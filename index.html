@@ -1,0 +1,2569 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>莲乡防腐保温工 - 专业防腐保温技术服务商</title>
+    <link rel="icon" href="图片1.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#1E3F66", secondary: "#4A4A4A" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Noto Sans SC', sans-serif;
+      }
+      input:focus, button:focus {
+      outline: none;
+      }
+      .service-video-card {
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      transition: all 0.5s ease;
+      }
+      .service-video-card:hover .service-content {
+      opacity: 0.3;
+      transition: opacity 0.3s ease;
+      }
+      .service-video-card .service-content {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+      }
+      .service-video-card.expanded {
+      transform: scale(2);
+      z-index: 100;
+      position: relative;
+      }
+      .video-play-btn {
+      transition: transform 0.2s ease;
+      }
+      .video-play-btn:hover {
+      transform: scale(1.1);
+      }
+      .video-play-btn:active {
+      transform: scale(0.95);
+      }
+      .video-controls {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      display: flex;
+      align-items: center;
+      background: rgba(0,0,0,0.5);
+      padding: 5px;
+      border-radius: 4px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      }
+      .expanded .video-controls {
+      opacity: 1;
+      }
+      .progress-container {
+      flex-grow: 1;
+      height: 5px;
+      background: rgba(255,255,255,0.3);
+      margin: 0 10px;
+      border-radius: 5px;
+      overflow: hidden;
+      cursor: pointer;
+      }
+      .progress-bar {
+      height: 100%;
+      background: #fff;
+      width: 0;
+      }
+      .volume-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      }
+      .volume-slider {
+      width: 0;
+      height: 5px;
+      background: rgba(255,255,255,0.3);
+      margin-left: 5px;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: width 0.3s ease;
+      position: relative;
+      }
+      .volume-container:hover .volume-slider {
+      width: 50px;
+      }
+      .volume-level {
+      height: 100%;
+      background: #fff;
+      width: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- 导航栏 -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <img src="图片1.png" alt="Logo" class="w-10 h-10 mr-2"> <!-- 添加图片logo -->
+          <h1 class="text-2xl font-['Pacifico'] text-primary mr-2">莲乡防腐保温工</h1>
+
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-primary font-medium">首页</a>
+          <a
+            href="about.html"
+            class="text-gray-600 hover:text-primary transition-colors"
+            >关于我们</a
+          >
+          <a
+            href="services.html"
+            class="text-gray-600 hover:text-primary transition-colors"
+            >服务项目</a
+          >
+          <a
+            href="projects.html"
+            class="text-gray-600 hover:text-primary transition-colors"
+            >工程案例</a
+          >
+          <a
+            href="contact.html"
+            class="text-gray-600 hover:text-primary transition-colors"
+            >联系我们</a
+          >
+        </nav>
+        <div class="md:hidden w-10 h-10 flex items-center justify-center">
+          <i class="ri-menu-line ri-2x text-gray-700"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Hero 区域 -->
+    <section class="relative">
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60"
+      >
+        <div class="carousel-container w-full h-full overflow-hidden">
+          <div class="carousel-slides w-full h-full relative">
+            <div
+              class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000"
+              style="background-image: url('https://public.readdy.ai/ai/img_res/ae34f1a4d6eb5f5ed7759544501400a3.jpg'); background-size: cover; background-position: center;"
+            ></div>
+            <div
+              class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000"
+              style="background-image: url('https://public.readdy.ai/ai/img_res/b132fac9c3ff80837e6885512489dab7.jpg'); background-size: cover; background-position: center;"
+            ></div>
+            <div
+              class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000"
+              style="background-image: url('https://public.readdy.ai/ai/img_res/40443df85d11d1ad485eac403c21a178.jpg'); background-size: cover; background-position: center;"
+            ></div>
+            <div
+              class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000"
+              style="background-image: url('https://public.readdy.ai/ai/img_res/87f0b1e5b33aee61d48065e2738e3f83.jpg'); background-size: cover; background-position: center;"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative container mx-auto px-4 py-20 md:py-32 flex flex-col items-start"
+      >
+        <div
+          class="max-w-2xl text-white bg-primary/70 p-8 rounded-lg backdrop-blur-sm shadow-lg"
+        >
+          <h2
+            class="text-3xl md:text-5xl font-bold mb-6 text-white drop-shadow-md"
+          >
+            专业防腐保温技术服务商
+          </h2>
+          <p class="text-lg md:text-xl mb-8 text-white/90 drop-shadow">
+            20
+            年技术沉淀，千余项工程经验，专业团队保障，为您提供一站式防腐保温解决方案
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <button
+              class="bg-white text-primary px-6 py-3 font-medium !rounded-button hover:bg-gray-100 transition-colors whitespace-nowrap shadow-md"
+            >
+              了解我们的服务
+            </button>
+            <button
+              class="bg-transparent border-2 border-white text-white px-6 py-3 font-medium !rounded-button hover:bg-white/10 transition-colors whitespace-nowrap shadow-md"
+            >
+              联系我们
+            </button>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const slides = document.querySelectorAll(".carousel-slide");
+          let currentSlide = 0;
+          function showSlide(index) {
+            slides.forEach((slide) => {
+              slide.style.opacity = "0";
+            });
+            slides[index].style.opacity = "1";
+          }
+          function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+          }
+          // 初始显示第一张
+          showSlide(0);
+          // 每2秒切换一次
+          setInterval(nextSlide, 2000);
+        });
+      </script>
+    </section>
+    <!-- 核心优势 -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">我们的核心优势</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            凭借多年行业经验和专业技术团队，我们为客户提供高质量的防腐保温解决方案
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="p-8 rounded-lg border border-transparent hover:border-primary/30 shadow-md hover:shadow-xl transition-all duration-300 group relative overflow-hidden cursor-pointer qualification-card"
+            style="background-image: url('https://public.readdy.ai/ai/img_res/1b4f0a569b024b42871dc841cdc2ff87.jpg'); background-size: cover; background-position: center;"
+          >
+            <div
+              class="absolute inset-0 bg-primary/70 group-hover:bg-primary/60 transition-colors duration-300"
+            ></div>
+            <div
+              class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 transition-colors duration-300 relative z-10"
+            >
+              <i
+                class="ri-medal-line ri-2x text-white group-hover:scale-110 transition-transform duration-300"
+              ></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-white mb-3 group-hover:text-white transition-colors duration-300 relative z-10"
+            >
+              专业资质
+            </h3>
+            <p
+              class="text-white/90 group-hover:text-white transition-colors duration-300 relative z-10"
+            >
+              拥有防腐保温工程专业资质，符合国家标准规范，确保工程质量和安全
+            </p>
+            <div
+              class="w-0 h-1 bg-white mt-6 group-hover:w-full transition-all duration-300 relative z-10"
+            ></div>
+          </div>
+          <div
+            class="p-8 rounded-lg border border-transparent hover:border-primary/30 shadow-md hover:shadow-xl transition-all duration-300 group relative overflow-hidden cursor-pointer technology-card"
+            style="background-image: url('https://public.readdy.ai/ai/img_res/465d94793fd1c19df433a61d1ea1fa3a.jpg'); background-size: cover; background-position: center;"
+          >
+            <div
+              class="absolute inset-0 bg-primary/70 group-hover:bg-primary/60 transition-colors duration-300"
+            ></div>
+            <div
+              class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 transition-colors duration-300 relative z-10"
+            >
+              <i
+                class="ri-tools-line ri-2x text-white group-hover:scale-110 transition-transform duration-300"
+              ></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-white mb-3 group-hover:text-white transition-colors duration-300 relative z-10"
+            >
+              技术优势
+            </h3>
+            <p
+              class="text-white/90 group-hover:text-white transition-colors duration-300 relative z-10"
+            >
+              20 年技术沉淀，掌握先进防腐保温工艺，能够应对各种复杂工程环境
+            </p>
+            <div
+              class="w-0 h-1 bg-white mt-6 group-hover:w-full transition-all duration-300 relative z-10"
+            ></div>
+          </div>
+          <div
+            class="p-8 rounded-lg border border-transparent hover:border-primary/30 shadow-md hover:shadow-xl transition-all duration-300 group relative overflow-hidden cursor-pointer service-card"
+            style="background-image: url('https://public.readdy.ai/ai/img_res/6103df35eef751ec6bdd3d2796d0f7a2.jpg'); background-size: cover; background-position: center;"
+          >
+            <div
+              class="absolute inset-0 bg-primary/70 group-hover:bg-primary/60 transition-colors duration-300"
+            ></div>
+            <div
+              class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-white/30 transition-colors duration-300 relative z-10"
+            >
+              <i
+                class="ri-customer-service-2-line ri-2x text-white group-hover:scale-110 transition-transform duration-300"
+              ></i>
+            </div>
+            <h3
+              class="text-xl font-bold text-white mb-3 group-hover:text-white transition-colors duration-300 relative z-10"
+            >
+              服务保障
+            </h3>
+            <p
+              class="text-white/90 group-hover:text-white transition-colors duration-300 relative z-10"
+            >
+              专业团队全程服务，从方案设计到施工维护，提供完善的售后保障体系
+            </p>
+            <div
+              class="w-0 h-1 bg-white mt-6 group-hover:w-full transition-all duration-300 relative z-10"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <!-- 弹窗 - 专业资质 -->
+      <div
+        id="qualification-modal"
+        class="fixed inset-0 bg-black/70 z-50 hidden flex items-center justify-center"
+      >
+        <div
+          class="bg-white rounded-lg w-11/12 max-w-5xl max-h-[90vh] overflow-y-auto p-6 relative"
+        >
+          <button
+            class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors"
+            id="close-qualification-modal"
+          >
+            <i class="ri-close-line ri-2x"></i>
+          </button>
+          <h3 class="text-2xl font-bold text-gray-800 mb-6">专业资质证书</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div
+              class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/c047a1ce99e77dcb878006f7d96dad80.jpg"
+                alt="防腐工程专业资质证书"
+                class="w-full h-auto"
+              />
+              <div class="p-4 bg-gray-50">
+                <h4 class="font-bold text-gray-800">防腐工程专业资质证书</h4>
+                <p class="text-gray-600 text-sm">国家建筑工程施工总承包资质</p>
+              </div>
+            </div>
+            <div
+              class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/5e218dc22b0fe7176366d278e711475d.jpg"
+                alt="保温工程专业资质证书"
+                class="w-full h-auto"
+              />
+              <div class="p-4 bg-gray-50">
+                <h4 class="font-bold text-gray-800">保温工程专业资质证书</h4>
+                <p class="text-gray-600 text-sm">建筑节能专项工程资质</p>
+              </div>
+            </div>
+            <div
+              class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/2dbfd848fb04074f6e055dd39fc59daa.jpg"
+                alt="ISO质量管理体系认证"
+                class="w-full h-auto"
+              />
+              <div class="p-4 bg-gray-50">
+                <h4 class="font-bold text-gray-800">ISO质量管理体系认证</h4>
+                <p class="text-gray-600 text-sm">
+                  ISO 9001:2015 质量管理体系认证
+                </p>
+              </div>
+            </div>
+            <div
+              class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/3d1d86f44c670abb7387975ccdab89eb.jpg"
+                alt="安全生产许可证"
+                class="w-full h-auto"
+              />
+              <div class="p-4 bg-gray-50">
+                <h4 class="font-bold text-gray-800">安全生产许可证</h4>
+                <p class="text-gray-600 text-sm">建设施工企业安全生产许可</p>
+              </div>
+            </div>
+            <div
+              class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/599f5f2f4157de236857389ebec9b618.jpg"
+                alt="环境管理体系认证"
+                class="w-full h-auto"
+              />
+              <div class="p-4 bg-gray-50">
+                <h4 class="font-bold text-gray-800">环境管理体系认证</h4>
+                <p class="text-gray-600 text-sm">
+                  ISO 14001:2015 环境管理体系认证
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 弹窗 - 技术优势 -->
+      <div
+        id="technology-modal"
+        class="fixed inset-0 bg-black/70 z-50 hidden flex items-center justify-center"
+      >
+        <div
+          class="bg-white rounded-lg w-11/12 max-w-5xl max-h-[90vh] overflow-y-auto p-6 relative"
+        >
+          <button
+            class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors"
+            id="close-technology-modal"
+          >
+            <i class="ri-close-line ri-2x"></i>
+          </button>
+          <h3 class="text-2xl font-bold text-gray-800 mb-6">
+            项目工程验收现场
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+              class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/dbd508cfa3630f0559aebe0a58283b05.jpg"
+                alt="防腐工程验收现场"
+                class="w-full h-auto"
+              />
+              <div class="p-4 bg-gray-50">
+                <h4 class="font-bold text-gray-800">防腐工程验收现场</h4>
+                <p class="text-gray-600 text-sm">
+                  江苏某石化厂管道防腐项目验收
+                </p>
+              </div>
+            </div>
+            <div
+              class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/7a910f4c9162eeba8d42dab3ce04e9ab.jpg"
+                alt="保温工程验收现场"
+                class="w-full h-auto"
+              />
+              <div class="p-4 bg-gray-50">
+                <h4 class="font-bold text-gray-800">保温工程验收现场</h4>
+                <p class="text-gray-600 text-sm">
+                  浙江某化工厂储罐保温项目验收
+                </p>
+              </div>
+            </div>
+            <div
+              class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/4cd25de4286ae0a9a7ea94474f88c97a.jpg"
+                alt="防腐涂层质量检测"
+                class="w-full h-auto"
+              />
+              <div class="p-4 bg-gray-50">
+                <h4 class="font-bold text-gray-800">防腐涂层质量检测</h4>
+                <p class="text-gray-600 text-sm">
+                  使用先进设备进行涂层厚度和附着力检测
+                </p>
+              </div>
+            </div>
+            <div
+              class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/c0ccfb312e03d1b354fef9f315952e37.jpg"
+                alt="保温效果热成像检测"
+                class="w-full h-auto"
+              />
+              <div class="p-4 bg-gray-50">
+                <h4 class="font-bold text-gray-800">保温效果热成像检测</h4>
+                <p class="text-gray-600 text-sm">使用热成像技术检测保温效果</p>
+              </div>
+            </div>
+            <div
+              class="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 md:col-span-2"
+            >
+              <img
+                src="https://public.readdy.ai/ai/img_res/aac41e589edf6a9cf0c7790463f12106.jpg"
+                alt="项目竣工验收会议"
+                class="w-full h-auto"
+              />
+              <div class="p-4 bg-gray-50">
+                <h4 class="font-bold text-gray-800">项目竣工验收会议</h4>
+                <p class="text-gray-600 text-sm">
+                  安徽某电厂设备防腐保温项目竣工验收
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 弹窗 - 服务保障 -->
+      <div
+        id="service-modal"
+        class="fixed inset-0 bg-black/70 z-50 hidden flex items-center justify-center"
+      >
+        <div
+          class="bg-white rounded-lg w-11/12 max-w-5xl max-h-[90vh] overflow-y-auto p-6 relative"
+        >
+          <button
+            class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors"
+            id="close-service-modal"
+          >
+            <i class="ri-close-line ri-2x"></i>
+          </button>
+          <h3 class="text-2xl font-bold text-gray-800 mb-6">全国服务网络</h3>
+          <div
+            class="relative w-full h-[600px] rounded-lg overflow-hidden shadow-lg mb-6"
+          >
+            <div
+              class="absolute inset-0 bg-cover bg-center"
+              style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');"
+            >
+              <!-- 北京分公司 -->
+              <div
+                class="absolute top-[25%] left-[55%] transform -translate-x-1/2 -translate-y-1/2 group"
+              >
+                <div
+                  class="w-6 h-6 bg-primary rounded-full animate-ping absolute"
+                ></div>
+                <div
+                  class="w-6 h-6 bg-primary rounded-full relative z-10 flex items-center justify-center"
+                >
+                  <div class="w-3 h-3 bg-white rounded-full"></div>
+                </div>
+                <div
+                  class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+                >
+                  <p class="font-bold text-primary text-sm">北京分公司</p>
+                </div>
+              </div>
+              <!-- 上海总部 -->
+              <div
+                class="absolute top-[45%] left-[60%] transform -translate-x-1/2 -translate-y-1/2 group"
+              >
+                <div
+                  class="w-8 h-8 bg-red-500 rounded-full animate-ping absolute"
+                ></div>
+                <div
+                  class="w-8 h-8 bg-red-500 rounded-full relative z-10 flex items-center justify-center"
+                >
+                  <div class="w-4 h-4 bg-white rounded-full"></div>
+                </div>
+                <div
+                  class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+                >
+                  <p class="font-bold text-red-500 text-sm">上海总部</p>
+                </div>
+              </div>
+              <!-- 广州分公司 -->
+              <div
+                class="absolute top-[65%] left-[58%] transform -translate-x-1/2 -translate-y-1/2 group"
+              >
+                <div
+                  class="w-6 h-6 bg-primary rounded-full animate-ping absolute"
+                ></div>
+                <div
+                  class="w-6 h-6 bg-primary rounded-full relative z-10 flex items-center justify-center"
+                >
+                  <div class="w-3 h-3 bg-white rounded-full"></div>
+                </div>
+                <div
+                  class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+                >
+                  <p class="font-bold text-primary text-sm">广州分公司</p>
+                </div>
+              </div>
+              <!-- 成都分公司 -->
+              <div
+                class="absolute top-[50%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 group"
+              >
+                <div
+                  class="w-6 h-6 bg-primary rounded-full animate-ping absolute"
+                ></div>
+                <div
+                  class="w-6 h-6 bg-primary rounded-full relative z-10 flex items-center justify-center"
+                >
+                  <div class="w-3 h-3 bg-white rounded-full"></div>
+                </div>
+                <div
+                  class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+                >
+                  <p class="font-bold text-primary text-sm">成都分公司</p>
+                </div>
+              </div>
+              <!-- 沈阳分公司 -->
+              <div
+                class="absolute top-[30%] left-[65%] transform -translate-x-1/2 -translate-y-1/2 group"
+              >
+                <div
+                  class="w-6 h-6 bg-primary rounded-full animate-ping absolute"
+                ></div>
+                <div
+                  class="w-6 h-6 bg-primary rounded-full relative z-10 flex items-center justify-center"
+                >
+                  <div class="w-3 h-3 bg-white rounded-full"></div>
+                </div>
+                <div
+                  class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white px-3 py-1 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap"
+                >
+                  <p class="font-bold text-primary text-sm">沈阳分公司</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+              <h4 class="font-bold text-gray-800 mb-2 flex items-center">
+                <i class="ri-building-line text-primary mr-2"></i>
+                总部
+              </h4>
+              <p class="text-gray-600 mb-1">上海市浦东新区张江高科技园区</p>
+              <p class="text-gray-600 mb-1">电话：021-88889999</p>
+              <p class="text-gray-600">邮箱：shanghai@lianxiangfangfu.com</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+              <h4 class="font-bold text-gray-800 mb-2 flex items-center">
+                <i class="ri-customer-service-2-line text-primary mr-2"></i>
+                全国服务热线
+              </h4>
+              <p class="text-gray-600 mb-1">400-888-9999</p>
+              <p class="text-gray-600 mb-1">7×24小时技术支持</p>
+              <p class="text-gray-600">48小时应急响应</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+              <h4 class="font-bold text-gray-800 mb-2 flex items-center">
+                <i class="ri-global-line text-primary mr-2"></i>
+                服务范围
+              </h4>
+              <p class="text-gray-600 mb-1">覆盖全国各省市自治区</p>
+              <p class="text-gray-600 mb-1">东南亚地区国际业务</p>
+              <p class="text-gray-600">一带一路沿线国家</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 服务项目 -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">我们的服务项目</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            提供全方位的防腐保温工程服务，满足不同行业和环境需求
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+          <div
+            class="bg-primary p-6 rounded-lg border border-transparent hover:border-primary/30 shadow-sm hover:shadow-lg transition-all duration-300 group relative overflow-hidden hover:bg-[#0A5F55] service-video-card"
+          >
+            <div
+              class="absolute -bottom-16 -right-16 w-32 h-32 bg-white/5 rounded-full group-hover:scale-150 transition-transform duration-500"
+            ></div>
+            <div class="service-content">
+              <div
+                class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/20 transition-all duration-300 relative z-10"
+              >
+                <i
+                  class="ri-shield-line ri-2x text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+              </div>
+              <h3
+                class="text-lg font-bold text-white mb-2 group-hover:text-white transition-colors duration-300"
+              >
+                防腐工
+              </h3>
+              <p
+                class="text-white/80 text-sm mb-4 group-hover:text-white/90 transition-colors duration-300 relative z-10"
+              >
+                专业防腐涂料施工，延长设备使用寿命，抵抗各类腐蚀环境
+              </p>
+              <a
+                href="#"
+                class="text-white font-medium text-sm flex items-center relative z-10 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+              >
+                了解更多
+                <i
+                  class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                ></i>
+              </a>
+            </div>
+            <div
+              class="service-video absolute inset-0 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 flex items-center justify-center"
+            >
+              <video
+                class="w-full h-full object-cover"
+                poster="https://public.readdy.ai/ai/img_res/7bc04f1ebdaa436522540ed1758ff648.jpg"
+              >
+                <source
+                  src="https://storage.googleapis.com/cms-storage-bucket/ec64036b4eacc9f3fd73.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div
+                class="absolute inset-0 bg-primary/50 flex items-center justify-center"
+              >
+                <button
+                  class="video-play-btn w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <i class="ri-play-fill ri-2x text-primary"></i>
+                </button>
+              </div>
+              <div class="video-controls">
+                <button class="play-pause-btn text-white">
+                  <i class="ri-play-fill ri-lg"></i>
+                </button>
+                <div class="progress-container">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="volume-container">
+                  <button class="volume-btn text-white">
+                    <i class="ri-volume-up-line ri-lg"></i>
+                  </button>
+                  <div class="volume-slider">
+                    <div class="volume-level"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary p-6 rounded-lg border border-transparent hover:border-primary/30 shadow-sm hover:shadow-lg transition-all duration-300 group relative overflow-hidden hover:bg-[#0A5F55] service-video-card"
+          >
+            <div
+              class="absolute -bottom-16 -right-16 w-32 h-32 bg-white/5 rounded-full group-hover:scale-150 transition-transform duration-500"
+            ></div>
+            <div class="service-content">
+              <div
+                class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/20 transition-all duration-300 relative z-10"
+              >
+                <i
+                  class="ri-paint-brush-line ri-2x text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+              </div>
+              <h3
+                class="text-lg font-bold text-white mb-2 group-hover:text-white transition-colors duration-300"
+              >
+                喷砂除锈工
+              </h3>
+              <p
+                class="text-white/80 text-sm mb-4 group-hover:text-white/90 transition-colors duration-300 relative z-10"
+              >
+                高效喷砂除锈处理，为后续防腐涂装提供理想基础表面
+              </p>
+              <a
+                href="#"
+                class="text-white font-medium text-sm flex items-center relative z-10 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+              >
+                了解更多
+                <i
+                  class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                ></i>
+              </a>
+            </div>
+            <div
+              class="service-video absolute inset-0 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 flex items-center justify-center"
+            >
+              <video
+                class="w-full h-full object-cover"
+                poster="https://public.readdy.ai/ai/img_res/a3288a8ec98dd13abe8cc94e97a9d7a0.jpg"
+              >
+                <source
+                  src="https://storage.googleapis.com/cms-storage-bucket/0d0173e1ab5c5778ca1a.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div
+                class="absolute inset-0 bg-primary/50 flex items-center justify-center"
+              >
+                <button
+                  class="video-play-btn w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <i class="ri-play-fill ri-2x text-primary"></i>
+                </button>
+              </div>
+              <div class="video-controls">
+                <button class="play-pause-btn text-white">
+                  <i class="ri-play-fill ri-lg"></i>
+                </button>
+                <div class="progress-container">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="volume-container">
+                  <button class="volume-btn text-white">
+                    <i class="ri-volume-up-line ri-lg"></i>
+                  </button>
+                  <div class="volume-slider">
+                    <div class="volume-level"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary p-6 rounded-lg border border-transparent hover:border-primary/30 shadow-sm hover:shadow-lg transition-all duration-300 group relative overflow-hidden hover:bg-[#0A5F55] service-video-card"
+          >
+            <div
+              class="absolute -bottom-16 -right-16 w-32 h-32 bg-white/5 rounded-full group-hover:scale-150 transition-transform duration-500"
+            ></div>
+            <div class="service-content">
+              <div
+                class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/20 transition-all duration-300 relative z-10"
+              >
+                <i
+                  class="ri-temp-cold-line ri-2x text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+              </div>
+              <h3
+                class="text-lg font-bold text-white mb-2 group-hover:text-white transition-colors duration-300"
+              >
+                保温工
+              </h3>
+              <p
+                class="text-white/80 text-sm mb-4 group-hover:text-white/90 transition-colors duration-300 relative z-10"
+              >
+                专业保温材料施工，有效隔热保温，降低能源消耗
+              </p>
+              <a
+                href="#"
+                class="text-white font-medium text-sm flex items-center relative z-10 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+              >
+                了解更多
+                <i
+                  class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                ></i>
+              </a>
+            </div>
+            <div
+              class="service-video absolute inset-0 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 flex items-center justify-center"
+            >
+              <video
+                class="w-full h-full object-cover"
+                poster="https://public.readdy.ai/ai/img_res/b95acee32f3afdcc140ada9d45cebce6.jpg"
+              >
+                <source
+                  src="https://storage.googleapis.com/cms-storage-bucket/c823e53b3a1a7b0d36a9.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div
+                class="absolute inset-0 bg-primary/50 flex items-center justify-center"
+              >
+                <button
+                  class="video-play-btn w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <i class="ri-play-fill ri-2x text-primary"></i>
+                </button>
+              </div>
+              <div class="video-controls">
+                <button class="play-pause-btn text-white">
+                  <i class="ri-play-fill ri-lg"></i>
+                </button>
+                <div class="progress-container">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="volume-container">
+                  <button class="volume-btn text-white">
+                    <i class="ri-volume-up-line ri-lg"></i>
+                  </button>
+                  <div class="volume-slider">
+                    <div class="volume-level"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary p-6 rounded-lg border border-transparent hover:border-primary/30 shadow-sm hover:shadow-lg transition-all duration-300 group relative overflow-hidden hover:bg-[#0A5F55] service-video-card"
+          >
+            <div
+              class="absolute -bottom-16 -right-16 w-32 h-32 bg-white/5 rounded-full group-hover:scale-150 transition-transform duration-500"
+            ></div>
+            <div class="service-content">
+              <div
+                class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/20 transition-all duration-300 relative z-10"
+              >
+                <i
+                  class="ri-layout-masonry-line ri-2x text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+              </div>
+              <h3
+                class="text-lg font-bold text-white mb-2 group-hover:text-white transition-colors duration-300"
+              >
+                外护板安装工
+              </h3>
+              <p
+                class="text-white/80 text-sm mb-4 group-hover:text-white/90 transition-colors duration-300 relative z-10"
+              >
+                专业外护板安装，保护保温层，提升美观度和耐久性
+              </p>
+              <a
+                href="#"
+                class="text-white font-medium text-sm flex items-center relative z-10 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+              >
+                了解更多
+                <i
+                  class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                ></i>
+              </a>
+            </div>
+            <div
+              class="service-video absolute inset-0 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 flex items-center justify-center"
+            >
+              <video
+                class="w-full h-full object-cover"
+                poster="https://public.readdy.ai/ai/img_res/919b56aefc80d8cde655be8d7161ce92.jpg"
+              >
+                <source
+                  src="https://storage.googleapis.com/cms-storage-bucket/2b89c6c5a6a6ce8fb8c7.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div
+                class="absolute inset-0 bg-primary/50 flex items-center justify-center"
+              >
+                <button
+                  class="video-play-btn w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <i class="ri-play-fill ri-2x text-primary"></i>
+                </button>
+              </div>
+              <div class="video-controls">
+                <button class="play-pause-btn text-white">
+                  <i class="ri-play-fill ri-lg"></i>
+                </button>
+                <div class="progress-container">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="volume-container">
+                  <button class="volume-btn text-white">
+                    <i class="ri-volume-up-line ri-lg"></i>
+                  </button>
+                  <div class="volume-slider">
+                    <div class="volume-level"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary p-6 rounded-lg border border-transparent hover:border-primary/30 shadow-sm hover:shadow-lg transition-all duration-300 group relative overflow-hidden hover:bg-[#0A5F55] service-video-card"
+          >
+            <div
+              class="absolute -bottom-16 -right-16 w-32 h-32 bg-white/5 rounded-full group-hover:scale-150 transition-transform duration-500"
+            ></div>
+            <div class="service-content">
+              <div
+                class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/20 transition-all duration-300 relative z-10"
+              >
+                <i
+                  class="ri-arrow-down-line ri-2x text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+              </div>
+              <h3
+                class="text-lg font-bold text-white mb-2 group-hover:text-white transition-colors duration-300"
+              >
+                下料工
+              </h3>
+              <p
+                class="text-white/80 text-sm mb-4 group-hover:text-white/90 transition-colors duration-300 relative z-10"
+              >
+                精准材料下料，减少浪费，提高施工效率和质量
+              </p>
+              <a
+                href="#"
+                class="text-white font-medium text-sm flex items-center relative z-10 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+              >
+                了解更多
+                <i
+                  class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                ></i>
+              </a>
+            </div>
+            <div
+              class="service-video absolute inset-0 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 flex items-center justify-center"
+            >
+              <video
+                class="w-full h-full object-cover"
+                poster="https://public.readdy.ai/ai/img_res/e1870ad74a4ad54fde6b863b9ca668ae.jpg"
+              >
+                <source
+                  src="https://storage.googleapis.com/cms-storage-bucket/7ac5f8a256d3a4d41f47.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div
+                class="absolute inset-0 bg-primary/50 flex items-center justify-center"
+              >
+                <button
+                  class="video-play-btn w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <i class="ri-play-fill ri-2x text-primary"></i>
+                </button>
+              </div>
+              <div class="video-controls">
+                <button class="play-pause-btn text-white">
+                  <i class="ri-play-fill ri-lg"></i>
+                </button>
+                <div class="progress-container">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="volume-container">
+                  <button class="volume-btn text-white">
+                    <i class="ri-volume-up-line ri-lg"></i>
+                  </button>
+                  <div class="volume-slider">
+                    <div class="volume-level"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary p-6 rounded-lg border border-transparent hover:border-primary/30 shadow-sm hover:shadow-lg transition-all duration-300 group relative overflow-hidden hover:bg-[#0A5F55] service-video-card"
+          >
+            <div
+              class="absolute -bottom-16 -right-16 w-32 h-32 bg-white/5 rounded-full group-hover:scale-150 transition-transform duration-500"
+            ></div>
+            <div class="service-content">
+              <div
+                class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/20 transition-all duration-300 relative z-10"
+              >
+                <i
+                  class="ri-flashlight-line ri-2x text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+              </div>
+              <h3
+                class="text-lg font-bold text-white mb-2 group-hover:text-white transition-colors duration-300"
+              >
+                电工
+              </h3>
+              <p
+                class="text-white/80 text-sm mb-4 group-hover:text-white/90 transition-colors duration-300 relative z-10"
+              >
+                专业电气安装与维护，确保电气系统安全可靠运行
+              </p>
+              <a
+                href="#"
+                class="text-white font-medium text-sm flex items-center relative z-10 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+              >
+                了解更多
+                <i
+                  class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                ></i>
+              </a>
+            </div>
+            <div
+              class="service-video absolute inset-0 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 flex items-center justify-center"
+            >
+              <video
+                class="w-full h-full object-cover"
+                poster="https://public.readdy.ai/ai/img_res/73181291f33f8c6ce9a9a0b06d36ddb1.jpg"
+              >
+                <source
+                  src="./激光除锈室内.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div
+                class="absolute inset-0 bg-primary/50 flex items-center justify-center"
+              >
+                <button
+                  class="video-play-btn w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <i class="ri-play-fill ri-2x text-primary"></i>
+                </button>
+              </div>
+              <div class="video-controls">
+                <button class="play-pause-btn text-white">
+                  <i class="ri-play-fill ri-lg"></i>
+                </button>
+                <div class="progress-container">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="volume-container">
+                  <button class="volume-btn text-white">
+                    <i class="ri-volume-up-line ri-lg"></i>
+                  </button>
+                  <div class="volume-slider">
+                    <div class="volume-level"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary p-6 rounded-lg border border-transparent hover:border-primary/30 shadow-sm hover:shadow-lg transition-all duration-300 group relative overflow-hidden hover:bg-[#0A5F55] service-video-card"
+          >
+            <div
+              class="absolute -bottom-16 -right-16 w-32 h-32 bg-white/5 rounded-full group-hover:scale-150 transition-transform duration-500"
+            ></div>
+            <div class="service-content">
+              <div
+                class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/20 transition-all duration-300 relative z-10"
+              >
+                <i
+                  class="ri-fire-line ri-2x text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+              </div>
+              <h3
+                class="text-lg font-bold text-white mb-2 group-hover:text-white transition-colors duration-300"
+              >
+                焊工
+              </h3>
+              <p
+                class="text-white/80 text-sm mb-4 group-hover:text-white/90 transition-colors duration-300 relative z-10"
+              >
+                专业焊接技术，保证结构牢固，符合工程质量标准
+              </p>
+              <a
+                href="#"
+                class="text-white font-medium text-sm flex items-center relative z-10 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+              >
+                了解更多
+                <i
+                  class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                ></i>
+              </a>
+            </div>
+            <div
+              class="service-video absolute inset-0 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 flex items-center justify-center"
+            >
+              <video
+                class="w-full h-full object-cover"
+                poster="https://public.readdy.ai/ai/img_res/79fb815c5cb4957386f0e2955166a1b6.jpg"
+              >
+                <source
+                  src="https://storage.googleapis.com/cms-storage-bucket/a44d8a2b06bd3181c8a7.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div
+                class="absolute inset-0 bg-primary/50 flex items-center justify-center"
+              >
+                <button
+                  class="video-play-btn w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <i class="ri-play-fill ri-2x text-primary"></i>
+                </button>
+              </div>
+              <div class="video-controls">
+                <button class="play-pause-btn text-white">
+                  <i class="ri-play-fill ri-lg"></i>
+                </button>
+                <div class="progress-container">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="volume-container">
+                  <button class="volume-btn text-white">
+                    <i class="ri-volume-up-line ri-lg"></i>
+                  </button>
+                  <div class="volume-slider">
+                    <div class="volume-level"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary p-6 rounded-lg border border-transparent hover:border-primary/30 shadow-sm hover:shadow-lg transition-all duration-300 group relative overflow-hidden hover:bg-[#0A5F55] service-video-card"
+          >
+            <div
+              class="absolute -bottom-16 -right-16 w-32 h-32 bg-white/5 rounded-full group-hover:scale-150 transition-transform duration-500"
+            ></div>
+            <div class="service-content">
+              <div
+                class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/20 transition-all duration-300 relative z-10"
+              >
+                <i
+                  class="ri-building-line ri-2x text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+              </div>
+              <h3
+                class="text-lg font-bold text-white mb-2 group-hover:text-white transition-colors duration-300"
+              >
+                架子工
+              </h3>
+              <p
+                class="text-white/80 text-sm mb-4 group-hover:text-white/90 transition-colors duration-300 relative z-10"
+              >
+                专业脚手架搭建，确保施工安全，提高作业效率
+              </p>
+              <a
+                href="#"
+                class="text-white font-medium text-sm flex items-center relative z-10 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+              >
+                了解更多
+                <i
+                  class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                ></i>
+              </a>
+            </div>
+            <div
+              class="service-video absolute inset-0 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 flex items-center justify-center"
+            >
+              <video
+                class="w-full h-full object-cover"
+                poster="https://public.readdy.ai/ai/img_res/3ab160995bcc3ad64c99fb3ab273c8e9.jpg"
+              >
+                <source
+                  src="https://storage.googleapis.com/cms-storage-bucket/c5d6c7ae0b2b9d2d0b8e.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div
+                class="absolute inset-0 bg-primary/50 flex items-center justify-center"
+              >
+                <button
+                  class="video-play-btn w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <i class="ri-play-fill ri-2x text-primary"></i>
+                </button>
+              </div>
+              <div class="video-controls">
+                <button class="play-pause-btn text-white">
+                  <i class="ri-play-fill ri-lg"></i>
+                </button>
+                <div class="progress-container">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="volume-container">
+                  <button class="volume-btn text-white">
+                    <i class="ri-volume-up-line ri-lg"></i>
+                  </button>
+                  <div class="volume-slider">
+                    <div class="volume-level"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-primary p-6 rounded-lg border border-transparent hover:border-primary/30 shadow-sm hover:shadow-lg transition-all duration-300 group relative overflow-hidden hover:bg-[#0A5F55] service-video-card"
+          >
+            <div
+              class="absolute -bottom-16 -right-16 w-32 h-32 bg-white/5 rounded-full group-hover:scale-150 transition-transform duration-500"
+            ></div>
+            <div class="service-content">
+              <div
+                class="w-14 h-14 bg-white/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-white/20 transition-all duration-300 relative z-10"
+              >
+                <i
+                  class="ri-hammer-line ri-2x text-white group-hover:scale-110 transition-transform duration-300"
+                ></i>
+              </div>
+              <h3
+                class="text-lg font-bold text-white mb-2 group-hover:text-white transition-colors duration-300"
+              >
+                瓦工
+              </h3>
+              <p
+                class="text-white/80 text-sm mb-4 group-hover:text-white/90 transition-colors duration-300 relative z-10"
+              >
+                专业砌筑和抹灰技术，确保墙体结构牢固美观
+              </p>
+              <a
+                href="#"
+                class="text-white font-medium text-sm flex items-center relative z-10 opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+              >
+                了解更多
+                <i
+                  class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                ></i>
+              </a>
+            </div>
+            <div
+              class="service-video absolute inset-0 bg-black opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20 flex items-center justify-center"
+            >
+              <video
+                class="w-full h-full object-cover"
+                poster="https://public.readdy.ai/ai/img_res/537ca194045834a305f3b26c4c1c7a28.jpg"
+              >
+                <source
+                  src="https://storage.googleapis.com/cms-storage-bucket/ebd8fe69b5d1e5cb7447.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div
+                class="absolute inset-0 bg-primary/50 flex items-center justify-center"
+              >
+                <button
+                  class="video-play-btn w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <i class="ri-play-fill ri-2x text-primary"></i>
+                </button>
+              </div>
+              <div class="video-controls">
+                <button class="play-pause-btn text-white">
+                  <i class="ri-play-fill ri-lg"></i>
+                </button>
+                <div class="progress-container">
+                  <div class="progress-bar"></div>
+                </div>
+                <div class="volume-container">
+                  <button class="volume-btn text-white">
+                    <i class="ri-volume-up-line ri-lg"></i>
+                  </button>
+                  <div class="volume-slider">
+                    <div class="volume-level"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 工程案例 -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">成功案例展示</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            我们已成功完成上千个防腐保温工程项目，以下是部分代表性案例
+          </p>
+        </div>
+        <div class="mb-8 flex justify-center">
+          <div class="inline-flex p-1 bg-gray-100 rounded-full">
+            <button
+              class="case-filter px-4 py-2 text-sm font-medium bg-primary text-white rounded-full whitespace-nowrap"
+              data-filter="all"
+            >
+              全部案例
+            </button>
+            <button
+              class="case-filter px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary rounded-full whitespace-nowrap"
+              data-filter="anticorrosion"
+            >
+              防腐工程
+            </button>
+            <button
+              class="case-filter px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary rounded-full whitespace-nowrap"
+              data-filter="insulation"
+            >
+              保温工程
+            </button>
+            <button
+              class="case-filter px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary rounded-full whitespace-nowrap"
+              data-filter="comprehensive"
+            >
+              综合项目
+            </button>
+            <button
+              class="case-filter px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary rounded-full whitespace-nowrap"
+              data-filter="international"
+            >
+              国外工程
+            </button>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8" id="case-container">
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-primary/20 case-item"
+            data-category="anticorrosion"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://public.readdy.ai/ai/img_res/f08cee641d6ac3a0bd70645c5fe871ef.jpg"
+                alt="石化厂管道防腐项目"
+                class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"
+              ></div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-xs font-medium py-1 px-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                防腐工程
+              </div>
+            </div>
+            <div class="p-6 relative">
+              <div
+                class="w-0 h-1 bg-primary absolute top-0 left-0 group-hover:w-full transition-all duration-500"
+              ></div>
+              <h3
+                class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors duration-300"
+              >
+                江苏某石化厂管道防腐项目
+              </h3>
+              <p
+                class="text-gray-600 mb-4 group-hover:text-gray-700 transition-colors duration-300"
+              >
+                为大型石化厂提供 5000
+                米管道防腐处理，采用先进防腐涂料，有效延长设备使用寿命
+              </p>
+              <div class="flex justify-between items-center">
+                <span
+                  class="text-sm text-gray-500 group-hover:text-primary/70 transition-colors duration-300"
+                  >2024 年 12 月完工</span
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-sm flex items-center opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                >
+                  查看详情
+                  <i
+                    class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-primary/20 case-item"
+            data-category="insulation"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://public.readdy.ai/ai/img_res/cd5fa30d56fbf93487774028e98dea6f.jpg"
+                alt="化工厂储罐保温项目"
+                class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"
+              ></div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-xs font-medium py-1 px-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                保温工程
+              </div>
+            </div>
+            <div class="p-6 relative">
+              <div
+                class="w-0 h-1 bg-primary absolute top-0 left-0 group-hover:w-full transition-all duration-500"
+              ></div>
+              <h3
+                class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors duration-300"
+              >
+                浙江某化工厂储罐保温项目
+              </h3>
+              <p
+                class="text-gray-600 mb-4 group-hover:text-gray-700 transition-colors duration-300"
+              >
+                为大型化工厂 12
+                个储罐提供保温施工，采用环保保温材料，有效降低能源消耗
+              </p>
+              <div class="flex justify-between items-center">
+                <span
+                  class="text-sm text-gray-500 group-hover:text-primary/70 transition-colors duration-300"
+                  >2024 年 9 月完工</span
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-sm flex items-center opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                >
+                  查看详情
+                  <i
+                    class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-primary/20 case-item"
+            data-category="comprehensive"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://public.readdy.ai/ai/img_res/fac4fd38805448b14bc3b7936208ab9b.jpg"
+                alt="电厂设备防腐保温项目"
+                class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"
+              ></div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-xs font-medium py-1 px-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                综合项目
+              </div>
+            </div>
+            <div class="p-6 relative">
+              <div
+                class="w-0 h-1 bg-primary absolute top-0 left-0 group-hover:w-full transition-all duration-500"
+              ></div>
+              <h3
+                class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors duration-300"
+              >
+                安徽某电厂设备防腐保温项目
+              </h3>
+              <p
+                class="text-gray-600 mb-4 group-hover:text-gray-700 transition-colors duration-300"
+              >
+                为发电厂锅炉及管道系统提供一体化防腐保温解决方案，确保设备安全稳定运行
+              </p>
+              <div class="flex justify-between items-center">
+                <span
+                  class="text-sm text-gray-500 group-hover:text-primary/70 transition-colors duration-300"
+                  >2024 年 7 月完工</span
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-sm flex items-center opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                >
+                  查看详情
+                  <i
+                    class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-primary/20 case-item"
+            data-category="anticorrosion"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://public.readdy.ai/ai/img_res/c36ecb95ef3442956a0c760051d822a0.jpg"
+                alt="钢结构防腐项目"
+                class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"
+              ></div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-xs font-medium py-1 px-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                防腐工程
+              </div>
+            </div>
+            <div class="p-6 relative">
+              <div
+                class="w-0 h-1 bg-primary absolute top-0 left-0 group-hover:w-full transition-all duration-500"
+              ></div>
+              <h3
+                class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors duration-300"
+              >
+                上海某钢铁厂钢结构防腐项目
+              </h3>
+              <p
+                class="text-gray-600 mb-4 group-hover:text-gray-700 transition-colors duration-300"
+              >
+                为钢铁厂主厂房钢结构提供全面防腐处理，采用高性能环保防腐涂料，抵抗严苛工业环境
+              </p>
+              <div class="flex justify-between items-center">
+                <span
+                  class="text-sm text-gray-500 group-hover:text-primary/70 transition-colors duration-300"
+                  >2024 年 11 月完工</span
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-sm flex items-center opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                >
+                  查看详情
+                  <i
+                    class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-primary/20 case-item"
+            data-category="insulation"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://public.readdy.ai/ai/img_res/07691790c6e6d4f72a49a1ac43c8b0df.jpg"
+                alt="设备保温项目"
+                class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"
+              ></div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-xs font-medium py-1 px-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                保温工程
+              </div>
+            </div>
+            <div class="p-6 relative">
+              <div
+                class="w-0 h-1 bg-primary absolute top-0 left-0 group-hover:w-full transition-all duration-500"
+              ></div>
+              <h3
+                class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors duration-300"
+              >
+                北京某制药厂设备保温项目
+              </h3>
+              <p
+                class="text-gray-600 mb-4 group-hover:text-gray-700 transition-colors duration-300"
+              >
+                为制药厂关键生产设备提供精密保温解决方案，确保生产工艺温度稳定，提高产品质量
+              </p>
+              <div class="flex justify-between items-center">
+                <span
+                  class="text-sm text-gray-500 group-hover:text-primary/70 transition-colors duration-300"
+                  >2024 年 8 月完工</span
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-sm flex items-center opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                >
+                  查看详情
+                  <i
+                    class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-primary/20 case-item"
+            data-category="international"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://public.readdy.ai/ai/img_res/a2217d2a6f1168b75c649735fae0c48c.jpg"
+                alt="国际工程项目"
+                class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"
+              ></div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-xs font-medium py-1 px-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                国外工程
+              </div>
+            </div>
+            <div class="p-6 relative">
+              <div
+                class="w-0 h-1 bg-primary absolute top-0 left-0 group-hover:w-full transition-all duration-500"
+              ></div>
+              <h3
+                class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors duration-300"
+              >
+                马来西亚石油炼化厂防腐保温项目
+              </h3>
+              <p
+                class="text-gray-600 mb-4 group-hover:text-gray-700 transition-colors duration-300"
+              >
+                为马来西亚大型石油炼化厂提供全面防腐保温服务，克服热带气候挑战，确保设备长期稳定运行
+              </p>
+              <div class="flex justify-between items-center">
+                <span
+                  class="text-sm text-gray-500 group-hover:text-primary/70 transition-colors duration-300"
+                  >2024 年 6 月完工</span
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-sm flex items-center opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                >
+                  查看详情
+                  <i
+                    class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-primary/20 case-item"
+            data-category="comprehensive"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://public.readdy.ai/ai/img_res/3728cd7b07a45a42b2cd1272d2669cec.jpg"
+                alt="综合工程项目"
+                class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"
+              ></div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-xs font-medium py-1 px-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                综合项目
+              </div>
+            </div>
+            <div class="p-6 relative">
+              <div
+                class="w-0 h-1 bg-primary absolute top-0 left-0 group-hover:w-full transition-all duration-500"
+              ></div>
+              <h3
+                class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors duration-300"
+              >
+                广东某LNG接收站综合工程
+              </h3>
+              <p
+                class="text-gray-600 mb-4 group-hover:text-gray-700 transition-colors duration-300"
+              >
+                为LNG接收站提供低温保温、防腐及外护板一体化解决方案，确保极低温环境下设备安全运行
+              </p>
+              <div class="flex justify-between items-center">
+                <span
+                  class="text-sm text-gray-500 group-hover:text-primary/70 transition-colors duration-300"
+                  >2024 年 5 月完工</span
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-sm flex items-center opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                >
+                  查看详情
+                  <i
+                    class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-transparent hover:border-primary/20 case-item"
+            data-category="international"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://public.readdy.ai/ai/img_res/d9cb1921c9d732a37cf4e7b07a464155.jpg"
+                alt="中东工程项目"
+                class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"
+              ></div>
+              <div
+                class="absolute top-4 right-4 bg-primary text-white text-xs font-medium py-1 px-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                国外工程
+              </div>
+            </div>
+            <div class="p-6 relative">
+              <div
+                class="w-0 h-1 bg-primary absolute top-0 left-0 group-hover:w-full transition-all duration-500"
+              ></div>
+              <h3
+                class="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors duration-300"
+              >
+                阿联酋沙漠油田设备防腐项目
+              </h3>
+              <p
+                class="text-gray-600 mb-4 group-hover:text-gray-700 transition-colors duration-300"
+              >
+                为中东沙漠环境下的油田设备提供特殊防腐处理，应对高温、沙尘等极端环境挑战
+              </p>
+              <div class="flex justify-between items-center">
+                <span
+                  class="text-sm text-gray-500 group-hover:text-primary/70 transition-colors duration-300"
+                  >2024 年 3 月完工</span
+                >
+                <a
+                  href="#"
+                  class="text-primary font-medium text-sm flex items-center opacity-80 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
+                >
+                  查看详情
+                  <i
+                    class="ri-arrow-right-line ml-1 group-hover:ml-2 transition-all duration-300"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <button
+            class="px-6 py-3 bg-primary text-white font-medium !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap"
+            id="load-more"
+          >
+            查看更多案例
+          </button>
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            // 案例筛选功能
+            const filterButtons = document.querySelectorAll(".case-filter");
+            const caseItems = document.querySelectorAll(".case-item");
+            // 初始化 - 显示所有案例
+            showAllCases();
+            // 为每个筛选按钮添加点击事件
+            filterButtons.forEach((button) => {
+              button.addEventListener("click", function () {
+                // 移除所有按钮的活跃状态
+                filterButtons.forEach((btn) => {
+                  btn.classList.remove("bg-primary", "text-white");
+                  btn.classList.add("text-gray-600");
+                });
+                // 添加当前按钮的活跃状态
+                this.classList.add("bg-primary", "text-white");
+                this.classList.remove("text-gray-600");
+                const filter = this.getAttribute("data-filter");
+                // 根据筛选条件显示/隐藏案例
+                if (filter === "all") {
+                  showAllCases();
+                } else {
+                  filterCases(filter);
+                }
+              });
+            });
+            // 显示所有案例
+            function showAllCases() {
+              caseItems.forEach((item) => {
+                item.style.display = "block";
+              });
+            }
+            // 根据类别筛选案例
+            function filterCases(category) {
+              caseItems.forEach((item) => {
+                if (item.getAttribute("data-category") === category) {
+                  item.style.display = "block";
+                } else {
+                  item.style.display = "none";
+                }
+              });
+            }
+            // 查看更多案例按钮功能
+            const loadMoreButton = document.getElementById("load-more");
+            loadMoreButton.addEventListener("click", function () {
+              // 这里可以实现加载更多案例的逻辑
+              // 简单模拟一个加载中状态
+              this.textContent = "加载中...";
+              this.disabled = true;
+              // 模拟网络请求延迟
+              setTimeout(() => {
+                // 恢复按钮状态
+                this.textContent = "查看更多案例";
+                this.disabled = false;
+                // 显示一个提示信息
+                const container = document.getElementById("case-container");
+                const notification = document.createElement("div");
+                notification.className =
+                  "fixed top-20 right-4 bg-primary text-white p-4 rounded shadow-lg z-50 transform transition-transform duration-500 translate-x-0";
+                notification.textContent = "已加载全部案例";
+                document.body.appendChild(notification);
+                // 3秒后移除提示
+                setTimeout(() => {
+                  notification.classList.add("translate-x-full");
+                  setTimeout(() => {
+                    document.body.removeChild(notification);
+                  }, 500);
+                }, 3000);
+              }, 1000);
+            });
+            // 核心优势卡片点击事件
+            // 专业资质卡片
+            const qualificationCard = document.querySelector(".qualification-card");
+            const qualificationModal = document.getElementById("qualification-modal");
+            const closeQualificationModal = document.getElementById(
+              "close-qualification-modal",
+            );
+            qualificationCard.addEventListener("click", function () {
+              qualificationModal.classList.remove("hidden");
+              document.body.style.overflow = "hidden";
+            });
+            closeQualificationModal.addEventListener("click", function () {
+              qualificationModal.classList.add("hidden");
+              document.body.style.overflow = "auto";
+            });
+            // 技术优势卡片
+            const technologyCard = document.querySelector(".technology-card");
+            const technologyModal = document.getElementById("technology-modal");
+            const closeTechnologyModal = document.getElementById(
+              "close-technology-modal",
+            );
+            technologyCard.addEventListener("click", function () {
+              technologyModal.classList.remove("hidden");
+              document.body.style.overflow = "hidden";
+            });
+            closeTechnologyModal.addEventListener("click", function () {
+              technologyModal.classList.add("hidden");
+              document.body.style.overflow = "auto";
+            });
+            // 服务保障卡片
+            const serviceCard = document.querySelector(".service-card");
+            const serviceModal = document.getElementById("service-modal");
+            const closeServiceModal = document.getElementById("close-service-modal");
+            serviceCard.addEventListener("click", function () {
+              serviceModal.classList.remove("hidden");
+              document.body.style.overflow = "hidden";
+            });
+            closeServiceModal.addEventListener("click", function () {
+              serviceModal.classList.add("hidden");
+              document.body.style.overflow = "auto";
+            });
+            // 点击模态框外部关闭模态框
+            window.addEventListener("click", function (event) {
+              if (event.target === qualificationModal) {
+                qualificationModal.classList.add("hidden");
+                document.body.style.overflow = "auto";
+              }
+              if (event.target === technologyModal) {
+                technologyModal.classList.add("hidden");
+                document.body.style.overflow = "auto";
+              }
+              if (event.target === serviceModal) {
+                serviceModal.classList.add("hidden");
+                document.body.style.overflow = "auto";
+              }
+            });
+            // ESC键关闭模态框
+            document.addEventListener("keydown", function (event) {
+              if (event.key === "Escape") {
+                qualificationModal.classList.add("hidden");
+                technologyModal.classList.add("hidden");
+                serviceModal.classList.add("hidden");
+                document.body.style.overflow = "auto";
+              }
+            });
+            // 服务项目视频卡片交互
+            const serviceVideoCards = document.querySelectorAll(".service-video-card");
+            const videoPlayBtns = document.querySelectorAll(".video-play-btn");
+            let activeCard = null;
+            // 为每个服务卡片添加鼠标进入事件
+            serviceVideoCards.forEach((card) => {
+              const video = card.querySelector("video");
+              const playBtn = card.querySelector(".video-play-btn");
+              const playPauseBtn = card.querySelector(".play-pause-btn");
+              const progressBar = card.querySelector(".progress-bar");
+              const progressContainer = card.querySelector(".progress-container");
+              const volumeBtn = card.querySelector(".volume-btn");
+              const volumeLevel = card.querySelector(".volume-level");
+              const volumeSlider = card.querySelector(".volume-slider");
+
+              // 初始化视频音量
+              if (video) {
+                video.volume = 1;
+              }
+
+              // 鼠标进入卡片时预加载视频
+              card.addEventListener("mouseenter", function () {
+                if (activeCard && activeCard !== card) return;
+
+                if (video && !card.classList.contains("expanded")) {
+                  video.load();
+                }
+              });
+
+              // 鼠标离开卡片时，如果没有展开则暂停视频
+              card.addEventListener("mouseleave", function () {
+                if (!card.classList.contains("expanded") && video) {
+                  video.pause();
+                  video.currentTime = 0;
+                  if (playBtn) {
+                    playBtn.innerHTML = '<i class="ri-play-fill ri-2x text-primary"></i>';
+                  }
+                  if (playPauseBtn) {
+                    playPauseBtn.innerHTML = '<i class="ri-play-fill ri-lg"></i>';
+                  }
+                }
+              });
+
+              // 播放按钮点击事件
+              if (playBtn) {
+                playBtn.addEventListener("click", function (e) {
+                  e.stopPropagation();
+
+                  // 如果有其他展开的卡片，先关闭它
+                  if (activeCard && activeCard !== card) {
+                    closeExpandedCard(activeCard);
+                  }
+
+                  // 展开当前卡片
+                  card.classList.add("expanded");
+                  activeCard = card;
+
+                  const overlay = this.closest(".absolute");
+                  if (video) {
+                    video.muted = false;
+                    video.loop = false;
+                    video.play();
+                    this.style.display = "none";
+                    overlay.style.backgroundColor = "rgba(30, 63, 102, 0.2)";
+
+                    // 更新播放/暂停按钮状态
+                    if (playPauseBtn) {
+                      playPauseBtn.innerHTML = '<i class="ri-pause-fill ri-lg"></i>';
+                    }
+
+                    // 监听视频播放进度
+                    video.addEventListener("timeupdate", updateProgressBar);
+
+                    // 监听视频结束事件
+                    video.addEventListener("ended", function () {
+                      closeExpandedCard(card);
+                    });
+                  }
+                });
+              }
+
+              // 播放/暂停按钮点击事件
+              if (playPauseBtn) {
+                playPauseBtn.addEventListener("click", function (e) {
+                  e.stopPropagation();
+                  if (video) {
+                    if (video.paused) {
+                      video.play();
+                      this.innerHTML = '<i class="ri-pause-fill ri-lg"></i>';
+                    } else {
+                      video.pause();
+                      this.innerHTML = '<i class="ri-play-fill ri-lg"></i>';
+                    }
+                  }
+                });
+              }
+
+              // 进度条点击事件
+              if (progressContainer) {
+                progressContainer.addEventListener("click", function (e) {
+                  e.stopPropagation();
+                  if (video) {
+                    const rect = this.getBoundingClientRect();
+                    const pos = (e.clientX - rect.left) / rect.width;
+                    video.currentTime = pos * video.duration;
+                    updateProgressBar();
+                  }
+                });
+              }
+
+              // 音量按钮点击事件
+              if (volumeBtn) {
+                volumeBtn.addEventListener("click", function (e) {
+                  e.stopPropagation();
+                  if (video) {
+                    if (video.muted) {
+                      video.muted = false;
+                      this.innerHTML = '<i class="ri-volume-up-line ri-lg"></i>';
+                      volumeLevel.style.width = video.volume * 100 + "%";
+                    } else {
+                      video.muted = true;
+                      this.innerHTML = '<i class="ri-volume-mute-line ri-lg"></i>';
+                      volumeLevel.style.width = "0";
+                    }
+                  }
+                });
+              }
+
+              // 音量滑块点击事件
+              if (volumeSlider) {
+                volumeSlider.addEventListener("click", function (e) {
+                  e.stopPropagation();
+                  if (video) {
+                    const rect = this.getBoundingClientRect();
+                    const pos = (e.clientX - rect.left) / rect.width;
+                    video.volume = Math.max(0, Math.min(1, pos));
+                    volumeLevel.style.width = video.volume * 100 + "%";
+
+                    if (video.volume === 0) {
+                      volumeBtn.innerHTML = '<i class="ri-volume-mute-line ri-lg"></i>';
+                      video.muted = true;
+                    } else {
+                      volumeBtn.innerHTML = '<i class="ri-volume-up-line ri-lg"></i>';
+                      video.muted = false;
+                    }
+                  }
+                });
+              }
+
+              // 更新进度条
+              function updateProgressBar() {
+                if (video && progressBar) {
+                  const percentage = (video.currentTime / video.duration) * 100;
+                  progressBar.style.width = percentage + "%";
+                }
+              }
+            });
+            // 点击页面其他区域关闭展开的卡片
+            document.addEventListener("click", function (e) {
+              if (activeCard && !activeCard.contains(e.target)) {
+                closeExpandedCard(activeCard);
+              }
+            });
+            // 关闭展开的卡片
+            function closeExpandedCard(card) {
+              if (!card) return;
+
+              const video = card.querySelector("video");
+              const playBtn = card.querySelector(".video-play-btn");
+              const playPauseBtn = card.querySelector(".play-pause-btn");
+
+              card.classList.remove("expanded");
+
+              if (video) {
+                video.pause();
+                video.currentTime = 0;
+                video.removeEventListener("timeupdate", updateProgressBar);
+                video.removeEventListener("ended", closeExpandedCard);
+              }
+
+              if (playBtn) {
+                playBtn.style.display = "flex";
+                playBtn.innerHTML = '<i class="ri-play-fill ri-2x text-primary"></i>';
+              }
+
+              if (playPauseBtn) {
+                playPauseBtn.innerHTML = '<i class="ri-play-fill ri-lg"></i>';
+              }
+
+              const overlay = card.querySelector(".service-video .absolute");
+              if (overlay) {
+                overlay.style.backgroundColor = "rgba(30, 63, 102, 0.5)";
+              }
+
+              activeCard = null;
+            }
+            // 通用更新进度条函数
+            function updateProgressBar() {
+              if (!activeCard) return;
+
+              const video = activeCard.querySelector("video");
+              const progressBar = activeCard.querySelector(".progress-bar");
+
+              if (video && progressBar) {
+                const percentage = (video.currentTime / video.duration) * 100;
+                progressBar.style.width = percentage + "%";
+              }
+            }
+          });
+        </script>
+      </div>
+    </section>
+    <!-- 客户评价 -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">客户评价</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">听听我们的客户怎么说</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group relative border border-transparent hover:border-primary/20"
+          >
+            <div
+              class="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl transform translate-x-6 -translate-y-6 group-hover:translate-x-4 group-hover:-translate-y-4 transition-transform duration-300"
+            ></div>
+            <div
+              class="absolute -bottom-3 -left-3 w-24 h-24 bg-primary/5 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500"
+            ></div>
+            <div class="flex items-center mb-4 relative z-10">
+              <div
+                class="text-yellow-400 flex group-hover:scale-110 origin-left transition-transform duration-300"
+              >
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p
+              class="text-gray-600 mb-6 relative z-10 group-hover:text-gray-700 transition-colors duration-300"
+            >
+              "莲乡防腐保温工的团队非常专业，从方案设计到施工完成，全程服务周到。我们工厂的设备防腐保温效果非常好，已经合作三年了，非常满意。"
+            </p>
+            <div class="flex items-center relative z-10">
+              <div
+                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors duration-300"
+              >
+                <i class="ri-user-3-line ri-lg text-primary"></i>
+              </div>
+              <div>
+                <h4
+                  class="font-bold text-gray-800 group-hover:text-primary transition-colors duration-300"
+                >
+                  陈经理
+                </h4>
+                <p
+                  class="text-sm text-gray-500 group-hover:text-gray-600 transition-colors duration-300"
+                >
+                  江苏某化工有限公司
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-0 h-1 bg-primary mt-6 group-hover:w-full transition-all duration-500"
+            ></div>
+          </div>
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group relative border border-transparent hover:border-primary/20"
+          >
+            <div
+              class="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl transform translate-x-6 -translate-y-6 group-hover:translate-x-4 group-hover:-translate-y-4 transition-transform duration-300"
+            ></div>
+            <div
+              class="absolute -bottom-3 -left-3 w-24 h-24 bg-primary/5 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500"
+            ></div>
+            <div class="flex items-center mb-4 relative z-10">
+              <div
+                class="text-yellow-400 flex group-hover:scale-110 origin-left transition-transform duration-300"
+              >
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p
+              class="text-gray-600 mb-6 relative z-10 group-hover:text-gray-700 transition-colors duration-300"
+            >
+              "我们电厂的锅炉保温项目交给莲乡防腐保温工后，施工质量和进度都非常令人满意。他们的技术团队经验丰富，解决问题迅速，是值得信赖的合作伙伴。"
+            </p>
+            <div class="flex items-center relative z-10">
+              <div
+                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors duration-300"
+              >
+                <i class="ri-user-3-line ri-lg text-primary"></i>
+              </div>
+              <div>
+                <h4
+                  class="font-bold text-gray-800 group-hover:text-primary transition-colors duration-300"
+                >
+                  李工程师
+                </h4>
+                <p
+                  class="text-sm text-gray-500 group-hover:text-gray-600 transition-colors duration-300"
+                >
+                  浙江某发电有限公司
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-0 h-1 bg-primary mt-6 group-hover:w-full transition-all duration-500"
+            ></div>
+          </div>
+          <div
+            class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 group relative border border-transparent hover:border-primary/20"
+          >
+            <div
+              class="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-3xl transform translate-x-6 -translate-y-6 group-hover:translate-x-4 group-hover:-translate-y-4 transition-transform duration-300"
+            ></div>
+            <div
+              class="absolute -bottom-3 -left-3 w-24 h-24 bg-primary/5 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500"
+            ></div>
+            <div class="flex items-center mb-4 relative z-10">
+              <div
+                class="text-yellow-400 flex group-hover:scale-110 origin-left transition-transform duration-300"
+              >
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+            </div>
+            <p
+              class="text-gray-600 mb-6 relative z-10 group-hover:text-gray-700 transition-colors duration-300"
+            >
+              "我们的石油管道防腐项目工期紧，要求高，莲乡防腐保温工不仅按时完成，而且质量超出预期。他们的专业水平和服务态度都值得肯定，会继续合作。"
+            </p>
+            <div class="flex items-center relative z-10">
+              <div
+                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors duration-300"
+              >
+                <i class="ri-user-3-line ri-lg text-primary"></i>
+              </div>
+              <div>
+                <h4
+                  class="font-bold text-gray-800 group-hover:text-primary transition-colors duration-300"
+                >
+                  张总监
+                </h4>
+                <p
+                  class="text-sm text-gray-500 group-hover:text-gray-600 transition-colors duration-300"
+                >
+                  安徽某石油工程公司
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-0 h-1 bg-primary mt-6 group-hover:w-full transition-all duration-500"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 联系我们 -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">联系我们</h2>
+            <p class="text-gray-600 mb-8">
+              无论您有任何防腐保温工程需求，都可以随时联系我们，我们将为您提供专业的解决方案
+            </p>
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 mt-1"
+                >
+                  <i class="ri-map-pin-line ri-lg text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">公司地址</h4>
+                  <p class="text-gray-600">
+                    江苏省苏州市吴中区莲花路 888 号莲乡工业园 A 栋
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 mt-1"
+                >
+                  <i class="ri-phone-line ri-lg text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">联系电话</h4>
+                  <p class="text-gray-600">0512-88889999 / 13912345678</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 mt-1"
+                >
+                  <i class="ri-mail-line ri-lg text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">电子邮箱</h4>
+                  <p class="text-gray-600">info@lianxiangfangfu.com</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4 mt-1"
+                >
+                  <i class="ri-time-line ri-lg text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">工作时间</h4>
+                  <p class="text-gray-600">周一至周五：8:30-17:30</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 p-8 rounded shadow-md">
+            <h3 class="text-xl font-bold text-gray-800 mb-6">发送咨询</h3>
+            <form>
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 mb-2">姓名</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary"
+                  placeholder="请输入您的姓名"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="phone" class="block text-gray-700 mb-2">电话</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary"
+                  placeholder="请输入您的联系电话"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 mb-2">邮箱</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary"
+                  placeholder="请输入您的电子邮箱"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block text-gray-700 mb-2"
+                  >咨询内容</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-3 border border-gray-300 rounded focus:border-primary focus:ring-1 focus:ring-primary"
+                  placeholder="请详细描述您的需求"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-primary text-white py-3 font-medium !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap"
+              >
+                提交咨询
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 底部区域 -->
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8 mb-12">
+          <div>
+            <div class="flex items-center mb-4">
+              <h1 class="text-2xl font-['Pacifico'] text-white mr-2">logo</h1>
+              <span class="text-lg font-medium">莲乡防腐保温工</span>
+            </div>
+            <p class="text-gray-400 mb-6">
+              专注防腐保温领域 20
+              年，以质量为本，以服务为根，为客户提供专业的防腐保温工程解决方案
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-wechat-fill ri-lg"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-weibo-fill ri-lg"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-mail-fill ri-lg"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-6">服务项目</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >防腐工程</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >保温工程</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >外护板安装</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >喷砂除锈</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >电气工程</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-6">关于我们</h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >公司简介</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >资质证书</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >团队介绍</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >发展历程</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >招贤纳士</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-6">联系方式</h4>
+            <ul class="space-y-4">
+              <li class="flex">
+                <i class="ri-map-pin-line ri-lg mr-3 mt-1"></i>
+                <span class="text-gray-400"
+                  >江苏省苏州市吴中区莲花路 888 号莲乡工业园 A 栋</span
+                >
+              </li>
+              <li class="flex">
+                <i class="ri-phone-line ri-lg mr-3 mt-1"></i>
+                <span class="text-gray-400">0512-88889999</span>
+              </li>
+              <li class="flex">
+                <i class="ri-mail-line ri-lg mr-3 mt-1"></i>
+                <span class="text-gray-400">info@lianxiangfangfu.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 mb-4 md:mb-0">
+              © 2025 莲乡防腐保温工. 版权所有
+            </p>
+            <div class="flex space-x-6">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+                >隐私政策</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+                >服务条款</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors"
+                >网站地图</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
