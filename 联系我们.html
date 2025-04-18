@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>莲乡防腐保温公司 - 联系我们</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#1a56db", secondary: "#0ea5e9" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Noto Sans SC', sans-serif;
+      }
+      .map-container {
+      position: relative;
+      overflow: hidden;
+      background-color: #f8fafc;
+      }
+      .map-bg {
+      background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+      .marker {
+      cursor: pointer;
+      transition: all 0.3s ease;
+      }
+      .marker:hover {
+      transform: scale(1.2);
+      }
+      .headquarters {
+      background-color: rgba(26, 86, 219, 0.9);
+      }
+      .domestic {
+      background-color: rgba(14, 165, 233, 0.9);
+      }
+      .international {
+      background-color: rgba(234, 88, 12, 0.9);
+      }
+      .company-card:hover {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      transform: translateY(-2px);
+      }
+      input:focus, textarea:focus {
+      outline: none;
+      border-color: #1a56db;
+      }
+      .custom-checkbox {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      background-color: white;
+      border: 2px solid #d1d5db;
+      cursor: pointer;
+      }
+      .custom-checkbox.checked {
+      background-color: #1a56db;
+      border-color: #1a56db;
+      }
+      .custom-checkbox.checked::after {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      }
+      .map-tab.active {
+      background-color: #1a56db;
+      color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <!-- 头部导航 -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+      <div
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center">
+         
+            <img src="./图片1.png" alt="Logo" style="max-width: 35px; max-height: 35px; display: block; margin: 0 auto;">
+        
+          <h1 class="text-xl font-bold text-gray-800">莲乡防腐保温公司</h1>
+        </div>
+        <div class="flex items-center">
+          <a
+            href="tel:+8613812345678"
+            class="flex items-center text-primary hover:text-primary/80 transition-colors"
+          >
+            <div class="w-8 h-8 flex items-center justify-center mr-2">
+              <i class="ri-phone-fill ri-lg"></i>
+            </div>
+            <span class="font-medium">186-0748-3310</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- 主要内容 -->
+    <main>
+      <!-- 顶部横幅 -->
+      <section class="relative h-[60vh] overflow-hidden">
+        <div
+          class="absolute inset-0 bg-cover bg-center transform scale-110 transition-transform duration-300"
+          style="background-image: url('https://readdy.ai/api/search-image?query=modern%20industrial%20factory%20with%20advanced%20equipment%20and%20blue%20sky%2C%20professional%20corporate%20atmosphere%2C%20clean%20and%20bright%20environment%2C%20wide%20angle%20shot&width=1920&height=1080&seq=10&orientation=landscape'); transform-origin: center center;"
+          id="parallax-bg"
+        ></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/90"
+        ></div>
+        <div
+          class="relative h-full container mx-auto px-4 flex items-center justify-center"
+        >
+          <div class="text-center text-white">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+              全国布局 · 全球服务
+            </h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto">
+              莲乡防腐保温公司拥有遍布全国的 14 家分公司和 2
+              家国际分公司，为您提供专业的防腐保温解决方案
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- 地图展示区 -->
+      <section id="map" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">我们的全球网络</h2>
+          <!-- 地图切换标签 -->
+          <div class="flex justify-center mb-8">
+            <div class="inline-flex bg-gray-100 p-1 rounded-full">
+              <button
+                class="map-tab active px-6 py-2 rounded-full text-sm font-medium whitespace-nowrap"
+                data-map="china"
+              >
+                中国地图
+              </button>
+              <button
+                class="map-tab px-6 py-2 rounded-full text-sm font-medium whitespace-nowrap"
+                data-map="world"
+              >
+                世界地图
+              </button>
+            </div>
+          </div>
+          <!-- 地图容器 -->
+          <div
+            class="map-container relative h-[500px] rounded-lg overflow-hidden shadow-lg mb-12"
+          >
+            <div class="w-full h-full">
+              <img
+                src="https://readdy.ai/api/search-image?query=Detailed%20vector%20map%20of%20China%20with%20provinces%20and%20cities%20marked%2C%20clean%20modern%20style%20with%20white%20background%20and%20blue%20borders&width=1280&height=720&seq=1&orientation=landscape"
+                alt="中国地图"
+                class="w-full h-full object-contain"
+                id="china-map-img"
+              />
+              <img
+                src="https://readdy.ai/api/search-image?query=Detailed%20vector%20world%20map%20with%20countries%20marked%2C%20clean%20modern%20style%20with%20white%20background%20and%20blue%20borders&width=1280&height=720&seq=2&orientation=landscape"
+                alt="世界地图"
+                class="w-full h-full object-contain hidden"
+                id="world-map-img"
+              />
+            </div>
+            <!-- 地图标记点 - 中国地图 -->
+            <div id="china-map" class="absolute inset-0">
+              <!-- 总部标记 -->
+              <div
+                class="marker headquarters absolute rounded-full w-6 h-6 flex items-center justify-center"
+                style="left: 56%; top: 62%;"
+                data-company="湖南省湘潭市湘潭县总公司"
+              >
+                <div
+                  class="w-4 h-4 flex items-center justify-center text-white"
+                >
+                  <i class="ri-building-4-fill ri-sm"></i>
+                </div>
+              </div>
+              <!-- 国内分公司标记 -->
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 51%; top: 60%;"
+                data-company="重庆分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 49%; top: 65%;"
+                data-company="云南昆明分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 48%; top: 68%;"
+                data-company="云南德宏分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 43%; top: 33%;"
+                data-company="新疆伊犁分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 60%; top: 40%;"
+                data-company="山东济宁分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 60%; top: 38%;"
+                data-company="山东淄博分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 58%; top: 52%;"
+                data-company="湖北宜昌分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 60%; top: 50%;"
+                data-company="湖北武汉分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 50%; top: 72%;"
+                data-company="广西崇左分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 48%; top: 68%;"
+                data-company="广西南宁分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 60%; top: 69%;"
+                data-company="广东深圳分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 54%; top: 37%;"
+                data-company="内蒙古赤峰分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 62%; top: 37%;"
+                data-company="河北唐山分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 62%; top: 45%;"
+                data-company="安徽合肥分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 64%; top: 30%;"
+                data-company="辽宁丹东分公司"
+              ></div>
+              <div
+                class="marker domestic absolute rounded-full w-5 h-5"
+                style="left: 58%; top: 70%;"
+                data-company="福建龙岩分公司"
+              ></div>
+            </div>
+            <!-- 地图标记点 - 世界地图 (默认隐藏) -->
+            <div id="world-map" class="absolute inset-0 hidden">
+              <!-- 总部标记 -->
+              <div
+                class="marker headquarters absolute rounded-full w-6 h-6 flex items-center justify-center"
+                style="left: 90%; top: 34%;"
+                data-company="湖南省湘潭市湘潭县总公司"
+              >
+                <div
+                  class="w-4 h-4 flex items-center justify-center text-white"
+                >
+                  <i class="ri-building-4-fill ri-sm"></i>
+                </div>
+              </div>
+              <!-- 国际分公司标记 -->
+              <div
+                class="marker international absolute rounded-full w-5 h-5"
+                style="left: 55%; top: 30%;"
+                data-company="俄罗斯利佩茨克州丹科夫经济特区分公司"
+              ></div>
+              <div
+                class="marker international absolute rounded-full w-5 h-5"
+                style="left: 52%; top: 45%;"
+                data-company="埃及新贝尼苏韦夫开发区分公司"
+              ></div>
+            </div>
+            <!-- 标记信息提示框 -->
+            <div
+              id="marker-tooltip"
+              class="hidden absolute bg-white p-3 rounded shadow-lg z-10 w-64"
+            >
+              <h4 class="font-bold text-gray-800 mb-1"></h4>
+              <p class="text-sm text-gray-600"></p>
+            </div>
+          </div>
+          <!-- 分公司列表 -->
+          <div>
+            <h3 class="text-2xl font-bold mb-6 text-center">我们的分支机构</h3>
+            <!-- 总公司 -->
+            <div
+              class="bg-primary/5 border-l-4 border-primary p-4 rounded mb-8"
+            >
+              <h4 class="text-xl font-bold text-primary mb-2">总公司</h4>
+              <div class="flex items-start">
+                <div
+                  class="w-6 h-6 flex items-center justify-center mr-2 mt-0.5 text-primary"
+                >
+                  <i class="ri-map-pin-2-fill"></i>
+                </div>
+                <div>
+                  <p class="font-medium">湖南省湘潭市湘潭县</p>
+                  <p class="text-gray-600 mt-1">电话: 0731-12345678</p>
+                </div>
+              </div>
+            </div>
+            <!-- 分公司列表 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- 华南地区 -->
+              <div
+                class="company-card bg-white rounded-lg shadow-sm p-5 transition-all duration-300"
+              >
+                <div class="mb-4 overflow-hidden rounded-lg h-48">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=modern%20office%20building%20exterior%20with%20glass%20facade%2C%20clean%20architecture%2C%20daytime%2C%20professional%20corporate%20headquarters&width=400&height=300&seq=3&orientation=landscape"
+                    alt="公司门面"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-lg font-bold mb-4 border-b pb-2">华南地区</h4>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">广东深圳分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0755-87654321</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">广西南宁分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0771-23456789</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">广西崇左分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0771-34567890</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- 华中地区 -->
+              <div
+                class="company-card bg-white rounded-lg shadow-sm p-5 transition-all duration-300"
+              >
+                <div class="mb-4 overflow-hidden rounded-lg h-48">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=modern%20office%20building%20exterior%20with%20glass%20facade%2C%20clean%20architecture%2C%20daytime%2C%20professional%20corporate%20headquarters&width=400&height=300&seq=3&orientation=landscape"
+                    alt="公司门面"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-lg font-bold mb-4 border-b pb-2">华中地区</h4>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">湖北武汉分公司</p>
+                      <p class="text-sm text-gray-600">电话: 027-45678901</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">湖北宜昌分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0717-56789012</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- 华东地区 -->
+              <div
+                class="company-card bg-white rounded-lg shadow-sm p-5 transition-all duration-300"
+              >
+                <div class="mb-4 overflow-hidden rounded-lg h-48">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=modern%20office%20building%20exterior%20with%20glass%20facade%2C%20clean%20architecture%2C%20daytime%2C%20professional%20corporate%20headquarters&width=400&height=300&seq=3&orientation=landscape"
+                    alt="公司门面"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-lg font-bold mb-4 border-b pb-2">华东地区</h4>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">山东济宁分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0537-67890123</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">山东淄博分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0533-78901234</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">安徽合肥分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0551-89012345</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">福建龙岩分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0597-90123456</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- 西南地区 -->
+              <div
+                class="company-card bg-white rounded-lg shadow-sm p-5 transition-all duration-300"
+              >
+                <div class="mb-4 overflow-hidden rounded-lg h-48">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=modern%20office%20building%20exterior%20with%20glass%20facade%2C%20clean%20architecture%2C%20daytime%2C%20professional%20corporate%20headquarters&width=400&height=300&seq=3&orientation=landscape"
+                    alt="公司门面"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-lg font-bold mb-4 border-b pb-2">西南地区</h4>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">重庆分公司</p>
+                      <p class="text-sm text-gray-600">电话: 023-01234567</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">云南昆明分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0871-12345678</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">云南德宏分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0692-23456789</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- 华北、东北、西北和内蒙古地区 -->
+              <div
+                class="company-card bg-white rounded-lg shadow-sm p-5 transition-all duration-300"
+              >
+                <div class="mb-4 overflow-hidden rounded-lg h-48">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=modern%20office%20building%20exterior%20with%20glass%20facade%2C%20clean%20architecture%2C%20daytime%2C%20professional%20corporate%20headquarters&width=400&height=300&seq=3&orientation=landscape"
+                    alt="公司门面"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-lg font-bold mb-4 border-b pb-2">北方地区</h4>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">河北唐山分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0315-34567890</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">辽宁丹东分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0415-45678901</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">新疆伊犁分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0999-56789012</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-secondary"
+                    >
+                      <i class="ri-building-2-line"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">内蒙古赤峰分公司</p>
+                      <p class="text-sm text-gray-600">电话: 0476-67890123</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- 国际分公司 -->
+              <div
+                class="company-card bg-white rounded-lg shadow-sm p-5 transition-all duration-300"
+              >
+                <div class="mb-4 overflow-hidden rounded-lg h-48">
+                  <img
+                    src="https://readdy.ai/api/search-image?query=modern%20office%20building%20exterior%20with%20glass%20facade%2C%20clean%20architecture%2C%20daytime%2C%20professional%20corporate%20headquarters&width=400&height=300&seq=3&orientation=landscape"
+                    alt="公司门面"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <h4 class="text-lg font-bold mb-4 border-b pb-2">国际分公司</h4>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-orange-500"
+                    >
+                      <i class="ri-global-fill"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">俄罗斯利佩茨克州丹科夫经济特区</p>
+                      <p class="text-sm text-gray-600">电话: +7-495-1234567</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-orange-500"
+                    >
+                      <i class="ri-global-fill"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">埃及新贝尼苏韦夫开发区</p>
+                      <p class="text-sm text-gray-600">电话: +20-2-23456789</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 联系我们区域 -->
+      <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-12">联系我们</h2>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- 联系信息 -->
+            <div>
+              <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-bold mb-6">多种联系方式</h3>
+                <div class="space-y-6">
+                  <div class="flex items-start">
+                    <div
+                      class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 text-primary"
+                    >
+                      <i class="ri-phone-fill ri-lg"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-gray-800 mb-1">电话咨询</h4>
+                      <p class="text-gray-600 mb-2">工作日 9:00-18:00</p>
+                      <a
+                        href="tel:+8613812345678"
+                        class="text-primary hover:text-primary/80 font-medium transition-colors"
+                        >182-0748-3310</a
+                      >
+                    </div>
+                  </div>
+                  <div class="flex items-start">
+                    <div
+                      class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 text-primary"
+                    >
+                      <i class="ri-mail-fill ri-lg"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-gray-800 mb-1">邮件咨询</h4>
+                      <p class="text-gray-600 mb-2">24小时内回复</p>
+                      <a
+                        href="mailto:contact@lianxiangfangfu.com"
+                        class="text-primary hover:text-primary/80 font-medium transition-colors"
+                        >mahuidong1024@gmail.com</a
+                      >
+                    </div>
+                  </div>
+                  <div class="flex items-start">
+                    <div
+                      class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 text-primary"
+                    >
+                      <i class="ri-wechat-fill ri-lg"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-gray-800 mb-1">企业微信</h4>
+                      <p class="text-gray-600 mb-2">扫码添加客服</p>
+					  
+                      <div
+                        class="mt-2 bg-gray-100 w-32 h-32 rounded flex items-center justify-center"
+                      >
+                        <div class="mt-2 bg-gray-100 w-32 h-32 rounded flex items-center justify-center">
+  <img src="马业新二维码.jpg" alt="QR Code" class="w-full h-full rounded">
+</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 联系表单 -->
+            <div>
+              <form class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-bold mb-6">在线留言</h3>
+                <div class="space-y-4">
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-gray-700 font-medium mb-2"
+                      >您的姓名</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary"
+                      placeholder="请输入您的姓名"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="phone"
+                      class="block text-gray-700 font-medium mb-2"
+                      >联系电话</label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary"
+                      placeholder="请输入您的联系电话"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-gray-700 font-medium mb-2"
+                      >电子邮箱</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary"
+                      placeholder="请输入您的电子邮箱"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="company"
+                      class="block text-gray-700 font-medium mb-2"
+                      >公司名称</label
+                    >
+                    <input
+                      type="text"
+                      id="company"
+                      class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary"
+                      placeholder="请输入您的公司名称"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="message"
+                      class="block text-gray-700 font-medium mb-2"
+                      >留言内容</label
+                    >
+                    <textarea
+                      id="message"
+                      rows="4"
+                      class="w-full px-4 py-3 rounded border border-gray-300 focus:border-primary"
+                      placeholder="请输入您的留言内容"
+                    ></textarea>
+                  </div>
+                  <div class="flex items-center">
+                    <div
+                      id="privacy-checkbox"
+                      class="custom-checkbox mr-3"
+                    ></div>
+                    <label for="privacy-checkbox" class="text-gray-700"
+                      >我已阅读并同意<a href="#" class="text-primary"
+                        >隐私政策</a
+                      ></label
+                    >
+                  </div>
+                  <button
+                    type="submit"
+                    class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-button transition-colors whitespace-nowrap"
+                  >
+                    提交留言
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <img src="./图片1.png" alt="Logo" style="max-width: 80px; max-height: 80px; display: block; margin: 0 auto;">
+              <h3 class="text-xl font-bold">莲乡防腐保温</h3>
+            </div>
+            <p class="text-gray-400 mb-4">
+              专业防腐保温解决方案提供商，全国布局，全球服务
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-wechat-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-weibo-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">快速链接</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >首页</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#map"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >分布网络</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >联系我们</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors"
+                  >隐私政策</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">联系方式</h4>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-gray-400"
+                >
+                  <i class="ri-map-pin-fill"></i>
+                </div>
+                <span class="text-gray-400">湖南省湘潭市湘潭县</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-gray-400"
+                >
+                  <i class="ri-phone-fill"></i>
+                </div>
+                <span class="text-gray-400">182-0748-3310</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mr-2 mt-0.5 text-gray-400"
+                >
+                  <i class="ri-mail-fill"></i>
+                </div>
+                <span class="text-gray-400">mahuidong1024@gmail.com</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">营业时间</h4>
+            <ul class="space-y-2">
+              <li class="text-gray-400">周一至周五: 9:00 - 18:00</li>
+              <li class="text-gray-400">周六: 休息</li>
+              <li class="text-gray-400">周日: 休息</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p class="text-gray-500">© 2025 莲乡防腐保温公司 版权所有</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 视差滚动效果
+        const parallaxBg = document.getElementById("parallax-bg");
+        let lastScrollY = window.scrollY;
+        window.addEventListener("scroll", () => {
+          const scrollY = window.scrollY;
+          const scale = 1.1 + scrollY * 0.0005;
+          parallaxBg.style.transform = `scale(${Math.min(scale, 1.3)})`;
+          lastScrollY = scrollY;
+        });
+        // 地图切换功能
+        const mapTabs = document.querySelectorAll(".map-tab");
+        const chinaMapImg = document.getElementById("china-map-img");
+        const worldMapImg = document.getElementById("world-map-img");
+        mapTabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            // 移除所有标签的活动状态
+            mapTabs.forEach((t) => t.classList.remove("active"));
+            // 添加当前标签的活动状态
+            this.classList.add("active");
+            // 切换地图显示
+            if (this.dataset.map === "china") {
+              chinaMapImg.classList.remove("hidden");
+              worldMapImg.classList.add("hidden");
+            } else {
+              chinaMapImg.classList.add("hidden");
+              worldMapImg.classList.remove("hidden");
+            }
+          });
+        });
+        // 地图标记点悬停效果
+        const markers = document.querySelectorAll(".marker");
+        const tooltip = document.getElementById("marker-tooltip");
+        markers.forEach((marker) => {
+          marker.addEventListener("mouseenter", function (e) {
+            const company = this.dataset.company;
+            tooltip.querySelector("h4").textContent = company;
+            tooltip.querySelector("p").textContent = "点击查看详细信息";
+            // 计算提示框位置
+            const rect = this.getBoundingClientRect();
+            const mapRect = document
+              .querySelector(".map-container")
+              .getBoundingClientRect();
+            tooltip.style.left = rect.left - mapRect.left + rect.width + 10 + "px";
+            tooltip.style.top =
+              rect.top -
+              mapRect.top -
+              tooltip.offsetHeight / 2 +
+              rect.height / 2 +
+              "px";
+            tooltip.classList.remove("hidden");
+          });
+          marker.addEventListener("mouseleave", function () {
+            tooltip.classList.add("hidden");
+          });
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        // 自定义复选框功能
+        const checkbox = document.getElementById("privacy-checkbox");
+        let isChecked = false;
+        checkbox.addEventListener("click", function () {
+          isChecked = !isChecked;
+          if (isChecked) {
+            this.classList.add("checked");
+          } else {
+            this.classList.remove("checked");
+          }
+        });
+        // 表单提交
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          // 验证表单
+          const name = document.getElementById("name").value;
+          const phone = document.getElementById("phone").value;
+          if (!name) {
+            alert("请输入您的姓名");
+            return;
+          }
+          if (!phone) {
+            alert("请输入您的联系电话");
+            return;
+          }
+          if (!isChecked) {
+            alert("请阅读并同意隐私政策");
+            return;
+          }
+          // 提交成功提示
+          // 创建成功提示弹窗
+          const successModal = document.createElement("div");
+          successModal.className =
+            "fixed inset-0 flex items-center justify-center z-50";
+          successModal.innerHTML = `
+      <div class="fixed inset-0 bg-black bg-opacity-50"></div>
+      <div class="bg-white rounded-lg p-8 relative z-10 max-w-md w-full mx-4">
+      <div class="text-center">
+      <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+      <i class="ri-check-line text-green-500 text-3xl"></i>
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">提交成功</h3>
+      <p class="text-gray-600 mb-6">谢谢您的支持与合作，稍后我们会安排专人与您取得联系</p>
+      <button class="bg-primary text-white px-6 py-2 rounded-button hover:bg-primary/90 transition-colors">确定</button>
+      </div>
+      </div>
+      `;
+          document.body.appendChild(successModal);
+          // 点击确定或遮罩层关闭弹窗
+          const closeModal = () => {
+            successModal.remove();
+          };
+          successModal.querySelector("button").addEventListener("click", closeModal);
+          successModal
+            .querySelector(".bg-black")
+            .addEventListener("click", closeModal);
+          form.reset();
+          checkbox.classList.remove("checked");
+          isChecked = false;
+        });
+      });
+    </script>
+  </body>
+</html>
