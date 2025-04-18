@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新闻资讯 - 莲乡防腐保温公司</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#1e40af", secondary: "#3b82f6" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Noto Sans SC', sans-serif;
+      }
+      .news-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      }
+      .news-card {
+      transition: all 0.3s ease;
+      }
+      .tab-active {
+      color: #1e40af;
+      font-weight: 600;
+      border-bottom: 2px solid #1e40af;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-[#f0f4ff] via-[#f5f0ff] to-[#fff0f6]">
+    <!-- 导航栏 -->
+    <header
+      class="bg-white/90 backdrop-blur-sm shadow-sm fixed top-0 left-0 right-0 z-50"
+    >	
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <img src="./图片1.png" alt="Logo" style="max-width: 35px; max-height: 35px; display: block;">
+		<h1 class="text-xl font-bold text-gray-800">莲乡防腐保温公司-新闻资讯</h1>
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="./index.html"
+            data-readdy="true"
+            class="text-gray-700 hover:text-primary font-medium"
+            >首页</a
+          >
+          <a
+            href="./index.html"
+            data-readdy="true"
+            class="text-gray-700 hover:text-primary font-medium"
+            >服务项目</a
+          >
+          <a href="#" class="text-gray-700 hover:text-primary font-medium"
+            >工程案例</a
+          >
+          <a href="./联系我们.html" class="text-gray-700 hover:text-primary font-medium"
+            >关于我们</a
+          >
+          <a href="#" class="text-primary font-medium">新闻资讯</a>
+          <a href="./联系我们.html" class="text-gray-700 hover:text-primary font-medium"
+            >联系我们</a
+          >
+        </nav>
+        <div class="md:hidden flex items-center justify-center w-10 h-10">
+          <i class="ri-menu-line ri-xl text-gray-700"></i>
+        </div>
+      </div>
+    </header>
+    <!-- 面包屑导航 -->
+    <div class="bg-white/90 backdrop-blur-sm pt-16 border-b">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center text-sm text-gray-500">
+          <a
+            href="./index.html"
+            data-readdy="true"
+            class="hover:text-primary"
+            >首页</a
+          >
+          <span class="mx-2">/</span>
+          <span class="text-primary">新闻资讯</span>
+        </div>
+      </div>
+    </div>
+    <!-- 主要内容区域 -->
+    <div class="container mx-auto px-4 py-8">
+      <!-- 分类筛选区 -->
+      <div class="bg-white rounded-lg shadow-sm p-4 mb-8">
+        <div class="flex flex-wrap gap-4 mb-6">
+          <div class="w-full md:w-auto">
+            <label class="block text-lg font-['Pacifico'] text-gray-800 mb-2"
+              >分类筛选</label
+            >
+            <div class="flex border-b border-gray-200">
+              <button
+                class="px-4 py-2 text-lg text-primary font-bold tab-active hover:text-primary/80 transition"
+              >
+                全部
+              </button>
+              <button
+                class="px-4 py-2 text-lg text-gray-600 font-bold hover:text-primary transition"
+              >
+                公司新闻
+              </button>
+              <button
+                class="px-4 py-2 text-lg text-gray-600 font-bold hover:text-primary transition"
+              >
+                行业动态
+              </button>
+              <button
+                class="px-4 py-2 text-lg text-gray-600 font-bold hover:text-primary transition"
+              >
+                技术文章
+              </button>
+            </div>
+          </div>
+          <div class="w-full md:w-auto md:ml-auto">
+            <label class="block text-sm text-gray-600 mb-1">时间筛选</label>
+            <div class="relative">
+              <select
+                class="pr-8 pl-4 py-2 border border-gray-300 rounded bg-white focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm appearance-none"
+              >
+                <option>全部时间</option>
+                <option>2025年</option>
+                <option>2024年</option>
+                <option>2023年</option>
+              </select>
+              <div
+                class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none"
+              >
+                <i class="ri-arrow-down-s-line text-gray-500"></i>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-auto">
+            <label class="block text-sm text-gray-600 mb-1">关键词搜索</label>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="搜索新闻关键词"
+                class="pl-10 pr-4 py-2 w-full md:w-64 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm"
+              />
+              <div class="absolute left-3 top-1/2 transform -translate-y-1/2">
+                <i class="ri-search-line text-gray-400"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- 左侧新闻列表 -->
+        <div class="lg:w-3/4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- 新闻卡片1 -->
+            <div
+              class="bg-white rounded-lg shadow-sm overflow-hidden news-card"
+            >
+              <div class="p-5">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 line-clamp-2">
+                  莲乡防腐保温公司：轻型建筑防腐保温的领跑者
+                </h3>
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span class="mr-3">2025-04-15 17:03</span>
+                  <span>来源: 拾起我们的青春</span>
+                </div>
+                <p class="text-gray-600 mb-4 line-clamp-3">
+                  4月10日下午，中国种猪信息网&《猪业科学》超级编辑部发起了一场特别的活动——"对话"智能化为生猪产业高质量发展赋能（江浙行）第九站。这次活动走进了莲乡防腐保温公司，这家公司专注于轻型建筑防腐保温解决方案。
+                </p>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="#"
+                    class="text-primary font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap"
+                  >
+                    查看详情
+                    <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                  </a>
+                  <span class="text-sm text-gray-500">阅读量: 1258</span>
+                </div>
+              </div>
+            </div>
+            <!-- 新闻卡片2 -->
+            <div
+              class="bg-white rounded-lg shadow-sm overflow-hidden news-card"
+            >
+              <div class="p-5">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 line-clamp-2">
+                  莲乡防腐保温公司参加2025年全国建筑防腐技术研讨会
+                </h3>
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span class="mr-3">2025-04-10 09:30</span>
+                  <span>来源: 建筑防腐网</span>
+                </div>
+                <p class="text-gray-600 mb-4 line-clamp-3">
+                  4月5日至7日，由中国建筑材料联合会主办的"2025年全国建筑防腐技术研讨会"在北京国际会议中心隆重举行。莲乡防腐保温公司作为行业领先企业受邀参加，并在会上分享了轻型建筑防腐保温的创新技术与应用案例。
+                </p>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="#"
+                    class="text-primary font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap"
+                  >
+                    查看详情
+                    <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                  </a>
+                  <span class="text-sm text-gray-500">阅读量: 986</span>
+                </div>
+              </div>
+            </div>
+            <!-- 新闻卡片3 -->
+            <div
+              class="bg-white rounded-lg shadow-sm overflow-hidden news-card"
+            >
+              <div class="p-5">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 line-clamp-2">
+                  莲乡防腐保温公司推出新一代环保型防腐涂料
+                </h3>
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span class="mr-3">2025-04-02 14:15</span>
+                  <span>来源: 防腐技术与应用</span>
+                </div>
+                <p class="text-gray-600 mb-4 line-clamp-3">
+                  近日，莲乡防腐保温公司正式发布新一代环保型防腐涂料产品系列，该系列产品采用水性环保配方，VOC含量低于国家标准50%，同时保持优异的防腐性能，使用寿命可达15年以上，为工业建筑提供更加绿色环保的防腐解决方案。
+                </p>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="#"
+                    class="text-primary font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap"
+                  >
+                    查看详情
+                    <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                  </a>
+                  <span class="text-sm text-gray-500">阅读量: 845</span>
+                </div>
+              </div>
+            </div>
+            <!-- 新闻卡片4 -->
+            <div
+              class="bg-white rounded-lg shadow-sm overflow-hidden news-card"
+            >
+              <div class="p-5">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 line-clamp-2">
+                  莲乡防腐保温公司成功中标华东地区最大畜牧场防腐保温项目
+                </h3>
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span class="mr-3">2025-03-28 11:20</span>
+                  <span>来源: 工程建设报</span>
+                </div>
+                <p class="text-gray-600 mb-4 line-clamp-3">
+                  近日，莲乡防腐保温公司成功中标华东地区最大规模的现代化畜牧场防腐保温工程项目。该项目总面积达12万平方米，合同金额超过3000万元，是公司今年以来承接的最大单体项目，预计将于2025年8月完工。
+                </p>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="#"
+                    class="text-primary font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap"
+                  >
+                    查看详情
+                    <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                  </a>
+                  <span class="text-sm text-gray-500">阅读量: 762</span>
+                </div>
+              </div>
+            </div>
+            <!-- 新闻卡片5 -->
+            <div
+              class="bg-white rounded-lg shadow-sm overflow-hidden news-card"
+            >
+              <div class="p-5">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 line-clamp-2">
+                  行业动态：2025年防腐保温材料市场发展趋势分析
+                </h3>
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span class="mr-3">2025-03-20 16:45</span>
+                  <span>来源: 建材产业研究</span>
+                </div>
+                <p class="text-gray-600 mb-4 line-clamp-3">
+                  随着国家对绿色建筑和节能减排政策的持续推进，2025年防腐保温材料市场呈现出"环保化、功能化、智能化"的发展趋势。水性防腐涂料、新型纳米保温材料、智能监测防腐系统成为市场热点，预计未来五年市场规模将保持年均15%的增长率。
+                </p>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="#"
+                    class="text-primary font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap"
+                  >
+                    查看详情
+                    <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                  </a>
+                  <span class="text-sm text-gray-500">阅读量: 1105</span>
+                </div>
+              </div>
+            </div>
+            <!-- 新闻卡片6 -->
+            <div
+              class="bg-white rounded-lg shadow-sm overflow-hidden news-card"
+            >
+              <div class="p-5">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 line-clamp-2">
+                  技术解析：畜牧建筑防腐保温系统设计要点
+                </h3>
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span class="mr-3">2025-03-15 10:30</span>
+                  <span>来源: 现代畜牧工程</span>
+                </div>
+                <p class="text-gray-600 mb-4 line-clamp-3">
+                  畜牧建筑环境特殊，具有高湿度、多腐蚀性气体等特点，对防腐保温系统设计提出了更高要求。本文详细分析了畜牧建筑防腐保温系统的设计要点，包括材料选择、结构设计、施工工艺等方面，为畜牧建筑防腐保温工程提供技术参考。
+                </p>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="#"
+                    class="text-primary font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap"
+                  >
+                    查看详情
+                    <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                  </a>
+                  <span class="text-sm text-gray-500">阅读量: 935</span>
+                </div>
+              </div>
+            </div>
+            <!-- 新闻卡片7 -->
+            <div
+              class="bg-white rounded-lg shadow-sm overflow-hidden news-card"
+            >
+              <div class="p-5">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 line-clamp-2">
+                  莲乡防腐保温公司荣获"2024年度防腐保温行业创新企业"称号
+                </h3>
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span class="mr-3">2025-03-08 14:50</span>
+                  <span>来源: 中国建材网</span>
+                </div>
+                <p class="text-gray-600 mb-4 line-clamp-3">
+                  在近日举行的"2024年度中国建材行业评选"活动中，莲乡防腐保温公司凭借在轻型建筑防腐保温领域的技术创新和卓越服务，荣获"2024年度防腐保温行业创新企业"称号，这是对公司多年来坚持技术创新和品质提升的充分肯定。
+                </p>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="#"
+                    class="text-primary font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap"
+                  >
+                    查看详情
+                    <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                  </a>
+                  <span class="text-sm text-gray-500">阅读量: 892</span>
+                </div>
+              </div>
+            </div>
+            <!-- 新闻卡片8 -->
+            <div
+              class="bg-white rounded-lg shadow-sm overflow-hidden news-card"
+            >
+              <div class="p-5">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 line-clamp-2">
+                  莲乡防腐保温公司与清华大学建筑学院达成产学研合作
+                </h3>
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span class="mr-3">2025-03-01 09:15</span>
+                  <span>来源: 科技创新报</span>
+                </div>
+                <p class="text-gray-600 mb-4 line-clamp-3">
+                  近日，莲乡防腐保温公司与清华大学建筑学院正式签署产学研合作协议，双方将在新型防腐保温材料研发、智能防腐监测系统开发等领域展开深入合作，共同推动防腐保温技术的创新发展，为行业提供更加先进的技术解决方案。
+                </p>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="#"
+                    class="text-primary font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap"
+                  >
+                    查看详情
+                    <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                  </a>
+                  <span class="text-sm text-gray-500">阅读量: 1056</span>
+                </div>
+              </div>
+            </div>
+            <!-- 新闻卡片9 -->
+            <div
+              class="bg-white rounded-lg shadow-sm overflow-hidden news-card"
+            >
+              <div class="p-5">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 line-clamp-2">
+                  莲乡防腐保温公司举办2025年客户技术交流会
+                </h3>
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span class="mr-3">2025-02-25 13:40</span>
+                  <span>来源: 防腐保温周刊</span>
+                </div>
+                <p class="text-gray-600 mb-4 line-clamp-3">
+                  2月20日，莲乡防腐保温公司在上海成功举办了"2025年客户技术交流会"，来自全国各地的200多位客户代表参加了此次活动。会上，公司详细介绍了最新研发的防腐保温产品和技术解决方案，并与客户就行业发展趋势和技术需求进行了深入交流。
+                </p>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="#"
+                    class="text-primary font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap"
+                  >
+                    查看详情
+                    <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                  </a>
+                  <span class="text-sm text-gray-500">阅读量: 785</span>
+                </div>
+              </div>
+            </div>
+            <!-- 新闻卡片10 -->
+            <div
+              class="bg-white rounded-lg shadow-sm overflow-hidden news-card"
+            >
+              <div class="p-5">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 line-clamp-2">
+                  技术文章：高湿环境下防腐涂层的选择与施工技巧
+                </h3>
+                <div class="flex items-center text-sm text-gray-500 mb-3">
+                  <span class="mr-3">2025-02-18 15:20</span>
+                  <span>来源: 防腐技术与应用</span>
+                </div>
+                <p class="text-gray-600 mb-4 line-clamp-3">
+                  高湿环境对防腐涂层提出了特殊要求，如何选择适合的防腐涂料并确保施工质量是工程成功的关键。本文详细介绍了高湿环境下防腐涂层的选择标准、施工准备工作、施工工艺要点以及质量控制措施，为高湿环境防腐工程提供技术指导。
+                </p>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="#"
+                    class="text-primary font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap"
+                  >
+                    查看详情
+                    <i class="ri-arrow-right-line ri-sm ml-1"></i>
+                  </a>
+                  <span class="text-sm text-gray-500">阅读量: 1230</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 分页 -->
+          <div class="flex justify-center mt-10">
+            <nav class="inline-flex rounded-md shadow-sm -space-x-px">
+              <a
+                href="#"
+                class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+              >
+                <i class="ri-arrow-left-s-line"></i>
+              </a>
+              <a
+                href="#"
+                class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-primary text-sm font-medium text-white"
+              >
+                1
+              </a>
+              <a
+                href="#"
+                class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
+              >
+                2
+              </a>
+              <a
+                href="#"
+                class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
+              >
+                3
+              </a>
+              <span
+                class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700"
+              >
+                ...
+              </span>
+              <a
+                href="#"
+                class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50"
+              >
+                8
+              </a>
+              <a
+                href="#"
+                class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+              >
+                <i class="ri-arrow-right-s-line"></i>
+              </a>
+            </nav>
+          </div>
+        </div>
+        <!-- 右侧边栏 -->
+        <div class="lg:w-1/4">
+          <!-- 热门文章 -->
+          <div
+            class="bg-gradient-to-br from-white to-blue-50/30 rounded-lg shadow-sm p-5 mb-6"
+          >
+            <h3 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b">
+              热门文章
+            </h3>
+            <ul class="space-y-4">
+              <li>
+                <a href="#" class="flex group">
+                  <div
+                    class="w-16 h-16 rounded overflow-hidden flex-shrink-0 mr-3"
+                  >
+                    <img
+                      src="https://readdy.ai/api/search-image?query=Industrial%2520anti-corrosion%2520coating%2520being%2520applied%2520to%2520metal%2520structure%2C%2520close-up%2520view%2520of%2520the%2520application%2520process&width=100&height=100&seq=101&orientation=squarish"
+                      alt="热门文章"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  <div>
+                    <h4
+                      class="text-gray-800 font-medium group-hover:text-primary line-clamp-2"
+                    >
+                      技术文章：高湿环境下防腐涂层的选择与施工技巧
+                    </h4>
+                    <p class="text-sm text-gray-500 mt-1">阅读量: 1230</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex group">
+                  <div
+                    class="w-16 h-16 rounded overflow-hidden flex-shrink-0 mr-3"
+                  >
+                    <img
+                      src="https://readdy.ai/api/search-image?query=Market%2520trend%2520chart%2520for%2520anti-corrosion%2520materials%2C%2520professional%2520business%2520analysis%2520graph&width=100&height=100&seq=102&orientation=squarish"
+                      alt="热门文章"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  <div>
+                    <h4
+                      class="text-gray-800 font-medium group-hover:text-primary line-clamp-2"
+                    >
+                      行业动态：2025年防腐保温材料市场发展趋势分析
+                    </h4>
+                    <p class="text-sm text-gray-500 mt-1">阅读量: 1105</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex group">
+                  <div
+                    class="w-16 h-16 rounded overflow-hidden flex-shrink-0 mr-3"
+                  >
+                    <img
+                      src="https://readdy.ai/api/search-image?query=University%2520and%2520industry%2520cooperation%2C%2520handshake%2520between%2520academic%2520and%2520business%2520representatives&width=100&height=100&seq=103&orientation=squarish"
+                      alt="热门文章"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  <div>
+                    <h4
+                      class="text-gray-800 font-medium group-hover:text-primary line-clamp-2"
+                    >
+                      莲乡防腐保温公司与清华大学建筑学院达成产学研合作
+                    </h4>
+                    <p class="text-sm text-gray-500 mt-1">阅读量: 1056</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex group">
+                  <div
+                    class="w-16 h-16 rounded overflow-hidden flex-shrink-0 mr-3"
+                  >
+                    <img
+                      src="https://readdy.ai/api/search-image?query=Professional%2520conference%2520about%2520anti-corrosion%2520technology%2C%2520people%2520in%2520business%2520attire%2520at%2520industry%2520event&width=100&height=100&seq=104&orientation=squarish"
+                      alt="热门文章"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  <div>
+                    <h4
+                      class="text-gray-800 font-medium group-hover:text-primary line-clamp-2"
+                    >
+                      莲乡防腐保温公司参加2025年全国建筑防腐技术研讨会
+                    </h4>
+                    <p class="text-sm text-gray-500 mt-1">阅读量: 986</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex group">
+                  <div
+                    class="w-16 h-16 rounded overflow-hidden flex-shrink-0 mr-3"
+                  >
+                    <img
+                      src="https://readdy.ai/api/search-image?query=Livestock%2520building%2520with%2520modern%2520anti-corrosion%2520and%2520insulation%2520system%2C%2520professional%2520agricultural%2520facility&width=100&height=100&seq=105&orientation=squarish"
+                      alt="热门文章"
+                      class="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  <div>
+                    <h4
+                      class="text-gray-800 font-medium group-hover:text-primary line-clamp-2"
+                    >
+                      技术解析：畜牧建筑防腐保温系统设计要点
+                    </h4>
+                    <p class="text-sm text-gray-500 mt-1">阅读量: 935</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- 新闻归档 -->
+          <div
+            class="bg-gradient-to-br from-white to-blue-50/30 rounded-lg shadow-sm p-5 mb-6"
+          >
+            <h3 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b">
+              新闻归档
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="flex justify-between items-center py-2 text-gray-700 hover:text-primary"
+                >
+                  <span>2025年4月</span>
+                  <span
+                    class="bg-gradient-to-r from-pink-50 to-purple-50 text-gray-600 text-xs px-2 py-1 rounded-full"
+                    >12篇</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex justify-between items-center py-2 text-gray-700 hover:text-primary"
+                >
+                  <span>2025年3月</span>
+                  <span
+                    class="bg-gradient-to-r from-pink-50 to-purple-50 text-gray-600 text-xs px-2 py-1 rounded-full"
+                    >18篇</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex justify-between items-center py-2 text-gray-700 hover:text-primary"
+                >
+                  <span>2025年2月</span>
+                  <span
+                    class="bg-gradient-to-r from-pink-50 to-purple-50 text-gray-600 text-xs px-2 py-1 rounded-full"
+                    >15篇</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex justify-between items-center py-2 text-gray-700 hover:text-primary"
+                >
+                  <span>2025年1月</span>
+                  <span
+                    class="bg-gradient-to-r from-pink-50 to-purple-50 text-gray-600 text-xs px-2 py-1 rounded-full"
+                    >20篇</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex justify-between items-center py-2 text-gray-700 hover:text-primary"
+                >
+                  <span>2024年12月</span>
+                  <span
+                    class="bg-gradient-to-r from-pink-50 to-purple-50 text-gray-600 text-xs px-2 py-1 rounded-full"
+                    >16篇</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex justify-between items-center py-2 text-gray-700 hover:text-primary"
+                >
+                  <span>2024年11月</span>
+                  <span
+                    class="bg-gradient-to-r from-pink-50 to-purple-50 text-gray-600 text-xs px-2 py-1 rounded-full"
+                    >14篇</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="flex justify-between items-center py-2 text-gray-700 hover:text-primary"
+                >
+                  <span>更早</span>
+                  <span
+                    class="bg-gradient-to-r from-pink-50 to-purple-50 text-gray-600 text-xs px-2 py-1 rounded-full"
+                    >86篇</span
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- 标签云 -->
+          <div
+            class="bg-gradient-to-br from-white to-blue-50/30 rounded-lg shadow-sm p-5 mb-6"
+          >
+            <h3 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b">
+              标签云
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <a
+                href="./index.html"
+                class="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full text-sm hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition"
+                >防腐技术</a
+              >
+              <a
+                href="./index.html"
+                class="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full text-sm hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition"
+                >保温材料</a
+              >
+              <a
+                href="./index.html"
+                class="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full text-sm hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition"
+                >畜牧建筑</a
+              >
+              <a
+                href="./index.html"
+                class="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full text-sm hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition"
+                >环保涂料</a
+              >
+              <a
+                href="./index.html"
+                class="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full text-sm hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition"
+                >技术创新</a
+              >
+              <a
+                href="./index.html"
+                class="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full text-sm hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition"
+                >行业标准</a
+              >
+              <a
+                href="./index.html"
+                class="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full text-sm hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition"
+                >工程案例</a
+              >
+              <a
+                href="./index.html"
+                class="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full text-sm hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition"
+                >市场分析</a
+              >
+              <a
+                href="./index.html"
+                class="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full text-sm hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition"
+                >产品研发</a
+              >
+              <a
+                href="./index.html"
+                class="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full text-sm hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition"
+                >施工工艺</a
+              >
+              <a
+                href="./index.html"
+                class="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full text-sm hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition"
+                >质量控制</a
+              >
+              <a
+                href="#"
+                class="px-3 py-1 bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full text-sm hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white transition"
+                >企业荣誉</a
+              >
+            </div>
+          </div>
+          <!-- 联系我们 -->
+          <div class="bg-white rounded-lg shadow-sm p-5">
+            <h3 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b">
+              联系我们
+            </h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-10 h-10 flex items-center justify-center text-purple-600 bg-purple-50 rounded-full mr-3 flex-shrink-0"
+                >
+                  <i class="ri-map-pin-line ri-lg"></i>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-500">公司地址</div>
+                  <div class="font-medium text-gray-700">
+                    湘潭县易俗河镇荷花南路西（天易示范区）
+                  </div>
+                </div>
+              </li>
+              <li class="flex items-center">
+                <div
+                  class="w-10 h-10 flex items-center justify-center text-purple-600 bg-purple-50 rounded-full mr-3 flex-shrink-0"
+                >
+                  <i class="ri-phone-line ri-lg"></i>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-500">服务热线</div>
+                  <div class="font-medium text-gray-700">18207483310</div>
+                </div>
+              </li>
+              <li class="flex items-center">
+                <div
+                  class="w-10 h-10 flex items-center justify-center text-purple-600 bg-purple-50 rounded-full mr-3 flex-shrink-0"
+                >
+                  <i class="ri-mail-line ri-lg"></i>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-500">微信咨询</div>
+                  <div class="font-medium text-gray-700">
+                    mayexin1991
+                  </div>
+                </div>
+              </li>
+              <li class="flex items-center">
+                <div
+                  class="w-10 h-10 flex items-center justify-center text-purple-600 bg-purple-50 rounded-full mr-3 flex-shrink-0"
+                >
+                  <i class="ri-wechat-line ri-lg"></i>
+                </div>
+                <div>
+                  <div class="text-sm text-gray-500">微信咨询</div>
+                  <div class="font-medium text-gray-700">扫码添加工程师</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 返回顶部按钮 -->
+    <div class="fixed right-6 bottom-6 z-40 hidden" id="backToTop">
+      <button
+        class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg flex items-center justify-center hover:from-blue-600 hover:to-purple-600 transition"
+      >
+        <i class="ri-arrow-up-line ri-lg"></i>
+      </button>
+    </div>
+    <!-- 页脚 -->
+    <footer
+      class="bg-gradient-to-br from-gray-800 via-gray-900 to-blue-900 text-white pt-12 pb-6 mt-12"
+    >
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">关于我们</h3>
+            <p class="text-gray-300 mb-4">
+              我们是专业的防腐保温工程服务商，拥有20年行业经验，为各行业提供高品质的防腐保温解决方案。
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-300 hover:text-white">
+                <div class="w-8 h-8 flex items-center justify-center">
+                  <i class="ri-weibo-fill ri-lg"></i>
+                </div>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white">
+                <div class="w-8 h-8 flex items-center justify-center">
+                  <i class="ri-wechat-fill ri-lg"></i>
+                </div>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white">
+                <div class="w-8 h-8 flex items-center justify-center">
+                  <i class="ri-linkedin-fill ri-lg"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">服务项目</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/0217669e-aed7-4e48-88c7-24ac3d34fb8f"
+                  data-readdy="true"
+                  class="text-gray-300 hover:text-white"
+                  >防腐工程</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">保温工程</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >防火防爆工程</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >地坪防腐工程</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white"
+                  >阴极保护工程</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">快速链接</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="./index.html"
+                  data-readdy="true"
+                  class="text-gray-300 hover:text-white"
+                  >首页</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./index.html"
+                  data-readdy="true"
+                  class="text-gray-300 hover:text-white"
+                  >服务项目</a
+                >
+              </li>
+              <li>
+                <a href="./index.html" class="text-gray-300 hover:text-white">工程案例</a>
+              </li>
+              <li>
+                <a href="./联系我们.html" class="text-gray-300 hover:text-white">关于我们</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">新闻资讯</a>
+              </li>
+              <li>
+                <a href="./联系我们.html" class="text-gray-300 hover:text-white">联系我们</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">联系我们</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3"
+                >
+                  <i class="ri-map-pin-line text-gray-300"></i>
+                </div>
+                <span class="text-gray-300"
+                  >湘潭县易俗河镇荷花南路西（天易示范区）</span
+                >
+              </li>
+              <li class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-phone-line text-gray-300"></i>
+                </div>
+                <span class="text-gray-300">18207483310</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-mail-line text-gray-300"></i>
+                </div>
+                <span class="text-gray-300">mayexin1991</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 pt-6 text-center text-gray-400 text-sm"
+        >
+          <p>© 2025 莲乡防腐保温公司. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 标签切换
+        const tabButtons = document.querySelectorAll(".border-b button");
+        tabButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            tabButtons.forEach((btn) => {
+              btn.classList.remove("tab-active");
+              btn.classList.add("text-gray-600");
+              btn.classList.remove("text-primary");
+            });
+            this.classList.add("tab-active");
+            this.classList.add("text-primary");
+            this.classList.remove("text-gray-600");
+          });
+        });
+        // 返回顶部按钮
+        const backToTopButton = document.getElementById("backToTop");
+        window.addEventListener("scroll", function () {
+          if (window.pageYOffset > 300) {
+            backToTopButton.classList.remove("hidden");
+          } else {
+            backToTopButton.classList.add("hidden");
+          }
+        });
+        backToTopButton.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+        // 单选框交互
+        const radioInputs = document.querySelectorAll('input[type="radio"]');
+        radioInputs.forEach((input) => {
+          input.addEventListener("change", function () {
+            // 重置所有
+            radioInputs.forEach((radio) => {
+              if (radio.name === this.name) {
+                const indicator = radio.parentElement.querySelector("div:last-child");
+                indicator.classList.add("hidden");
+              }
+            });
+            // 设置选中的
+            if (this.checked) {
+              const indicator = this.parentElement.querySelector("div:last-child");
+              indicator.classList.remove("hidden");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
