@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>工程案例 - 莲乡防腐保温公司</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#1e40af',secondary:'#3b82f6'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+.case-card {
+    transition: all 0.3s ease;
+}
+.case-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(30, 64, 175, 0.1);
+}
+.case-tag {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: linear-gradient(45deg, #1e40af, #3b82f6);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.tab-button.active {
+    background-color: #1e40af;
+    color: white;
+}
+.filter-button.active {
+    background-color: #1e40af;
+    color: white;
+}
+.gallery-image {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+.lightbox-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+}
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    transform: translateY(-50%);
+}
+.lightbox-nav button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.lightbox-nav button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.data-chart {
+    height: 300px;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body class="bg-gradient-to-br from-[#f0f4ff] via-[#f5f0ff] to-[#fff0f6]">
+<!-- 导航栏 -->
+<header class="bg-white/90 backdrop-blur-sm shadow-sm fixed top-0 left-0 right-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="#" class="text-2xl font-['Pacifico'] text-primary">莲乡防腐保温公司</a>
+        <nav class="hidden md:flex space-x-8">
+            <a href="./index.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium">首页</a>
+            <a href="./服务详情页.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium">服务项目</a>
+            <a href="#" class="text-primary font-medium">工程案例</a>
+            <a href="./关于我们.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium">关于我们</a>
+            <a href="./新闻资讯.html" data-readdy="true" class="text-gray-700 hover:text-primary font-medium">新闻资讯</a>
+            <a href="./联系我们.html" class="text-gray-700 hover:text-primary font-medium">联系我们</a>
+        </nav>
+        <div class="md:hidden flex items-center justify-center w-10 h-10">
+            <i class="ri-menu-line ri-xl text-gray-700"></i>
+        </div>
+    </div>
+</header>
+
+<!-- 面包屑导航 -->
+<div class="bg-white/90 backdrop-blur-sm pt-16 border-b">
+    <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center text-sm text-gray-500">
+            <a href="./index.html" data-readdy="true" class="hover:text-primary">首页</a>
+            <span class="mx-2">/</span>
+            <span class="text-primary">工程案例</span>
+        </div>
+    </div>
+</div>
+
+<!-- 案例分类导航 -->
+<section class="py-10 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-10">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">工程案例展示</h1>
+            <p class="text-gray-600 max-w-3xl mx-auto">近50年来，我们为各行业客户提供专业的防腐保温解决方案，以下是我们的部分精选案例</p>
+        </div>
+        
+        <div class="mb-8">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">按行业分类</h3>
+            <div class="flex flex-wrap gap-3">
+                <button class="filter-button industry-filter active px-4 py-2 bg-blue-100 text-gray-700 rounded-full hover:bg-blue-200 transition !rounded-button whitespace-nowrap" data-filter="all">全部行业</button>
+                <button class="filter-button industry-filter px-4 py-2 bg-blue-100 text-gray-700 rounded-full hover:bg-blue-200 transition !rounded-button whitespace-nowrap" data-filter="chemical">化工行业</button>
+                <button class="filter-button industry-filter px-4 py-2 bg-blue-100 text-gray-700 rounded-full hover:bg-blue-200 transition !rounded-button whitespace-nowrap" data-filter="steel">钢铁冶金</button>
+                <button class="filter-button industry-filter px-4 py-2 bg-blue-100 text-gray-700 rounded-full hover:bg-blue-200 transition !rounded-button whitespace-nowrap" data-filter="petroleum">石油化工</button>
+                <button class="filter-button industry-filter px-4 py-2 bg-blue-100 text-gray-700 rounded-full hover:bg-blue-200 transition !rounded-button whitespace-nowrap" data-filter="power">电力能源</button>
+                <button class="filter-button industry-filter px-4 py-2 bg-blue-100 text-gray-700 rounded-full hover:bg-blue-200 transition !rounded-button whitespace-nowrap" data-filter="municipal">市政工程</button>
+                <button class="filter-button industry-filter px-4 py-2 bg-blue-100 text-gray-700 rounded-full hover:bg-blue-200 transition !rounded-button whitespace-nowrap" data-filter="building">建筑工程</button>
+            </div>
+        </div>
+        
+        <div class="mb-10">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">按工程类型分类</h3>
+            <div class="flex flex-wrap gap-3">
+                <button class="filter-button type-filter active px-4 py-2 bg-blue-100 text-gray-700 rounded-full hover:bg-blue-200 transition !rounded-button whitespace-nowrap" data-filter="all">全部类型</button>
+                <button class="filter-button type-filter px-4 py-2 bg-blue-100 text-gray-700 rounded-full hover:bg-blue-200 transition !rounded-button whitespace-nowrap" data-filter="anticorrosion">防腐工程</button>
+                <button class="filter-button type-filter px-4 py-2 bg-blue-100 text-gray-700 rounded-full hover:bg-blue-200 transition !rounded-button whitespace-nowrap" data-filter="insulation">保温工程</button>
+                <button class="filter-button type-filter px-4 py-2 bg-blue-100 text-gray-700 rounded-full hover:bg-blue-200 transition !rounded-button whitespace-nowrap" data-filter="integrated">防腐保温一体化</button>
+                <button class="filter-button type-filter px-4 py-2 bg-blue-100 text-gray-700 rounded-full hover:bg-blue-200 transition !rounded-button whitespace-nowrap" data-filter="coating">特种涂装</button>
+                <button class="filter-button type-filter px-4 py-2 bg-blue-100 text-gray-700 rounded-full hover:bg-blue-200 transition !rounded-button whitespace-nowrap" data-filter="maintenance">设备维护</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 精选案例展示 -->
+<section class="py-10 bg-gradient-to-r from-blue-50 to-indigo-50">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">精选工程案例</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto">这些案例展示了我们在不同行业和工程类型中的专业能力和技术实力</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="caseGrid">
+            <!-- 案例1 -->
+            <div class="case-card bg-white rounded-lg shadow-sm overflow-hidden" data-industry="chemical" data-type="anticorrosion">
+                <div class="relative">
+                    <img src="https://readdy.ai/api/search-image?query=Large%2520industrial%2520chemical%2520storage%2520tanks%2520with%2520anti-corrosion%2520coating%2520being%2520applied%252C%2520workers%2520in%2520safety%2520gear%2520using%2520specialized%2520equipment%252C%2520industrial%2520facility%2520with%2520multiple%2520cylindrical%2520tanks%2520in%2520background%252C%2520professional%2520anti-corrosion%2520project%2520in%2520progress&width=600&height=400&seq=101&orientation=landscape" alt="山东某大型化工集团储罐防腐工程" class="w-full h-60 object-cover object-top">
+                    <div class="case-tag">2023年8月完工</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">山东某大型化工集团储罐防腐工程</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <span class="text-gray-600">山东省东营市垦利区</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-money-cny-circle-line"></i>
+                            </div>
+                            <span class="text-gray-600">合同金额: ¥380万</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-team-line"></i>
+                            </div>
+                            <span class="text-gray-600">施工人数: 45人</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-ruler-line"></i>
+                            </div>
+                            <span class="text-gray-600">面积: 12000㎡</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-building-line"></i>
+                            </div>
+                            <span class="text-gray-600">20个储罐</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                            <i class="ri-user-star-line"></i>
+                        </div>
+                        <span class="text-gray-600">甲方: 山东某化工集团有限公司</span>
+                    </div>
+                    <a href="#case1" class="view-case-detail inline-block px-4 py-2 bg-primary text-white rounded-button hover:bg-blue-700 transition whitespace-nowrap">查看详情</a>
+                </div>
+            </div>
+            
+            <!-- 案例2 -->
+            <div class="case-card bg-white rounded-lg shadow-sm overflow-hidden" data-industry="steel" data-type="insulation">
+                <div class="relative">
+                    <img src="https://readdy.ai/api/search-image?query=Steel%2520mill%2520blast%2520furnace%2520insulation%2520project%252C%2520workers%2520installing%2520thermal%2520insulation%2520materials%2520on%2520large%2520industrial%2520equipment%252C%2520high%2520temperature%2520environment%2520with%2520specialized%2520protective%2520gear%252C%2520professional%2520industrial%2520insulation%2520work%2520in%2520progress&width=600&height=400&seq=102&orientation=landscape" alt="河北某钢铁集团高炉保温工程" class="w-full h-60 object-cover object-top">
+                    <div class="case-tag">2023年11月完工</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">河北某钢铁集团高炉保温工程</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <span class="text-gray-600">河北省唐山市丰南区</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-money-cny-circle-line"></i>
+                            </div>
+                            <span class="text-gray-600">合同金额: ¥560万</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-team-line"></i>
+                            </div>
+                            <span class="text-gray-600">施工人数: 60人</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-ruler-line"></i>
+                            </div>
+                            <span class="text-gray-600">面积: 8000㎡</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-building-line"></i>
+                            </div>
+                            <span class="text-gray-600">2座高炉</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                            <i class="ri-user-star-line"></i>
+                        </div>
+                        <span class="text-gray-600">甲方: 河北某钢铁集团</span>
+                    </div>
+                    <a href="#case2" class="view-case-detail inline-block px-4 py-2 bg-primary text-white rounded-button hover:bg-blue-700 transition whitespace-nowrap">查看详情</a>
+                </div>
+            </div>
+            
+            <!-- 案例3 -->
+            <div class="case-card bg-white rounded-lg shadow-sm overflow-hidden" data-industry="petroleum" data-type="integrated">
+                <div class="relative">
+                    <img src="https://readdy.ai/api/search-image?query=Oil%2520refinery%2520pipeline%2520anti-corrosion%2520and%2520insulation%2520project%252C%2520complex%2520network%2520of%2520industrial%2520pipes%2520with%2520silver%2520insulation%2520coating%252C%2520workers%2520applying%2520protective%2520materials%252C%2520large%2520petroleum%2520processing%2520facility%2520in%2520background&width=600&height=400&seq=103&orientation=landscape" alt="中石化某炼油厂管道防腐保温工程" class="w-full h-60 object-cover object-top">
+                    <div class="case-tag">2024年1月完工</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">中石化某炼油厂管道防腐保温工程</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <span class="text-gray-600">广东省茂名市</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-money-cny-circle-line"></i>
+                            </div>
+                            <span class="text-gray-600">合同金额: ¥620万</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-team-line"></i>
+                            </div>
+                            <span class="text-gray-600">施工人数: 55人</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-ruler-line"></i>
+                            </div>
+                            <span class="text-gray-600">长度: 15000米</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-building-line"></i>
+                            </div>
+                            <span class="text-gray-600">管径: DN50-600</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                            <i class="ri-user-star-line"></i>
+                        </div>
+                        <span class="text-gray-600">甲方: 中国石化集团</span>
+                    </div>
+                    <a href="#case3" class="view-case-detail inline-block px-4 py-2 bg-primary text-white rounded-button hover:bg-blue-700 transition whitespace-nowrap">查看详情</a>
+                </div>
+            </div>
+            
+            <!-- 案例4 -->
+            <div class="case-card bg-white rounded-lg shadow-sm overflow-hidden" data-industry="power" data-type="anticorrosion">
+                <div class="relative">
+                    <img src="https://readdy.ai/api/search-image?query=Power%2520plant%2520cooling%2520tower%2520anti-corrosion%2520project%252C%2520large%2520concrete%2520structure%2520being%2520treated%2520with%2520protective%2520coatings%252C%2520workers%2520on%2520scaffolding%2520applying%2520materials%2520to%2520exterior%2520surfaces%252C%2520industrial%2520power%2520generation%2520facility&width=600&height=400&seq=104&orientation=landscape" alt="江苏某发电厂冷却塔防腐工程" class="w-full h-60 object-cover object-top">
+                    <div class="case-tag">2023年9月完工</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">江苏某发电厂冷却塔防腐工程</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <span class="text-gray-600">江苏省徐州市</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-money-cny-circle-line"></i>
+                            </div>
+                            <span class="text-gray-600">合同金额: ¥420万</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-team-line"></i>
+                            </div>
+                            <span class="text-gray-600">施工人数: 50人</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-ruler-line"></i>
+                            </div>
+                            <span class="text-gray-600">面积: 18000㎡</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-building-line"></i>
+                            </div>
+                            <span class="text-gray-600">2座冷却塔</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                            <i class="ri-user-star-line"></i>
+                        </div>
+                        <span class="text-gray-600">甲方: 华能集团江苏分公司</span>
+                    </div>
+                    <a href="#case4" class="view-case-detail inline-block px-4 py-2 bg-primary text-white rounded-button hover:bg-blue-700 transition whitespace-nowrap">查看详情</a>
+                </div>
+            </div>
+            
+            <!-- 案例5 -->
+            <div class="case-card bg-white rounded-lg shadow-sm overflow-hidden" data-industry="municipal" data-type="coating">
+                <div class="relative">
+                    <img src="https://readdy.ai/api/search-image?query=Municipal%2520water%2520treatment%2520facility%2520special%2520coating%2520project%252C%2520large%2520concrete%2520tanks%2520and%2520infrastructure%2520being%2520coated%2520with%2520protective%2520materials%252C%2520workers%2520in%2520safety%2520gear%2520applying%2520specialized%2520coatings%252C%2520urban%2520water%2520treatment%2520plant&width=600&height=400&seq=105&orientation=landscape" alt="北京某污水处理厂特种涂装工程" class="w-full h-60 object-cover object-top">
+                    <div class="case-tag">2023年10月完工</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">北京某污水处理厂特种涂装工程</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <span class="text-gray-600">北京市顺义区</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-money-cny-circle-line"></i>
+                            </div>
+                            <span class="text-gray-600">合同金额: ¥320万</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-team-line"></i>
+                            </div>
+                            <span class="text-gray-600">施工人数: 40人</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-ruler-line"></i>
+                            </div>
+                            <span class="text-gray-600">面积: 9500㎡</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-building-line"></i>
+                            </div>
+                            <span class="text-gray-600">12个处理池</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                            <i class="ri-user-star-line"></i>
+                        </div>
+                        <span class="text-gray-600">甲方: 北京市排水集团</span>
+                    </div>
+                    <a href="#case5" class="view-case-detail inline-block px-4 py-2 bg-primary text-white rounded-button hover:bg-blue-700 transition whitespace-nowrap">查看详情</a>
+                </div>
+            </div>
+            
+            <!-- 案例6 -->
+            <div class="case-card bg-white rounded-lg shadow-sm overflow-hidden" data-industry="building" data-type="maintenance">
+                <div class="relative">
+                    <img src="https://readdy.ai/api/search-image?query=High-rise%2520building%2520exterior%2520maintenance%2520project%252C%2520workers%2520on%2520suspended%2520platforms%2520applying%2520protective%2520coatings%2520to%2520glass%2520and%2520metal%2520facade%252C%2520urban%2520skyscraper%2520with%2520scaffolding%2520and%2520professional%2520maintenance%2520equipment&width=600&height=400&seq=106&orientation=landscape" alt="上海某高层建筑外墙维护工程" class="w-full h-60 object-cover object-top">
+                    <div class="case-tag">2024年2月完工</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">上海某高层建筑外墙维护工程</h3>
+                    <div class="flex items-center mb-3">
+                        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <span class="text-gray-600">上海市浦东新区</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3 mb-4">
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-money-cny-circle-line"></i>
+                            </div>
+                            <span class="text-gray-600">合同金额: ¥480万</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-team-line"></i>
+                            </div>
+                            <span class="text-gray-600">施工人数: 35人</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-ruler-line"></i>
+                            </div>
+                            <span class="text-gray-600">面积: 22000㎡</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                                <i class="ri-building-line"></i>
+                            </div>
+                            <span class="text-gray-600">68层建筑</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-5 h-5 flex items-center justify-center text-primary mr-2">
+                            <i class="ri-user-star-line"></i>
+                        </div>
+                        <span class="text-gray-600">甲方: 上海某国际金融中心</span>
+                    </div>
+                    <a href="#case6" class="view-case-detail inline-block px-4 py-2 bg-primary text-white rounded-button hover:bg-blue-700 transition whitespace-nowrap">查看详情</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 案例详情1 -->
+<section id="case1" class="py-16 bg-white hidden case-detail">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center mb-8">
+            <a href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/771124ed-4760-4359-a709-1f25a63a42dc" data-readdy="true" class="flex items-center text-primary hover:text-blue-700 transition">
+                <div class="w-5 h-5 flex items-center justify-center mr-1">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+                <span>返回案例列表</span>
+            </a>
+        </div>
+        
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-lg shadow-sm mb-10">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">山东某大型化工集团储罐防腐工程</h2>
+                    <div class="flex items-center mb-6">
+                        <div class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm font-medium mr-3">化工行业</div>
+                        <div class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm font-medium">防腐工程</div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-6">
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">项目地点</div>
+                            <div class="font-medium text-gray-800">山东省东营市垦利区</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">完成时间</div>
+                            <div class="font-medium text-gray-800">2023年8月</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">合同金额</div>
+                            <div class="font-medium text-gray-800">¥380万</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">施工规模</div>
+                            <div class="font-medium text-gray-800">20个储罐，总面积12000㎡</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">施工人数</div>
+                            <div class="font-medium text-gray-800">45人</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">甲方单位</div>
+                            <div class="font-medium text-gray-800">山东某化工集团有限公司</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3">
+                    <img src="https://readdy.ai/api/search-image?query=Chemical%2520storage%2520tanks%2520with%2520fresh%2520anti-corrosion%2520coating%252C%2520completed%2520industrial%2520project%2520showing%2520multiple%2520large%2520cylindrical%2520tanks%2520with%2520protective%2520finish%252C%2520professional%2520anti-corrosion%2520work%2520in%2520industrial%2520chemical%2520facility&width=400&height=300&seq=107&orientation=landscape" alt="项目效果图" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+            <div class="md:col-span-2">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">项目概况</h3>
+                <p class="text-gray-600 mb-4">本项目为山东某大型化工集团的储罐防腐工程，涉及20个大型化工储罐的防腐处理，总施工面积达12000平方米。储罐主要用于存储各类化学原料和成品，环境腐蚀性强，对防腐材料和施工工艺要求极高。</p>
+                <p class="text-gray-600 mb-4">项目于2023年3月启动，历时5个月，于2023年8月顺利完工并通过验收。在施工过程中，我公司组织了45名专业技术人员和施工人员，克服了高温环境、有限空间作业等多重困难，圆满完成了施工任务。</p>
+                <p class="text-gray-600">该项目的成功实施，不仅延长了储罐的使用寿命，提高了设备的安全性能，还为甲方节约了大量的维护成本，获得了甲方的高度认可。</p>
+                
+                <h3 class="text-2xl font-bold text-gray-800 mt-10 mb-6">技术难点</h3>
+                <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">高温环境下的防腐材料应用</h4>
+                    <p class="text-gray-600 mb-4">储罐工作环境温度高达60℃以上，常规防腐材料在此环境下容易老化失效。我们需要选择特殊的耐高温防腐材料，并确保其在高温环境下的长期稳定性。</p>
+                    <div class="flex items-center text-primary">
+                        <div class="w-5 h-5 flex items-center justify-center mr-2">
+                            <i class="ri-error-warning-line"></i>
+                        </div>
+                        <span>挑战：材料选择与施工工艺的适应性</span>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">化学介质复杂的防腐要求</h4>
+                    <p class="text-gray-600 mb-4">储罐内存储的化学品种类繁多，包括酸、碱、盐等多种腐蚀性介质，对防腐层的耐化学性提出了极高要求，需要采用多层复合防腐系统。</p>
+                    <div class="flex items-center text-primary">
+                        <div class="w-5 h-5 flex items-center justify-center mr-2">
+                            <i class="ri-error-warning-line"></i>
+                        </div>
+                        <span>挑战：防腐系统的耐化学性与适用性</span>
+                    </div>
+                </div>
+                
+                <h3 class="text-2xl font-bold text-gray-800 mt-10 mb-6">解决方案</h3>
+                <div class="space-y-6">
+                    <div class="flex">
+                        <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full text-white mr-4 flex-shrink-0 mt-1">
+                            <span class="font-bold">1</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">采用特种耐高温防腐涂料</h4>
+                            <p class="text-gray-600">选用国际领先的特种环氧酚醛防腐涂料，耐温可达180℃，同时具有优异的耐化学性能，能够抵抗多种化学介质的腐蚀。</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full text-white mr-4 flex-shrink-0 mt-1">
+                            <span class="font-bold">2</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">分段施工策略</h4>
+                            <p class="text-gray-600">根据储罐的使用情况和生产计划，采用分段施工策略，确保生产不中断的情况下完成防腐工作，最大限度减少对生产的影响。</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full text-white mr-4 flex-shrink-0 mt-1">
+                            <span class="font-bold">3</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">多层复合防腐系统</h4>
+                            <p class="text-gray-600">设计并实施了三层复合防腐系统：底层为高附着力底漆，中层为耐化学性环氧中涂，面层为耐高温、耐紫外线的氟碳面漆，形成全方位防护。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">施工过程</h3>
+                <div class="space-y-4">
+                    <div class="gallery-image">
+                        <img src="https://readdy.ai/api/search-image?query=Industrial%2520workers%2520in%2520protective%2520gear%2520preparing%2520metal%2520surface%2520of%2520chemical%2520storage%2520tank%2520for%2520anti-corrosion%2520coating%252C%2520sandblasting%2520equipment%2520and%2520scaffolding%2520visible%252C%2520first%2520stage%2520of%2520professional%2520anti-corrosion%2520work&width=400&height=300&seq=108&orientation=landscape" alt="表面处理" class="w-full h-auto rounded-lg shadow-sm">
+                        <p class="mt-2 text-sm text-gray-600">第一阶段：储罐表面处理与打磨</p>
+                    </div>
+                    <div class="gallery-image">
+                        <img src="https://readdy.ai/api/search-image?query=Workers%2520applying%2520primer%2520coat%2520to%2520chemical%2520storage%2520tank%252C%2520professional%2520spray%2520equipment%2520being%2520used%252C%2520workers%2520in%2520full%2520protective%2520gear%2520with%2520respirators%252C%2520industrial%2520anti-corrosion%2520project%2520in%2520progress&width=400&height=300&seq=109&orientation=landscape" alt="底漆施工" class="w-full h-auto rounded-lg shadow-sm">
+                        <p class="mt-2 text-sm text-gray-600">第二阶段：底漆施工</p>
+                    </div>
+                    <div class="gallery-image">
+                        <img src="https://readdy.ai/api/search-image?query=Final%2520stage%2520of%2520anti-corrosion%2520coating%2520application%2520on%2520chemical%2520storage%2520tank%252C%2520workers%2520applying%2520top%2520coat%2520with%2520professional%2520equipment%252C%2520nearly%2520completed%2520industrial%2520project%2520showing%2520smooth%2520protective%2520finish&width=400&height=300&seq=110&orientation=landscape" alt="面漆施工" class="w-full h-auto rounded-lg shadow-sm">
+                        <p class="mt-2 text-sm text-gray-600">第三阶段：面漆施工</p>
+                    </div>
+                    <div class="gallery-image">
+                        <img src="https://readdy.ai/api/search-image?query=Quality%2520inspection%2520of%2520completed%2520anti-corrosion%2520coating%2520on%2520chemical%2520storage%2520tank%252C%2520inspector%2520using%2520thickness%2520gauge%2520and%2520other%2520testing%2520equipment%252C%2520final%2520verification%2520of%2520professional%2520industrial%2520coating%2520work&width=400&height=300&seq=111&orientation=landscape" alt="质量检测" class="w-full h-auto rounded-lg shadow-sm">
+                        <p class="mt-2 text-sm text-gray-600">第四阶段：质量检测与验收</p>
+                    </div>
+                </div>
+                
+                <h3 class="text-2xl font-bold text-gray-800 mt-10 mb-6">甲方评价</h3>
+                <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full text-primary mr-3 flex-shrink-0">
+                            <i class="ri-double-quotes-l ri-lg"></i>
+                        </div>
+                        <p class="text-gray-600 italic">莲乡防腐保温公司在我厂储罐防腐项目中展现了卓越的专业能力和高效的施工水平。他们克服了高温环境和复杂介质的技术难题，按时保质完成了工程，防腐效果远超我们的预期。</p>
+                    </div>
+                    <div class="flex items-center justify-end">
+                        <div class="text-right">
+                            <div class="font-bold text-gray-800">王志强</div>
+                            <div class="text-sm text-gray-600">山东某化工集团 工程部经理</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">项目数据</h3>
+                    <div class="data-chart" id="case1Chart"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">效果展示</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-3">防腐前</h4>
+                        <img src="https://readdy.ai/api/search-image?query=Corroded%2520chemical%2520storage%2520tanks%2520before%2520anti-corrosion%2520treatment%252C%2520showing%2520rust%2520and%2520deterioration%2520on%2520metal%2520surfaces%252C%2520industrial%2520facility%2520with%2520visible%2520signs%2520of%2520corrosion%2520damage%2520requiring%2520professional%2520intervention&width=500&height=300&seq=112&orientation=landscape" alt="防腐前" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-3">防腐后</h4>
+                        <img src="https://readdy.ai/api/search-image?query=Completely%2520restored%2520chemical%2520storage%2520tanks%2520after%2520anti-corrosion%2520treatment%252C%2520showing%2520smooth%2520protective%2520coating%2520with%2520uniform%2520finish%252C%2520same%2520industrial%2520facility%2520now%2520with%2520professionally%2520protected%2520surfaces%2520in%2520excellent%2520condition&width=500&height=300&seq=113&orientation=landscape" alt="防腐后" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+                <div class="md:col-span-2">
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-3">红外热成像对比</h4>
+                        <img src="https://readdy.ai/api/search-image?query=Side-by-side%2520thermal%2520imaging%2520comparison%2520of%2520chemical%2520storage%2520tanks%2520before%2520and%2520after%2520anti-corrosion%2520treatment%252C%2520showing%2520temperature%2520differences%2520with%2520color%2520gradient%2520visualization%252C%2520professional%2520thermal%2520analysis%2520of%2520industrial%2520coating%2520effectiveness&width=800&height=300&seq=114&orientation=landscape" alt="红外热成像对比" class="w-full h-auto rounded-lg">
+                        <p class="mt-2 text-sm text-gray-600">左侧为处理前热损失严重区域，右侧为处理后热损失显著降低</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 案例详情2 -->
+<section id="case2" class="py-16 bg-white hidden case-detail">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center mb-8">
+            <a href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/771124ed-4760-4359-a709-1f25a63a42dc" data-readdy="true" class="flex items-center text-primary hover:text-blue-700 transition">
+                <div class="w-5 h-5 flex items-center justify-center mr-1">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+                <span>返回案例列表</span>
+            </a>
+        </div>
+        
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-lg shadow-sm mb-10">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">河北某钢铁集团高炉保温工程</h2>
+                    <div class="flex items-center mb-6">
+                        <div class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm font-medium mr-3">钢铁冶金</div>
+                        <div class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm font-medium">保温工程</div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-6">
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">项目地点</div>
+                            <div class="font-medium text-gray-800">河北省唐山市丰南区</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">完成时间</div>
+                            <div class="font-medium text-gray-800">2023年11月</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">合同金额</div>
+                            <div class="font-medium text-gray-800">¥560万</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">施工规模</div>
+                            <div class="font-medium text-gray-800">2座高炉，总面积8000㎡</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">施工人数</div>
+                            <div class="font-medium text-gray-800">60人</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">甲方单位</div>
+                            <div class="font-medium text-gray-800">河北某钢铁集团</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3">
+                    <img src="https://readdy.ai/api/search-image?query=Completed%2520blast%2520furnace%2520insulation%2520project%2520in%2520steel%2520mill%252C%2520large%2520industrial%2520equipment%2520with%2520silver%2520insulation%2520covering%252C%2520professional%2520thermal%2520insulation%2520work%2520in%2520metallurgical%2520facility%252C%2520energy-efficient%2520industrial%2520solution&width=400&height=300&seq=115&orientation=landscape" alt="项目效果图" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+            <div class="md:col-span-2">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">项目概况</h3>
+                <p class="text-gray-600 mb-4">本项目为河北某钢铁集团的高炉保温工程，涉及2座大型高炉的保温施工，总施工面积达8000平方米。高炉作为钢铁生产的核心设备，工作温度高达1500℃以上，对保温材料和施工工艺提出了极高要求。</p>
+                <p class="text-gray-600 mb-4">项目于2023年7月启动，历时4个月，于2023年11月顺利完工并通过验收。在施工过程中，我公司组织了60名专业技术人员和施工人员，克服了超高温环境、高空作业等多重困难，圆满完成了施工任务。</p>
+                <p class="text-gray-600">该项目的成功实施，显著提高了高炉的热效率，降低了能源消耗，为甲方每年节约能源成本约1200万元，获得了甲方的高度评价。</p>
+                
+                <h3 class="text-2xl font-bold text-gray-800 mt-10 mb-6">技术难点</h3>
+                <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">高温工况下的保温材料选择</h4>
+                    <p class="text-gray-600 mb-4">高炉工作温度高达1500℃以上，常规保温材料无法承受如此高温。需要选择特殊的耐高温保温材料，并确保其在极端温度下的长期稳定性和保温效果。</p>
+                    <div class="flex items-center text-primary">
+                        <div class="w-5 h-5 flex items-center justify-center mr-2">
+                            <i class="ri-error-warning-line"></i>
+                        </div>
+                        <span>挑战：超高温环境下材料的耐久性与保温性能</span>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">高炉不停产施工</h4>
+                    <p class="text-gray-600 mb-4">高炉是钢铁厂的核心设备，停产成本极高，需要在高炉不停产的情况下进行保温施工，这对施工安全和工艺提出了极高要求。</p>
+                    <div class="flex items-center text-primary">
+                        <div class="w-5 h-5 flex items-center justify-center mr-2">
+                            <i class="ri-error-warning-line"></i>
+                        </div>
+                        <span>挑战：高温环境下的安全施工与工艺控制</span>
+                    </div>
+                </div>
+                
+                <h3 class="text-2xl font-bold text-gray-800 mt-10 mb-6">解决方案</h3>
+                <div class="space-y-6">
+                    <div class="flex">
+                        <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full text-white mr-4 flex-shrink-0 mt-1">
+                            <span class="font-bold">1</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">采用纳米级隔热保温材料</h4>
+                            <p class="text-gray-600">选用国际先进的纳米陶瓷纤维保温材料，耐温可达1800℃，导热系数低至0.035W/(m·K)，大幅提高保温效果。</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full text-white mr-4 flex-shrink-0 mt-1">
+                            <span class="font-bold">2</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">多层复合施工工艺</h4>
+                            <p class="text-gray-600">采用"纳米陶瓷纤维+高温硅酸铝毡+不锈钢保护层"的多层复合施工工艺，形成梯度保温系统，最大化保温效果。</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full text-white mr-4 flex-shrink-0 mt-1">
+                            <span class="font-bold">3</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">分区域轮换施工策略</h4>
+                            <p class="text-gray-600">将高炉外壁分为多个区域，采用轮换施工策略，确保高炉不停产的情况下安全完成保温工作，最大限度减少对生产的影响。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">施工过程</h3>
+                <div class="space-y-4">
+                    <div class="gallery-image">
+                        <img src="https://readdy.ai/api/search-image?query=Workers%2520preparing%2520blast%2520furnace%2520surface%2520for%2520insulation%2520installation%252C%2520industrial%2520scaffolding%2520around%2520large%2520metallurgical%2520equipment%252C%2520initial%2520stage%2520of%2520thermal%2520insulation%2520project%2520in%2520steel%2520mill&width=400&height=300&seq=116&orientation=landscape" alt="表面处理" class="w-full h-auto rounded-lg shadow-sm">
+                        <p class="mt-2 text-sm text-gray-600">第一阶段：高炉表面处理与准备</p>
+                    </div>
+                    <div class="gallery-image">
+                        <img src="https://readdy.ai/api/search-image?query=Workers%2520installing%2520first%2520layer%2520of%2520ceramic%2520fiber%2520insulation%2520on%2520blast%2520furnace%252C%2520specialized%2520high-temperature%2520materials%2520being%2520applied%252C%2520industrial%2520insulation%2520project%2520in%2520steel%2520mill%2520with%2520workers%2520in%2520heat-resistant%2520gear&width=400&height=300&seq=117&orientation=landscape" alt="内层施工" class="w-full h-auto rounded-lg shadow-sm">
+                        <p class="mt-2 text-sm text-gray-600">第二阶段：纳米陶瓷纤维内层施工</p>
+                    </div>
+                    <div class="gallery-image">
+                        <img src="https://readdy.ai/api/search-image?query=Installation%2520of%2520middle%2520insulation%2520layer%2520on%2520blast%2520furnace%252C%2520workers%2520applying%2520alumino-silicate%2520blanket%2520material%252C%2520industrial%2520thermal%2520insulation%2520project%2520in%2520steel%2520mill%2520showing%2520multi-layer%2520system%2520installation&width=400&height=300&seq=118&orientation=landscape" alt="中层施工" class="w-full h-auto rounded-lg shadow-sm">
+                        <p class="mt-2 text-sm text-gray-600">第三阶段：硅酸铝毡中层施工</p>
+                    </div>
+                    <div class="gallery-image">
+                        <img src="https://readdy.ai/api/search-image?query=Final%2520stage%2520of%2520blast%2520furnace%2520insulation%2520project%252C%2520workers%2520installing%2520stainless%2520steel%2520protective%2520outer%2520layer%2520over%2520insulation%2520materials%252C%2520nearly%2520completed%2520industrial%2520thermal%2520protection%2520system%2520in%2520steel%2520mill&width=400&height=300&seq=119&orientation=landscape" alt="外层施工" class="w-full h-auto rounded-lg shadow-sm">
+                        <p class="mt-2 text-sm text-gray-600">第四阶段：不锈钢保护外层施工</p>
+                    </div>
+                </div>
+                
+                <h3 class="text-2xl font-bold text-gray-800 mt-10 mb-6">甲方评价</h3>
+                <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full text-primary mr-3 flex-shrink-0">
+                            <i class="ri-double-quotes-l ri-lg"></i>
+                        </div>
+                        <p class="text-gray-600 italic">莲乡防腐保温公司在我厂高炉保温项目中表现出色，他们采用的纳米保温技术使我们的高炉热效率提升了15%以上，年节约能源成本超过1200万元。更重要的是，整个施工过程中未影响生产，体现了高超的专业水平。</p>
+                    </div>
+                    <div class="flex items-center justify-end">
+                        <div class="text-right">
+                            <div class="font-bold text-gray-800">李明辉</div>
+                            <div class="text-sm text-gray-600">河北某钢铁集团 技术总监</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">节能效果分析</h3>
+                    <div class="data-chart" id="case2Chart"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">效果展示</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-3">保温前</h4>
+                        <img src="https://readdy.ai/api/search-image?query=Blast%2520furnace%2520before%2520insulation%2520treatment%2520in%2520steel%2520mill%252C%2520showing%2520high%2520surface%2520temperature%2520and%2520heat%2520loss%252C%2520industrial%2520equipment%2520without%2520proper%2520thermal%2520protection%252C%2520inefficient%2520energy%2520usage%2520visible&width=500&height=300&seq=120&orientation=landscape" alt="保温前" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-3">保温后</h4>
+                        <img src="https://readdy.ai/api/search-image?query=Same%2520blast%2520furnace%2520after%2520complete%2520insulation%2520treatment%2520in%2520steel%2520mill%252C%2520showing%2520professional%2520stainless%2520steel%2520exterior%2520covering%2520over%2520insulation%2520materials%252C%2520energy-efficient%2520industrial%2520equipment%2520with%2520proper%2520thermal%2520protection&width=500&height=300&seq=121&orientation=landscape" alt="保温后" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+                <div class="md:col-span-2">
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-3">红外热成像对比</h4>
+                        <img src="https://readdy.ai/api/search-image?query=Side-by-side%2520thermal%2520imaging%2520comparison%2520of%2520blast%2520furnace%2520before%2520and%2520after%2520insulation%2520treatment%252C%2520showing%2520dramatic%2520temperature%2520differences%2520with%2520color%2520gradient%2520visualization%252C%2520professional%2520thermal%2520analysis%2520of%2520industrial%2520insulation%2520effectiveness&width=800&height=300&seq=122&orientation=landscape" alt="红外热成像对比" class="w-full h-auto rounded-lg">
+                        <p class="mt-2 text-sm text-gray-600">左侧为处理前外表面温度高达180℃，右侧为处理后外表面温度降至45℃以下</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 案例详情3 -->
+<section id="case3" class="py-16 bg-white hidden case-detail">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center mb-8">
+            <a href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/771124ed-4760-4359-a709-1f25a63a42dc" data-readdy="true" class="flex items-center text-primary hover:text-blue-700 transition">
+                <div class="w-5 h-5 flex items-center justify-center mr-1">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+                <span>返回案例列表</span>
+            </a>
+        </div>
+        
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-lg shadow-sm mb-10">
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">中石化某炼油厂管道防腐保温工程</h2>
+                    <div class="flex items-center mb-6">
+                        <div class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm font-medium mr-3">石油化工</div>
+                        <div class="px-3 py-1 bg-blue-100 text-primary rounded-full text-sm font-medium">防腐保温一体化</div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-6">
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">项目地点</div>
+                            <div class="font-medium text-gray-800">广东省茂名市</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">完成时间</div>
+                            <div class="font-medium text-gray-800">2024年1月</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">合同金额</div>
+                            <div class="font-medium text-gray-800">¥620万</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">施工规模</div>
+                            <div class="font-medium text-gray-800">管道长度15000米，管径DN50-600</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">施工人数</div>
+                            <div class="font-medium text-gray-800">55人</div>
+                        </div>
+                        <div class="bg-white/70 p-4 rounded-lg">
+                            <div class="text-gray-600 text-sm mb-1">甲方单位</div>
+                            <div class="font-medium text-gray-800">中国石化集团</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/3">
+                    <img src="https://readdy.ai/api/search-image?query=Completed%2520oil%2520refinery%2520pipeline%2520anti-corrosion%2520and%2520insulation%2520project%252C%2520showing%2520network%2520of%2520silver-insulated%2520pipes%2520with%2520professional%2520protective%2520covering%252C%2520petroleum%2520processing%2520facility%2520with%2520energy-efficient%2520pipeline%2520system&width=400&height=300&seq=123&orientation=landscape" alt="项目效果图" class="w-full h-auto rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+            <div class="md:col-span-2">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">项目概况</h3>
+                <p class="text-gray-600 mb-4">本项目为中石化某炼油厂的管道防腐保温一体化工程，涉及厂区内多条工艺管道的防腐保温处理，总长度达15000米，管径从DN50到DN600不等。这些管道输送的介质温度高、腐蚀性强，同时存在热损失问题，需要同时解决防腐和保温两方面的需求。</p>
+                <p class="text-gray-600 mb-4">项目于2023年8月启动，历时5个月，于2024年1月顺利完工并通过验收。在施工过程中，我公司组织了55名专业技术人员和施工人员，克服了复杂管网、高温介质、有限空间作业等多重困难，圆满完成了施工任务。</p>
+                <p class="text-gray-600">该项目的成功实施，不仅解决了管道的腐蚀问题，延长了使用寿命，还显著提高了热效率，降低了能源消耗，为甲方每年节约维护和能源成本约850万元，获得了甲方的高度评价。</p>
+                
+                <h3 class="text-2xl font-bold text-gray-800 mt-10 mb-6">技术难点</h3>
+                <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">复杂管网的一体化处理</h4>
+                    <p class="text-gray-600 mb-4">炼油厂管网复杂，管径大小不一，弯头、三通、阀门等附件众多，如何在保证防腐和保温效果的同时，确保施工质量和美观度，是一大技术难点。</p>
+                    <div class="flex items-center text-primary">
+                        <div class="w-5 h-5 flex items-center justify-center mr-2">
+                            <i class="ri-error-warning-line"></i>
+                        </div>
+                        <span>挑战：复杂管网的整体解决方案</span>
+                    </div>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">防腐与保温材料的兼容性</h4>
+                    <p class="text-gray-600 mb-4">传统的防腐和保温材料往往难以兼容，如何选择既能满足防腐要求又具备良好保温性能的材料系统，是项目成功的关键。</p>
+                    <div class="flex items-center text-primary">
+                        <div class="w-5 h-5 flex items-center justify-center mr-2">
+                            <i class="ri-error-warning-line"></i>
+                        </div>
+                        <span>挑战：材料系统的兼容性与综合性能</span>
+                    </div>
+                </div>
+                
+                <h3 class="text-2xl font-bold text-gray-800 mt-10 mb-6">解决方案</h3>
+                <div class="space-y-6">
+                    <div class="flex">
+                        <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full text-white mr-4 flex-shrink-0 mt-1">
+                            <span class="font-bold">1</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">一体化防腐保温材料系统</h4>
+                            <p class="text-gray-600">采用自主研发的"环氧陶瓷复合涂层+气凝胶保温材料+铝箔外护层"一体化系统，解决了防腐与保温材料的兼容性问题。</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full text-white mr-4 flex-shrink-0 mt-1">
+                            <span class="font-bold">2</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">定制化预制件解决方案</h4>
+                            <p class="text-gray-600">针对弯头、三通、阀门等特殊部位，采用3D扫描技术制作定制化预制件，确保复杂管网的施工质量和美观度。</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full text-white mr-4 flex-shrink-0 mt-1">
+                            <span class="font-bold">3</span>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">分段施工与在线监测</h4>
+                            <p class="text-gray-600">采用分段施工策略，结合在线温度和腐蚀监测系统，实时监控施工效果，确保整个管网系统的防腐保温性能达到设计要求。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:col-span-1">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">施工过程</h3>
+                <div class="space-y-4">
+                    <div class="gallery-image">
+                        <img src="https://readdy.ai/api/search-image?query=Workers%2520preparing%2520oil%2520refinery%2520pipelines%2520for%2520anti-corrosion%2520and%2520insulation%2520treatment%252C%2520surface%2520cleaning%2520and%2520preparation%2520stage%252C%2520industrial%2520petroleum%2520facility%2520with%2520exposed%2520metal%2520pipes%2520being%2520prepared%2520for%2520protection&width=400&height=300&seq=124&orientation=landscape" alt="表面处理" class="w-full h-auto rounded-lg shadow-sm">
+                        <p class="mt-2 text-sm text-gray-600">第一阶段：管道表面处理与准备</p>
+                    </div>
+                    <div class="gallery-image">
+                        <img src="https://readdy.ai/api/search-image?query=Application%2520of%2520anti-corrosion%2520ceramic%2520composite%2520coating%2520to%2520oil%2520refinery%2520pipelines%252C%2520workers%2520using%2520specialized%2520spray%2520equipment%252C%2520industrial%2520petroleum%2520facility%2520with%2520pipes%2520being%2520treated%2520with%2520protective%2520materials&width=400&height=300&seq=125&orientation=landscape" alt="防腐层施工" class="w-full h-auto rounded-lg shadow-sm">
+                        <p class="mt-2 text-sm text-gray-600">第二阶段：环氧陶瓷复合防腐层施工</p>
+                    </div>
+                    <div class="gallery-image">
+                        <img src="https://readdy.ai/api/search-image?query=Installation%2520of%2520aerogel%2520insulation%2520material%2520on%2520oil%2520refinery%2520pipelines%252C%2520workers%2520applying%2520advanced%2520thermal%2520insulation%2520over%2520anti-corrosion%2520layer%252C%2520industrial%2520petroleum%2520facility%2520with%2520pipes%2520receiving%2520thermal%2520protection&width=400&height=300&seq=126&orientation=landscape" alt="保温层施工" class="w-full h-auto rounded-lg shadow-sm">
+                        <p class="mt-2 text-sm text-gray-600">第三阶段：气凝胶保温层施工</p>
+                    </div>
+                    <div class="gallery-image">
+                        <img src="https://readdy.ai/api/search-image?query=Final%2520stage%2520of%2520pipeline%2520protection%2520in%2520oil%2520refinery%252C%2520workers%2520installing%2520aluminum%2520foil%2520outer%2520protective%2520layer%2520over%2520insulation%252C%2520nearly%2520completed%2520industrial%2520project%2520showing%2520silver%2520finished%2520pipes%2520with%2520comprehensive%2520protection&width=400&height=300&seq=127&orientation=landscape" alt="外护层施工" class="w-full h-auto rounded-lg shadow-sm">
+                        <p class="mt-2 text-sm text-gray-600">第四阶段：铝箔外护层施工</p>
+                    </div>
+                </div>
+                
+                <h3 class="text-2xl font-bold text-gray-800 mt-10 mb-6">甲方评价</h3>
+                <div class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-lg shadow-sm">
+                    <div class="flex items-start mb-4">
+                        <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full text-primary mr-3 flex-shrink-0">
+                            <i class="ri-double-quotes-l ri-lg"></i>
+                        </div>
+                        <p class="text-gray-600 italic">莲乡防腐保温公司提供的一体化解决方案完美解决了我厂管道系统的防腐和保温需求。他们的施工质量和工艺水平令人印象深刻，特别是复杂管网部位的处理非常精细。项目完成后，我们的能源消耗降低了12%，年节约成本近850万元。</p>
+                    </div>
+                    <div class="flex items-center justify-end">
+                        <div class="text-right">
+                            <div class="font-bold text-gray-800">陈国强</div>
+                            <div class="text-sm text-gray-600">中石化某炼油厂 设备部主任</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">综合效益分析</h3>
+                    <div class="data-chart" id="case3Chart"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">效果展示</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-3">处理前</h4>
+                        <img src="https://readdy.ai/api/search-image?query=Oil%2520refinery%2520pipelines%2520before%2520anti-corrosion%2520and%2520insulation%2520treatment%252C%2520showing%2520worn%2520metal%2520surfaces%2520with%2520visible%2520corrosion%2520and%2520deterioration%252C%2520industrial%2520petroleum%2520facility%2520with%2520unprotected%2520pipe%2520network&width=500&height=300&seq=128&orientation=landscape" alt="处理前" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-3">处理后</h4>
+                        <img src="https://readdy.ai/api/search-image?query=Same%2520oil%2520refinery%2520pipelines%2520after%2520complete%2520anti-corrosion%2520and%2520insulation%2520treatment%252C%2520showing%2520uniform%2520silver%2520aluminum%2520protective%2520covering%252C%2520industrial%2520petroleum%2520facility%2520with%2520professionally%2520protected%2520pipe%2520network&width=500&height=300&seq=129&orientation=landscape" alt="处理后" class="w-full h-auto rounded-lg">
+                    </div>
+                </div>
+                <div class="md:col-span-2">
+                    <div class="bg-white p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-3">复杂管网处理效果</h4>
+                        <img src="https://readdy.ai/api/search-image?query=Close-up%2520of%2520complex%2520pipeline%2520junction%2520points%2520in%2520oil%2520refinery%2520after%2520anti-corrosion%2520and%2520insulation%2520treatment%252C%2520showing%2520detailed%2520craftsmanship%2520around%2520valves%252C%2520bends%2520and%2520T-junctions%252C%2520professional%2520industrial%2520protection%2520with%2520custom-fitted%2520components&width=800&height=300&seq=130&orientation=landscape" alt="复杂管网处理效果" class="w-full h-auto rounded-lg">
+                        <p class="mt-2 text-sm text-gray-600">弯头、三通、阀门等复杂部位的定制化处理效果</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 图片灯箱 -->
+<div class="lightbox" id="imageLightbox">
+    <div class="lightbox-close" id="lightboxClose">×</div>
+    <div class="lightbox-content">
+        <img src="" alt="放大图片" id="lightboxImage" class="max-w-full max-h-full">
+    </div>
+    <div class="lightbox-nav">
+        <button id="prevImage" class="!rounded-button whitespace-nowrap"><i class="ri-arrow-left-line"></i></button>
+        <button id="nextImage" class="!rounded-button whitespace-nowrap"><i class="ri-arrow-right-line"></i></button>
+    </div>
+</div>
+
+<!-- 返回顶部按钮 -->
+<div class="fixed right-6 bottom-6 z-40 hidden" id="backToTop">
+    <button class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg flex items-center justify-center hover:from-blue-600 hover:to-purple-600 transition !rounded-button whitespace-nowrap">
+        <i class="ri-arrow-up-line ri-lg"></i>
+    </button>
+</div>
+
+<!-- 页脚 -->
+<footer class="bg-gradient-to-br from-gray-800 via-gray-900 to-blue-900 text-white pt-12 pb-6">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">关于我们</h3>
+                <p class="text-gray-300 mb-4">湘潭市防腐保温安装有限公司创建于1975年，是一家集工程施工、投资开发、技术研究为一体的综合型企业，为各行业提供高品质的防腐保温解决方案。</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-weibo-fill ri-lg"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-wechat-fill ri-lg"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-linkedin-fill ri-lg"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">服务项目</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" data-readdy="true" class="text-gray-300 hover:text-white">防腐工程</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">保温工程</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">防火防爆工程</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">地坪防腐工程</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">阴极保护工程</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">快速链接</h3>
+                <ul class="space-y-2">
+                    <li><a href="./index.html" data-readdy="true" class="text-gray-300 hover:text-white">首页</a></li>
+                    <li><a href="./服务详情页.html" data-readdy="true" class="text-gray-300 hover:text-white">服务项目</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white">工程案例</a></li>
+                    <li><a href="./关于我们.html" data-readdy="true" class="text-gray-300 hover:text-white">关于我们</a></li>
+                    <li><a href="./新闻咨询.html" data-readdy="true" class="text-gray-300 hover:text-white">新闻资讯</a></li>
+                    <li><a href="./联系我们.html" class="text-gray-300 hover:text-white">联系我们</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">联系我们</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+                            <i class="ri-map-pin-line text-gray-300"></i>
+                        </div>
+                        <span class="text-gray-300">湘潭县易俗河镇荷花南路西（天易示范区）</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-5 h-5 flex items-center justify-center mr-3">
+                            <i class="ri-phone-line text-gray-300"></i>
+                        </div>
+                        <span class="text-gray-300">18207483310</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-5 h-5 flex items-center justify-center mr-3">
+                            <i class="ri-mail-line text-gray-300"></i>
+                        </div>
+                        <span class="text-gray-300">mahiudong1024@163.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+            <p>© 2025 湘潭市防腐保温安装有限公司. 保留所有权利.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 案例筛选功能
+    const industryFilters = document.querySelectorAll('.industry-filter');
+    const typeFilters = document.querySelectorAll('.type-filter');
+    const caseCards = document.querySelectorAll('.case-card');
+    
+    function filterCases() {
+        const activeIndustry = document.querySelector('.industry-filter.active').dataset.filter;
+        const activeType = document.querySelector('.type-filter.active').dataset.filter;
+        
+        caseCards.forEach(card => {
+            const cardIndustry = card.dataset.industry;
+            const cardType = card.dataset.type;
+            
+            const industryMatch = activeIndustry === 'all' || activeIndustry === cardIndustry;
+            const typeMatch = activeType === 'all' || activeType === cardType;
+            
+            if (industryMatch && typeMatch) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+    
+    industryFilters.forEach(button => {
+        button.addEventListener('click', function() {
+            industryFilters.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            filterCases();
+        });
+    });
+    
+    typeFilters.forEach(button => {
+        button.addEventListener('click', function() {
+            typeFilters.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            filterCases();
+        });
+    });
+    
+    // 案例详情查看
+    const caseDetailLinks = document.querySelectorAll('.view-case-detail');
+    const caseDetails = document.querySelectorAll('.case-detail');
+    
+    caseDetailLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            
+            // 隐藏所有案例详情
+            caseDetails.forEach(detail => {
+                detail.classList.add('hidden');
+            });
+            
+            // 显示目标案例详情
+            document.getElementById(targetId).classList.remove('hidden');
+            
+            // 滚动到顶部
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+    
+    // 图片灯箱功能
+    const galleryImages = document.querySelectorAll('.gallery-image img');
+    const lightbox = document.getElementById('imageLightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const prevButton = document.getElementById('prevImage');
+    const nextButton = document.getElementById('nextImage');
+    
+    let currentImageIndex = 0;
+    let currentGalleryImages = [];
+    
+    galleryImages.forEach((img, index) => {
+        img.addEventListener('click', function() {
+            // 获取当前案例详情中的所有图片
+            const currentDetail = this.closest('.case-detail');
+            currentGalleryImages = Array.from(currentDetail.querySelectorAll('.gallery-image img'));
+            
+            // 设置当前图片索引
+            currentImageIndex = currentGalleryImages.indexOf(this);
+            
+            // 显示灯箱
+            lightboxImage.src = this.src;
+            lightbox.style.display = 'flex';
+            
+            // 禁止背景滚动
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    
+    lightboxClose.addEventListener('click', function() {
+        lightbox.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+    
+    prevButton.addEventListener('click', function() {
+        if (currentGalleryImages.length > 1) {
+            currentImageIndex = (currentImageIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+            lightboxImage.src = currentGalleryImages[currentImageIndex].src;
+        }
+    });
+    
+    nextButton.addEventListener('click', function() {
+        if (currentGalleryImages.length > 1) {
+            currentImageIndex = (currentImageIndex + 1) % currentGalleryImages.length;
+            lightboxImage.src = currentGalleryImages[currentImageIndex].src;
+        }
+    });
+    
+    // 点击灯箱背景关闭
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // 案例1图表
+    const case1Chart = echarts.init(document.getElementById('case1Chart'));
+    const case1Option = {
+        animation: false,
+        tooltip: {
+            trigger: 'axis',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+            textStyle: {
+                color: '#1f2937'
+            }
+        },
+        legend: {
+            data: ['防腐前', '防腐后'],
+            textStyle: {
+                color: '#1f2937'
+            }
+        },
+        grid: {
+            left: '0',
+            right: '0',
+            bottom: '0',
+            top: '50',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            data: ['材料腐蚀率', '维护频率', '设备寿命', '安全系数'],
+            axisLabel: {
+                color: '#1f2937'
+            }
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                formatter: '{value}%',
+                color: '#1f2937'
+            }
+        },
+        series: [
+            {
+                name: '防腐前',
+                type: 'bar',
+                data: [85, 75, 40, 55],
+                itemStyle: {
+                    color: 'rgba(252, 141, 98, 1)'
+                }
+            },
+            {
+                name: '防腐后',
+                type: 'bar',
+                data: [15, 20, 90, 95],
+                itemStyle: {
+                    color: 'rgba(87, 181, 231, 1)'
+                }
+            }
+        ]
+    };
+    case1Chart.setOption(case1Option);
+    
+    // 案例2图表
+    const case2Chart = echarts.init(document.getElementById('case2Chart'));
+    const case2Option = {
+        animation: false,
+        tooltip: {
+            trigger: 'item',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+            textStyle: {
+                color: '#1f2937'
+            }
+        },
+        legend: {
+            orient: 'vertical',
+            right: 10,
+            top: 'center',
+            textStyle: {
+                color: '#1f2937'
+            }
+        },
+        series: [
+            {
+                name: '节能效果',
+                type: 'pie',
+                radius: ['40%', '70%'],
+                avoidLabelOverlap: false,
+                itemStyle: {
+                    borderRadius: 8,
+                    borderColor: '#fff',
+                    borderWidth: 2
+                },
+                label: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    label: {
+                        show: true,
+                        fontSize: '14',
+                        fontWeight: 'bold',
+                        color: '#1f2937'
+                    }
+                },
+                labelLine: {
+                    show: false
+                },
+                data: [
+                    { value: 45, name: '热损失降低 (45%)' },
+                    { value: 30, name: '能源成本节约 (30%)' },
+                    { value: 15, name: '设备寿命延长 (15%)' },
+                    { value: 10, name: '维护成本降低 (10%)' }
+                ],
+                color: ['rgba(87, 181, 231, 1)', 'rgba(141, 211, 199, 1)', 'rgba(251, 191, 114, 1)', 'rgba(252, 141, 98, 1)']
+            }
+        ]
+    };
+    case2Chart.setOption(case2Option);
+    
+    // 案例3图表
+    const case3Chart = echarts.init(document.getElementById('case3Chart'));
+    const case3Option = {
+        animation: false,
+        tooltip: {
+            trigger: 'axis',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+            textStyle: {
+                color: '#1f2937'
+            }
+        },
+        grid: {
+            left: '0',
+            right: '0',
+            bottom: '0',
+            top: '10',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            data: ['防腐效果', '保温效果', '综合成本', '维护周期'],
+            axisLabel: {
+                color: '#1f2937'
+            }
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                formatter: '{value}分',
+                color: '#1f2937'
+            },
+            max: 100
+        },
+        series: [
+            {
+                name: '效益评分',
+                type: 'line',
+                data: [95, 92, 85, 90],
+                smooth: true,
+                lineStyle: {
+                    width: 4,
+                    color: 'rgba(87, 181, 231, 1)'
+                },
+                itemStyle: {
+                    color: 'rgba(87, 181, 231, 1)'
+                },
+                areaStyle: {
+                    color: {
+                        type: 'linear',
+                        x: 0,
+                        y: 0,
+                        x2: 0,
+                        y2: 1,
+                        colorStops: [{
+                            offset: 0, color: 'rgba(87, 181, 231, 0.3)'
+                        }, {
+                            offset: 1, color: 'rgba(87, 181, 231, 0.1)'
+                        }]
+                    }
+                }
+            }
+        ]
+    };
+    case3Chart.setOption(case3Option);
+    
+    // 窗口大小变化时重绘图表
+    window.addEventListener('resize', function() {
+        if (document.getElementById('case1Chart') && !document.getElementById('case1').classList.contains('hidden')) {
+            case1Chart.resize();
+        }
+        if (document.getElementById('case2Chart') && !document.getElementById('case2').classList.contains('hidden')) {
+            case2Chart.resize();
+        }
+        if (document.getElementById('case3Chart') && !document.getElementById('case3').classList.contains('hidden')) {
+            case3Chart.resize();
+        }
+    });
+    
+    // 返回顶部按钮
+    const backToTopButton = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.remove('hidden');
+        } else {
+            backToTopButton.classList.add('hidden');
+        }
+    });
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+</body>
+</html>
