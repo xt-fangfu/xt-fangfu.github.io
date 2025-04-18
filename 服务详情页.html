@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>防腐工程服务详情 - 专业防腐保温工程解决方案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#1e40af',secondary:'#3b82f6'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Noto Sans SC', sans-serif;
+}
+.scroll-spy-active {
+color: #1e40af;
+font-weight: 600;
+border-left: 3px solid #1e40af;
+}
+.service-nav {
+position: sticky;
+top: 100px;
+}
+.image-gallery::-webkit-scrollbar {
+display: none;
+}
+</style>
+</head>
+<body class="bg-gradient-to-br from-[#f0f9f0] to-[#e8f6e8]">
+<!-- 导航栏 -->
+<header class="bg-white/90 backdrop-blur-sm shadow-sm fixed top-0 left-0 right-0 z-50">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<a href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/3f497355-2c97-4f68-bcba-238508855323" data-readdy="true" class="text-2xl font-['Pacifico'] text-primary">logo</a>
+<nav class="hidden md:flex space-x-8">
+<a href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/3f497355-2c97-4f68-bcba-238508855323" data-readdy="true" class="text-gray-700 hover:text-primary font-medium">首页</a>
+<a href="#" class="text-primary font-medium">服务项目</a>
+<a href="#" class="text-gray-700 hover:text-primary font-medium">工程案例</a>
+<a href="#" class="text-gray-700 hover:text-primary font-medium">关于我们</a>
+<a href="#" class="text-gray-700 hover:text-primary font-medium">新闻资讯</a>
+<a href="#" class="text-gray-700 hover:text-primary font-medium">联系我们</a>
+</nav>
+<div class="md:hidden flex items-center justify-center w-10 h-10">
+<i class="ri-menu-line ri-xl text-gray-700"></i>
+</div>
+</div>
+</header>
+<!-- 面包屑导航 -->
+<div class="bg-white/90 backdrop-blur-sm pt-16 border-b">
+<div class="container mx-auto px-4 py-3">
+<div class="flex items-center text-sm text-gray-500">
+<a href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/3f497355-2c97-4f68-bcba-238508855323" data-readdy="true" class="hover:text-primary">首页</a>
+<span class="mx-2">/</span>
+<a href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/3f497355-2c97-4f68-bcba-238508855323" data-readdy="true" class="hover:text-primary">服务项目</a>
+<span class="mx-2">/</span>
+<span class="text-primary">防腐工程</span>
+</div>
+</div>
+</div>
+<!-- 服务概述区域 -->
+<section class="relative">
+<div style="background-image: url('https://readdy.ai/api/search-image?query=Industrial%2520anti-corrosion%2520engineering%2520site%2520with%2520workers%2520in%2520safety%2520gear%2520applying%2520protective%2520coatings%2520to%2520metal%2520structures.%2520Professional%2520equipment%2520and%2520machinery%2520visible.%2520Clean%2520industrial%2520environment%2520with%2520soft%2520lighting.%2520High-quality%2520professional%2520photo.&width=1600&height=600&seq=1&orientation=landscape'); background-size: cover; background-position: center;" class="h-80 relative">
+<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+<div class="container mx-auto px-4 h-full relative z-10">
+<div class="flex flex-col justify-center h-full max-w-3xl">
+<h1 class="text-4xl font-bold text-white mb-4">工业防腐工程服务</h1>
+<p class="text-lg text-white mb-6">专业的防腐技术，为您的工业设施提供全方位保护，延长设备使用寿命，降低维护成本</p>
+<div class="flex space-x-4">
+<button class="bg-primary text-white px-6 py-3 !rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap">获取方案报价</button>
+<button class="bg-white text-primary px-6 py-3 !rounded-button font-medium hover:bg-gray-100 transition whitespace-nowrap">联系技术顾问</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 主要内容区域 -->
+<div class="container mx-auto px-4 py-12">
+<div class="flex flex-col md:flex-row gap-8">
+<!-- 左侧导航 -->
+<div class="md:w-1/4 lg:w-1/5">
+<div class="service-nav bg-white/90 backdrop-blur-sm rounded-lg shadow-sm p-4">
+<h3 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b">服务导航</h3>
+<ul class="space-y-1" id="scrollSpy">
+<li><a href="#intro" class="block py-2 px-3 text-gray-700 hover:text-primary scroll-spy-active">服务介绍</a></li>
+<li><a href="#features" class="block py-2 px-3 text-gray-700 hover:text-primary">技术特点</a></li>
+<li><a href="#process" class="block py-2 px-3 text-gray-700 hover:text-primary">服务流程</a></li>
+<li><a href="#applications" class="block py-2 px-3 text-gray-700 hover:text-primary">适用范围</a></li>
+<li><a href="#cases" class="block py-2 px-3 text-gray-700 hover:text-primary">案例展示</a></li>
+<li><a href="#advantages" class="block py-2 px-3 text-gray-700 hover:text-primary">服务优势</a></li>
+</ul>
+</div>
+<div class="bg-white/80 backdrop-blur-sm rounded-lg shadow-sm p-4 mt-6">
+<h3 class="text-lg font-bold text-gray-800 mb-4">联系我们</h3>
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 flex items-center justify-center text-primary bg-blue-50 rounded-full mr-3">
+<i class="ri-phone-line ri-lg"></i>
+</div>
+<div>
+<div class="text-sm text-gray-500">服务热线</div>
+<div class="font-medium">400-888-7777</div>
+</div>
+</div>
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 flex items-center justify-center text-primary bg-blue-50 rounded-full mr-3">
+<i class="ri-mail-line ri-lg"></i>
+</div>
+<div>
+<div class="text-sm text-gray-500">邮箱咨询</div>
+<div class="font-medium">service@example.com</div>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 flex items-center justify-center text-primary bg-blue-50 rounded-full mr-3">
+<i class="ri-wechat-line ri-lg"></i>
+</div>
+<div>
+<div class="text-sm text-gray-500">微信咨询</div>
+<div class="font-medium">扫码添加工程师</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 右侧内容 -->
+<div class="md:w-3/4 lg:w-4/5">
+<!-- 服务介绍 -->
+<section id="intro" class="bg-white rounded-lg shadow-sm p-6 mb-8">
+<h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">服务介绍</h2>
+<div class="flex flex-col lg:flex-row gap-6">
+<div class="lg:w-3/5">
+<p class="text-gray-700 mb-4">工业防腐工程是指对工业设施、设备和构筑物进行防腐蚀处理的专业工程服务。我们提供全面的防腐解决方案，包括表面处理、防腐涂料施工、阴极保护系统安装等多种技术手段，有效延长工业设施的使用寿命，降低维护成本。</p>
+<p class="text-gray-700 mb-4">我公司拥有20年防腐工程经验，专业团队由行业资深工程师组成，采用国际先进的防腐技术和材料，为石油化工、电力、冶金、市政等多个行业提供定制化的防腐解决方案。</p>
+<p class="text-gray-700">我们的服务不仅限于新建工程的防腐处理，还包括对已投入使用的设施进行防腐维护和修复，确保设备在恶劣环境下持续稳定运行，最大限度地降低腐蚀风险和经济损失。</p>
+</div>
+<div class="lg:w-2/5">
+<div class="rounded-lg overflow-hidden h-64">
+<img src="https://readdy.ai/api/search-image?query=Professional%2520industrial%2520anti-corrosion%2520engineering%2520team%2520applying%2520protective%2520coatings%2520to%2520metal%2520pipes%2520and%2520equipment.%2520Workers%2520wearing%2520safety%2520gear%2520in%2520an%2520industrial%2520facility.%2520Clean%2520professional%2520environment%2520with%2520good%2520lighting.%2520High-quality%2520photo.&width=600&height=400&seq=2&orientation=landscape" alt="防腐工程施工现场" class="w-full h-full object-cover object-top">
+</div>
+</div>
+</div>
+</section>
+<!-- 技术特点 -->
+<section id="features" class="bg-white/80 backdrop-blur-sm rounded-lg shadow-sm p-6 mb-8">
+<h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">技术特点</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-4 flex-shrink-0">
+<i class="ri-shield-check-line ri-lg text-primary"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-800 mb-2">高性能防腐涂料</h3>
+<p class="text-gray-700">采用国际先进的环氧树脂、聚氨酯、氟碳等高性能防腐涂料，耐化学腐蚀，抗紫外线，使用寿命可达15-20年。</p>
+</div>
+</div>
+<div class="flex">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-4 flex-shrink-0">
+<i class="ri-flashlight-line ri-lg text-primary"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-800 mb-2">阴极保护技术</h3>
+<p class="text-gray-700">结合牺牲阳极和外加电流阴极保护系统，为地下管道、储罐等金属设施提供全方位电化学保护。</p>
+</div>
+</div>
+<div class="flex">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-4 flex-shrink-0">
+<i class="ri-brush-line ri-lg text-primary"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-800 mb-2">表面处理工艺</h3>
+<p class="text-gray-700">采用喷砂、抛丸、高压水清洗等先进表面处理工艺，确保基材表面洁净度和粗糙度达到理想状态，提高涂层附着力。</p>
+</div>
+</div>
+<div class="flex">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-4 flex-shrink-0">
+<i class="ri-test-tube-line ri-lg text-primary"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-800 mb-2">腐蚀监测系统</h3>
+<p class="text-gray-700">配置先进的腐蚀监测系统，实时监控设备腐蚀状况，及时预警，防患于未然。</p>
+</div>
+</div>
+<div class="flex">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-4 flex-shrink-0">
+<i class="ri-recycle-line ri-lg text-primary"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-800 mb-2">环保材料应用</h3>
+<p class="text-gray-700">使用低VOC、无重金属等环保型防腐材料，符合国家环保要求，保护施工人员健康和环境安全。</p>
+</div>
+</div>
+<div class="flex">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-4 flex-shrink-0">
+<i class="ri-database-2-line ri-lg text-primary"></i>
+</div>
+<div>
+<h3 class="text-lg font-semibold text-gray-800 mb-2">数字化管理</h3>
+<p class="text-gray-700">应用BIM技术和数字化管理平台，精确记录防腐工程数据，为后期维护提供科学依据。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 服务流程 -->
+<section id="process" class="bg-white/80 backdrop-blur-sm rounded-lg shadow-sm p-6 mb-8">
+<h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">服务流程</h2>
+<div class="relative flex flex-col items-center">
+<div class="w-[2px] absolute h-full bg-blue-100 left-1/2 transform -translate-x-1/2"></div>
+<div class="space-y-16 relative w-full max-w-2xl">
+<!-- 需求评估 -->
+<div class="flex items-start relative">
+<div class="w-1/2 pr-8 text-right">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">需求评估</h3>
+<p class="text-gray-600">现场勘察客户设施，了解腐蚀性状和防护需求，收集相关数据，为方案设计提供依据。</p>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-primary rounded-full text-white flex items-center justify-center font-bold z-10">1</div>
+<div class="w-1/2 pl-8"></div>
+</div>
+<!-- 方案设计 -->
+<div class="flex items-start relative">
+<div class="w-1/2 pr-8"></div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-primary rounded-full text-white flex items-center justify-center font-bold z-10">2</div>
+<div class="w-1/2 pl-8">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">方案设计</h3>
+<p class="text-gray-600">根据评估结果，设计个性化防腐方案，包括材料选择、工艺流程、施工计划和质量控制措施等。</p>
+</div>
+</div>
+<!-- 材料准备 -->
+<div class="flex items-start relative">
+<div class="w-1/2 pr-8 text-right">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">材料准备</h3>
+<p class="text-gray-600">根据方案要求，采购高品质防腐材料，并进行严格的质量检验，确保材料性能符合设计要求。</p>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-primary rounded-full text-white flex items-center justify-center font-bold z-10">3</div>
+<div class="w-1/2 pl-8"></div>
+</div>
+<!-- 施工实施 -->
+<div class="flex items-start relative">
+<div class="w-1/2 pr-8"></div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-primary rounded-full text-white flex items-center justify-center font-bold z-10">4</div>
+<div class="w-1/2 pl-8">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">施工实施</h3>
+<p class="text-gray-600">由专业施工团队按照方案要求进行施工，包括表面处理、底漆涂装、中间涂装、面漆涂装等工序。</p>
+</div>
+</div>
+<!-- 质量检测 -->
+<div class="flex items-start relative">
+<div class="w-1/2 pr-8 text-right">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">质量检测</h3>
+<p class="text-gray-600">施工完成后，进行全面的质量检测，包括涂层厚度、附着力、针孔、外观等项指标，确保防腐效果达标。</p>
+</div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-primary rounded-full text-white flex items-center justify-center font-bold z-10">5</div>
+<div class="w-1/2 pl-8"></div>
+</div>
+<!-- 售后服务 -->
+<div class="flex items-start relative">
+<div class="w-1/2 pr-8"></div>
+<div class="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-primary rounded-full text-white flex items-center justify-center font-bold z-10">6</div>
+<div class="w-1/2 pl-8">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">售后服务</h3>
+<p class="text-gray-600">提供定期巡检、维护保养和技术咨询等售后服务，及时发现并解决潜在问题，确保防腐效果长期稳定。</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 适用范围 -->
+<section id="applications" class="bg-white/80 backdrop-blur-sm rounded-lg shadow-sm p-6 mb-8">
+<h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">适用范围</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-gray-50 rounded-lg p-5 hover:shadow-md transition">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+<i class="ri-oil-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-800 mb-2">石油化工</h3>
+<p class="text-gray-700">适用于炼油厂、化工厂的储罐、管道、反应釜、塔器等设备的防腐保护，抵抗酸碱、有机溶剂等化学介质腐蚀。</p>
+</div>
+<div class="bg-gray-50 rounded-lg p-5 hover:shadow-md transition">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+<i class="ri-flashlight-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-800 mb-2">电力设施</h3>
+<p class="text-gray-700">适用于发电厂、变电站的冷却塔、烟囱、钢结构、管道等设施的防腐处理，抵抗高温、高湿环境腐蚀。</p>
+</div>
+<div class="bg-gray-50 rounded-lg p-5 hover:shadow-md transition">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+<i class="ri-ship-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-800 mb-2">海洋工程</h3>
+<p class="text-gray-700">适用于海上平台、码头、船舶等海洋工程设施的防腐保护，抵抗海水腐蚀和海洋生物附着。</p>
+</div>
+<div class="bg-gray-50 rounded-lg p-5 hover:shadow-md transition">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+<i class="ri-building-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-800 mb-2">市政工程</h3>
+<p class="text-gray-700">适用于桥梁、隧道、污水处理厂等市政设施的防腐保护，延长使用寿命，降低维护成本。</p>
+</div>
+<div class="bg-gray-50 rounded-lg p-5 hover:shadow-md transition">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+<i class="ri-hammer-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-800 mb-2">冶金矿山</h3>
+<p class="text-gray-700">适用于冶金厂、矿山的设备、管道、厂房等设施的防腐处理，抵抗酸性气体、粉尘等腐蚀因素。</p>
+</div>
+<div class="bg-gray-50 rounded-lg p-5 hover:shadow-md transition">
+<div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+<i class="ri-water-flash-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-800 mb-2">水处理设施</h3>
+<p class="text-gray-700">适用于自来水厂、污水处理厂的水池、管道、泵站等设施的防腐保护，抵抗水质腐蚀和微生物侵蚀。</p>
+</div>
+</div>
+</section>
+<!-- 案例展示 -->
+<section id="cases" class="bg-white/80 backdrop-blur-sm rounded-lg shadow-sm p-6 mb-8">
+<h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">案例展示</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Large%2520industrial%2520oil%2520storage%2520tanks%2520with%2520fresh%2520anti-corrosion%2520coating.%2520Professional%2520industrial%2520facility%2520with%2520clean%2520environment.%2520Bright%2520daylight%2C%2520professional%2520photo%2520showing%2520the%2520completed%2520anti-corrosion%2520project.&width=400&height=300&seq=3&orientation=landscape" alt="石化企业储罐防腐项目" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-1">石化企业储罐防腐项目</h3>
+<p class="text-sm text-gray-500 mb-2">完工时间：2024年3月</p>
+<p class="text-gray-700 text-sm mb-3">为某大型石化企业完成50座大型储罐的防腐工程，采用环氧富锌底漆+环氧云铁中间漆+聚氨酯面漆三层防腐体系，防腐寿命达15年以上。</p>
+<button class="text-primary text-sm font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap">
+查看详情
+<i class="ri-arrow-right-line ri-sm ml-1"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Power%2520plant%2520cooling%2520tower%2520with%2520anti-corrosion%2520coating%2520being%2520applied.%2520Workers%2520on%2520scaffolding%2520applying%2520protective%2520materials.%2520Industrial%2520facility%2520with%2520professional%2520equipment.%2520Clean%2520professional%2520photo%2520showing%2520the%2520anti-corrosion%2520process.&width=400&height=300&seq=4&orientation=landscape" alt="电厂冷却塔防腐项目" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-1">电厂冷却塔防腐项目</h3>
+<p class="text-sm text-gray-500 mb-2">完工时间：2023年11月</p>
+<p class="text-gray-700 text-sm mb-3">为某火力发电厂完成4座大型冷却塔的内外壁防腐工程，采用耐高温、耐湿热环境的特种防腐涂料，解决了高温高湿环境下的腐蚀难题。</p>
+<button class="text-primary text-sm font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap">
+查看详情
+<i class="ri-arrow-right-line ri-sm ml-1"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Offshore%2520oil%2520platform%2520with%2520anti-corrosion%2520protection%2520being%2520applied.%2520Workers%2520in%2520safety%2520gear%2520applying%2520marine-grade%2520protective%2520coatings%2520to%2520metal%2520structures.%2520Ocean%2520environment%2520with%2520professional%2520equipment.%2520High-quality%2520photo%2520of%2520marine%2520anti-corrosion%2520work.&width=400&height=300&seq=5&orientation=landscape" alt="海上平台防腐项目" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-1">海上平台防腐项目</h3>
+<p class="text-sm text-gray-500 mb-2">完工时间：2024年1月</p>
+<p class="text-gray-700 text-sm mb-3">为某海洋石油公司完成海上钻井平台的防腐工程，采用耐海水腐蚀的特种涂料体系和牺牲阳极阴极保护系统，确保平台在恶劣海洋环境中的安全运行。</p>
+<button class="text-primary text-sm font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap">
+查看详情
+<i class="ri-arrow-right-line ri-sm ml-1"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Large%2520bridge%2520structure%2520with%2520anti-corrosion%2520coating%2520being%2520applied.%2520Workers%2520on%2520suspended%2520platforms%2520applying%2520protective%2520materials%2520to%2520metal%2520beams.%2520Urban%2520environment%2520with%2520professional%2520equipment.%2520High-quality%2520photo%2520of%2520infrastructure%2520anti-corrosion%2520work.&width=400&height=300&seq=6&orientation=landscape" alt="跨海大桥防腐项目" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-1">跨海大桥防腐项目</h3>
+<p class="text-sm text-gray-500 mb-2">完工时间：2023年8月</p>
+<p class="text-gray-700 text-sm mb-3">为某跨海大桥完成钢结构防腐工程，采用高性能氟碳涂料体系，具有优异的耐候性和抗紫外线性能，防腐寿命可达20年以上。</p>
+<button class="text-primary text-sm font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap">
+查看详情
+<i class="ri-arrow-right-line ri-sm ml-1"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Industrial%2520chemical%2520plant%2520pipes%2520and%2520equipment%2520with%2520anti-corrosion%2520coating%2520being%2520applied.%2520Workers%2520in%2520protective%2520gear%2520applying%2520specialized%2520coatings%2520to%2520complex%2520piping%2520systems.%2520Indoor%2520industrial%2520facility%2520with%2520professional%2520equipment.%2520High-quality%2520photo%2520of%2520chemical%2520plant%2520anti-corrosion%2520work.&width=400&height=300&seq=7&orientation=landscape" alt="化工厂管道防腐项目" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-1">化工厂管道防腐项目</h3>
+<p class="text-sm text-gray-500 mb-2">完工时间：2024年2月</p>
+<p class="text-gray-700 text-sm mb-3">为某大型化工企业完成厂区内5000米管道的防腐工程，采用耐强酸强碱的特种防腐涂料，有效解决了化学介质腐蚀问题。</p>
+<button class="text-primary text-sm font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap">
+查看详情
+<i class="ri-arrow-right-line ri-sm ml-1"></i>
+</button>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Water%2520treatment%2520facility%2520tanks%2520and%2520equipment%2520with%2520anti-corrosion%2520coating%2520being%2520applied.%2520Workers%2520applying%2520specialized%2520protective%2520materials%2520to%2520large%2520water%2520tanks.%2520Clean%2520industrial%2520environment%2520with%2520professional%2520equipment.%2520High-quality%2520photo%2520of%2520water%2520treatment%2520plant%2520anti-corrosion%2520work.&width=400&height=300&seq=8&orientation=landscape" alt="污水处理厂防腐项目" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-1">污水处理厂防腐项目</h3>
+<p class="text-sm text-gray-500 mb-2">完工时间：2023年12月</p>
+<p class="text-gray-700 text-sm mb-3">为某市政污水处理厂完成水池、管道等设施的防腐工程，采用环保型防腐涂料，解决了微生物腐蚀和污水腐蚀问题。</p>
+<button class="text-primary text-sm font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap">
+查看详情
+<i class="ri-arrow-right-line ri-sm ml-1"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-6 text-center">
+<button class="bg-white border border-gray-300 text-gray-700 px-6 py-2 !rounded-button font-medium hover:bg-gray-50 transition whitespace-nowrap">
+查看更多案例
+<i class="ri-arrow-right-line ri-sm ml-1"></i>
+</button>
+</div>
+</section>
+<!-- 服务优势 -->
+<section id="advantages" class="bg-white/80 backdrop-blur-sm rounded-lg shadow-sm p-6 mb-8">
+<h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">服务优势</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-gray-50 rounded-lg p-5">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full mr-3">
+<i class="ri-team-line ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-800">专业团队</h3>
+</div>
+<p class="text-gray-700">拥有20年行业经验的专业团队，核心技术人员均具备高级工程师资质，熟悉各类防腐工程技术标准和规范。</p>
+</div>
+<div class="bg-gray-50 rounded-lg p-5">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full mr-3">
+<i class="ri-award-line ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-800">资质认证</h3>
+</div>
+<p class="text-gray-700">拥有防腐工程专业承包一级资质，ISO9001质量管理体系认证，ISO14001环境管理体系认证和ISO45001职业健康安全管理体系认证。</p>
+</div>
+<div class="bg-gray-50 rounded-lg p-5">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full mr-3">
+<i class="ri-tools-line ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-800">先进设备</h3>
+</div>
+<p class="text-gray-700">配备先进的防腐施工设备和检测仪器，包括高压无气喷涂设备、电火花检测仪、涂层厚度测量仪等，确保施工质量。</p>
+</div>
+<div class="bg-gray-50 rounded-lg p-5">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full mr-3">
+<i class="ri-customer-service-2-line ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-800">全程服务</h3>
+</div>
+<p class="text-gray-700">提供从方案设计、材料选择、施工实施到后期维护的全程一站式服务，专人对接，响应迅速。</p>
+</div>
+<div class="bg-gray-50 rounded-lg p-5">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full mr-3">
+<i class="ri-shield-check-line ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-800">质量保证</h3>
+</div>
+<p class="text-gray-700">严格执行国家和行业标准，建立完善的质量控制体系，提供长达5-10年的质量保证期，定期回访检查。</p>
+</div>
+<div class="bg-gray-50 rounded-lg p-5">
+<div class="flex items-center mb-3">
+<div class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full mr-3">
+<i class="ri-time-line ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-800">高效施工</h3>
+</div>
+<p class="text-gray-700">科学规划施工流程，多团队协同作业，缩短工期，降低对客户生产运营的影响，确保按时交付。</p>
+</div>
+</div>
+</section>
+<!-- 在线咨询 -->
+<section class="bg-white/90 backdrop-blur-sm rounded-lg shadow-sm p-6 mb-8">
+<h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">在线咨询</h2>
+<p class="text-gray-700 mb-6">如果您对我们的防腐工程服务有任何疑问或需求，请填写以下表单，我们的专业顾问将在24小时内与您联系。</p>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label for="name" class="block text-gray-700 font-medium mb-2">姓名</label>
+<input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm" placeholder="请输入您的姓名">
+</div>
+<div>
+<label for="company" class="block text-gray-700 font-medium mb-2">公司名称</label>
+<input type="text" id="company" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm" placeholder="请输入您的公司名称">
+</div>
+<div>
+<label for="phone" class="block text-gray-700 font-medium mb-2">联系电话</label>
+<input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm" placeholder="请输入您的联系电话">
+</div>
+<div>
+<label for="email" class="block text-gray-700 font-medium mb-2">电子邮箱</label>
+<input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm" placeholder="请输入您的电子邮箱">
+</div>
+<div class="md:col-span-2">
+<label for="project" class="block text-gray-700 font-medium mb-2">项目类型</label>
+<div class="flex flex-wrap gap-4">
+<label class="flex items-center cursor-pointer">
+<div class="relative w-5 h-5 mr-2">
+<input type="radio" name="project" value="石油化工" class="opacity-0 absolute w-full h-full cursor-pointer">
+<div class="w-5 h-5 border border-gray-300 rounded-full"></div>
+<div class="hidden absolute inset-0 flex items-center justify-center">
+<div class="w-2.5 h-2.5 bg-primary rounded-full"></div>
+</div>
+</div>
+<span class="text-gray-700">石油化工</span>
+</label>
+<label class="flex items-center cursor-pointer">
+<div class="relative w-5 h-5 mr-2">
+<input type="radio" name="project" value="电力设施" class="opacity-0 absolute w-full h-full cursor-pointer">
+<div class="w-5 h-5 border border-gray-300 rounded-full"></div>
+<div class="hidden absolute inset-0 flex items-center justify-center">
+<div class="w-2.5 h-2.5 bg-primary rounded-full"></div>
+</div>
+</div>
+<span class="text-gray-700">电力设施</span>
+</label>
+<label class="flex items-center cursor-pointer">
+<div class="relative w-5 h-5 mr-2">
+<input type="radio" name="project" value="海洋工程" class="opacity-0 absolute w-full h-full cursor-pointer">
+<div class="w-5 h-5 border border-gray-300 rounded-full"></div>
+<div class="hidden absolute inset-0 flex items-center justify-center">
+<div class="w-2.5 h-2.5 bg-primary rounded-full"></div>
+</div>
+</div>
+<span class="text-gray-700">海洋工程</span>
+</label>
+<label class="flex items-center cursor-pointer">
+<div class="relative w-5 h-5 mr-2">
+<input type="radio" name="project" value="市政工程" class="opacity-0 absolute w-full h-full cursor-pointer">
+<div class="w-5 h-5 border border-gray-300 rounded-full"></div>
+<div class="hidden absolute inset-0 flex items-center justify-center">
+<div class="w-2.5 h-2.5 bg-primary rounded-full"></div>
+</div>
+</div>
+<span class="text-gray-700">市政工程</span>
+</label>
+<label class="flex items-center cursor-pointer">
+<div class="relative w-5 h-5 mr-2">
+<input type="radio" name="project" value="其他" class="opacity-0 absolute w-full h-full cursor-pointer">
+<div class="w-5 h-5 border border-gray-300 rounded-full"></div>
+<div class="hidden absolute inset-0 flex items-center justify-center">
+<div class="w-2.5 h-2.5 bg-primary rounded-full"></div>
+</div>
+</div>
+<span class="text-gray-700">其他</span>
+</label>
+</div>
+</div>
+<div class="md:col-span-2">
+<label for="message" class="block text-gray-700 font-medium mb-2">需求描述</label>
+<textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm" placeholder="请详细描述您的项目需求和防腐要求"></textarea>
+</div>
+<div class="md:col-span-2 flex justify-center">
+<button type="submit" class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap">提交咨询</button>
+</div>
+</form>
+</section>
+<!-- 相关服务推荐 -->
+<section class="bg-white/80 backdrop-blur-sm rounded-lg shadow-sm p-6">
+<h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b">相关服务推荐</h2>
+<div class="relative">
+<div class="flex overflow-x-auto pb-4 gap-6 image-gallery">
+<div class="min-w-[280px] max-w-[280px] bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+<div class="h-40 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Industrial%2520thermal%2520insulation%2520installation%2520on%2520large%2520pipes%2520and%2520equipment.%2520Workers%2520applying%2520insulation%2520materials%2520to%2520industrial%2520equipment.%2520Clean%2520professional%2520environment%2520with%2520good%2520lighting.%2520High-quality%2520photo%2520of%2520thermal%2520insulation%2520work.&width=280&height=160&seq=9&orientation=landscape" alt="工业保温工程" class="w-full h-full object-cover object-top"></div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">工业保温工程</h3>
+<p class="text-gray-700 text-sm mb-3">专业的工业设备和管道保温服务，有效降低能耗，提高设备运行效率。</p>
+<a href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/3f497355-2c97-4f68-bcba-238508855323" data-readdy="true" class="text-primary text-sm font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap">
+查看详情
+<i class="ri-arrow-right-line ri-sm ml-1"></i>
+</a>
+</div>
+</div>
+<div class="min-w-[280px] max-w-[280px] bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+<div class="h-40 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Industrial%2520fireproofing%2520application%2520on%2520steel%2520structures.%2520Workers%2520applying%2520fireproof%2520coatings%2520to%2520metal%2520beams%2520and%2520columns.%2520Indoor%2520construction%2520site%2520with%2520professional%2520equipment.%2520High-quality%2520photo%2520of%2520fireproofing%2520work.&width=280&height=160&seq=10&orientation=landscape" alt="防火防爆工程" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">防火防爆工程</h3>
+<p class="text-gray-700 text-sm mb-3">专业的钢结构防火涂料施工和设备防爆处理，提高工业设施安全性。</p>
+<a href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/3f497355-2c97-4f68-bcba-238508855323" data-readdy="true" class="text-primary text-sm font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap">
+查看详情
+<i class="ri-arrow-right-line ri-sm ml-1"></i>
+</a>
+</div>
+</div>
+<div class="min-w-[280px] max-w-[280px] bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+<div class="h-40 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Industrial%2520floor%2520coating%2520application.%2520Workers%2520applying%2520epoxy%2520or%2520polyurethane%2520coatings%2520to%2520concrete%2520floors%2520in%2520an%2520industrial%2520facility.%2520Clean%2520workspace%2520with%2520professional%2520equipment.%2520High-quality%2520photo%2520of%2520industrial%2520flooring%2520work.&width=280&height=160&seq=11&orientation=landscape" alt="地坪防腐工程" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">地坪防腐工程</h3>
+<p class="text-gray-700 text-sm mb-3">专业的工业地坪防腐处理，提供耐磨、防滑、耐化学腐蚀的地面解决方案。</p>
+<a href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/3f497355-2c97-4f68-bcba-238508855323" data-readdy="true" class="text-primary text-sm font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap">
+查看详情
+<i class="ri-arrow-right-line ri-sm ml-1"></i>
+</a>
+</div>
+</div>
+<div class="min-w-[280px] max-w-[280px] bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+<div class="h-40 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=Cathodic%2520protection%2520system%2520installation%2520for%2520underground%2520pipelines.%2520Workers%2520installing%2520anodes%2520and%2520electrical%2520components%2520for%2520pipeline%2520protection.%2520Outdoor%2520construction%2520site%2520with%2520professional%2520equipment.%2520High-quality%2520photo%2520of%2520cathodic%2520protection%2520work.&width=280&height=160&seq=12&orientation=landscape" alt="阴极保护工程" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="text-lg font-semibold text-gray-800 mb-2">阴极保护工程</h3>
+<p class="text-gray-700 text-sm mb-3">专业的金属设施阴极保护系统设计和安装，有效防止电化学腐蚀。</p>
+<a href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/3f497355-2c97-4f68-bcba-238508855323" data-readdy="true" class="text-primary text-sm font-medium hover:text-primary/80 transition flex items-center whitespace-nowrap">
+查看详情
+<i class="ri-arrow-right-line ri-sm ml-1"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<!-- 悬浮咨询按钮 -->
+<div class="fixed right-6 bottom-24 z-40">
+<button id="consultBtn" class="w-14 h-14 bg-primary text-white rounded-full shadow-lg flex items-center justify-center hover:bg-primary/90 transition">
+<i class="ri-customer-service-2-line ri-xl"></i>
+</button>
+</div>
+<!-- 咨询弹窗 -->
+<div id="consultModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+<div class="bg-white rounded-lg w-full max-w-md mx-4 p-6">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-xl font-bold text-gray-800">快速咨询</h3>
+<button id="closeModal" class="text-gray-500 hover:text-gray-700">
+<i class="ri-close-line ri-lg"></i>
+</button>
+</div>
+<p class="text-gray-700 mb-4">请留下您的联系方式，我们将尽快与您联系</p>
+<form>
+<div class="mb-4">
+<label for="quickName" class="block text-gray-700 font-medium mb-2">姓名</label>
+<input type="text" id="quickName" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm" placeholder="请输入您的姓名">
+</div>
+<div class="mb-4">
+<label for="quickPhone" class="block text-gray-700 font-medium mb-2">联系电话</label>
+<input type="tel" id="quickPhone" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm" placeholder="请输入您的联系电话">
+</div>
+<div class="mb-4">
+<label for="quickMessage" class="block text-gray-700 font-medium mb-2">咨询内容</label>
+<textarea id="quickMessage" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary text-sm" placeholder="请简要描述您的需求"></textarea>
+</div>
+<button type="submit" class="w-full bg-primary text-white py-2 !rounded-button font-medium hover:bg-primary/90 transition whitespace-nowrap">提交咨询</button>
+</form>
+</div>
+</div>
+<!-- 页脚 -->
+<footer class="bg-gray-800 text-white pt-12 pb-6">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<div>
+<h3 class="text-xl font-bold mb-4">关于我们</h3>
+<p class="text-gray-300 mb-4">我们是专业的防腐保温工程服务商，拥有20年行业经验，为各行业提供高品质的防腐保温解决方案。</p>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-300 hover:text-white">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-weibo-fill ri-lg"></i>
+</div>
+</a>
+<a href="#" class="text-gray-300 hover:text-white">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-wechat-fill ri-lg"></i>
+</div>
+</a>
+<a href="#" class="text-gray-300 hover:text-white">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-linkedin-fill ri-lg"></i>
+</div>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">服务项目</h3>
+<ul class="space-y-2">
+<li><a href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/3f497355-2c97-4f68-bcba-238508855323" data-readdy="true" class="text-gray-300 hover:text-white">防腐工程</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white">保温工程</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white">防火防爆工程</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white">地坪防腐工程</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white">阴极保护工程</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">快速链接</h3>
+<ul class="space-y-2">
+<li><a href="https://readdy.ai/home/68c74ab8-f8df-43f9-95ea-271b0afce80d/3f497355-2c97-4f68-bcba-238508855323" data-readdy="true" class="text-gray-300 hover:text-white">首页</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white">服务项目</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white">工程案例</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white">关于我们</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white">新闻资讯</a></li>
+<li><a href="#" class="text-gray-300 hover:text-white">联系我们</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">联系我们</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3">
+<i class="ri-map-pin-line text-gray-300"></i>
+</div>
+<span class="text-gray-300">上海市浦东新区张江高科技园区博云路2号</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-phone-line text-gray-300"></i>
+</div>
+<span class="text-gray-300">400-888-7777</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-3">
+<i class="ri-mail-line text-gray-300"></i>
+</div>
+<span class="text-gray-300">info@example.com</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
+<p>© 2025 专业防腐保温工程公司. 保留所有权利.</p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// 单选框交互
+const radioInputs = document.querySelectorAll('input[type="radio"]');
+radioInputs.forEach(input => {
+input.addEventListener('change', function() {
+// 重置所有
+radioInputs.forEach(radio => {
+if (radio.name === this.name) {
+const indicator = radio.parentElement.querySelector('div:last-child');
+indicator.classList.add('hidden');
+}
+});
+// 设置选中的
+if (this.checked) {
+const indicator = this.parentElement.querySelector('div:last-child');
+indicator.classList.remove('hidden');
+}
+});
+});
+// 滚动监听
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('#scrollSpy a');
+function scrollSpy() {
+const scrollPosition = window.scrollY;
+sections.forEach(section => {
+const sectionTop = section.offsetTop - 120;
+const sectionHeight = section.offsetHeight;
+const sectionId = section.getAttribute('id');
+if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+navLinks.forEach(link => {
+link.classList.remove('scroll-spy-active');
+if (link.getAttribute('href') === '#' + sectionId) {
+link.classList.add('scroll-spy-active');
+}
+});
+}
+});
+}
+window.addEventListener('scroll', scrollSpy);
+// 平滑滚动
+navLinks.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+const targetSection = document.querySelector(targetId);
+if (targetSection) {
+window.scrollTo({
+top: targetSection.offsetTop - 100,
+behavior: 'smooth'
+});
+}
+});
+});
+// 咨询弹窗
+const consultBtn = document.getElementById('consultBtn');
+const consultModal = document.getElementById('consultModal');
+const closeModal = document.getElementById('closeModal');
+consultBtn.addEventListener('click', function() {
+consultModal.classList.remove('hidden');
+});
+closeModal.addEventListener('click', function() {
+consultModal.classList.add('hidden');
+});
+consultModal.addEventListener('click', function(e) {
+if (e.target === consultModal) {
+consultModal.classList.add('hidden');
+}
+});
+});
+</script>
+</body>
+</html>
