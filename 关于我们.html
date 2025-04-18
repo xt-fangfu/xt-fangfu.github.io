@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>关于我们 - 莲乡防腐保温公司</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#1e40af", secondary: "#3b82f6" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Noto Sans SC', sans-serif;
+      }
+      .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -36px;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, #1e40af, #3b82f6);
+      border: 4px solid white;
+      box-shadow: 0 0 0 2px rgba(30, 64, 175, 0.3), 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      transition: all 0.3s ease;
+      }
+      .timeline-item:hover::before {
+      transform: scale(1.2);
+      box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.4), 0 6px 8px rgba(0, 0, 0, 0.15);
+      }
+      .timeline-item::after {
+      content: '';
+      position: absolute;
+      left: -29px;
+      top: 20px;
+      bottom: -20px;
+      width: 6px;
+      background: linear-gradient(to bottom, #1e40af 0%, #3b82f6 100%);
+      border-radius: 3px;
+      opacity: 0.2;
+      z-index: 0;
+      }
+      .timeline-item:last-child::after {
+      display: none;
+      }
+      .timeline-item:hover .bg-gradient-to-br {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(30, 64, 175, 0.1);
+      }
+      .honor-card:hover {
+      transform: translateY(-5px);
+      }
+      .honor-card {
+      transition: all 0.3s ease;
+      }
+      .team-card:hover {
+      transform: translateY(-5px);
+      }
+      .team-card {
+      transition: all 0.3s ease;
+      }
+      .client-logo {
+      filter: grayscale(100%);
+      opacity: 0.7;
+      transition: all 0.3s ease;
+      }
+      .client-logo:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-[#f0f4ff] via-[#f5f0ff] to-[#fff0f6]">
+    <!-- 导航栏 -->
+    <header
+      class="bg-white/90 backdrop-blur-sm shadow-sm fixed top-0 left-0 right-0 z-50"
+    >
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <img src="./图片1.png" alt="Logo" style="max-width: 35px; max-height: 35px; display: block;">
+			<h1 class="text-xl font-bold text-gray-800">莲乡防腐保温公司-关于我们</h1>
+        <nav class="hidden md:flex space-x-8">
+          <a
+            href="./index.html"
+            data-readdy="true"
+            class="text-gray-700 hover:text-primary font-medium"
+            >首页</a
+          >
+          <a
+            href="./服务详情页.html"
+            data-readdy="true"
+            class="text-gray-700 hover:text-primary font-medium"
+            >服务项目</a
+          >
+          <a href="./工程案例.html" class="text-gray-700 hover:text-primary font-medium"
+            >工程案例</a
+          >
+          <a href="#" class="text-primary font-medium">关于我们</a>
+          <a
+            href="./新闻资讯.html"
+            data-readdy="true"
+            class="text-gray-700 hover:text-primary font-medium"
+            >新闻资讯</a
+          >
+          <a href="./联系我们.html" class="text-gray-700 hover:text-primary font-medium"
+            >联系我们</a
+          >
+        </nav>
+        <div class="md:hidden flex items-center justify-center w-10 h-10">
+          <i class="ri-menu-line ri-xl text-gray-700"></i>
+        </div>
+      </div>
+    </header>
+    <!-- 面包屑导航 -->
+    <div class="bg-white/90 backdrop-blur-sm pt-16 border-b">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center text-sm text-gray-500">
+          <a
+            href="./index.html"
+            data-readdy="true"
+            class="hover:text-primary"
+            >首页</a
+          >
+          <span class="mx-2">/</span>
+          <span class="text-primary">关于我们</span>
+        </div>
+      </div>
+    </div>
+    <!-- 公司简介 -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <div class="md:w-1/2">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              公司简介
+            </h2>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              湘潭市防腐保温安装有限公司座落于长株潭城市群"两型社会"建设五大综合配套改革示范区之一的湘潭天易工業示范區荷花南路，前身为湘潭市防腐保温公司，于1975年在白石故居创建，2009年实现企业改制。
+            </p>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              通过了GB/T/ISO9001:2008、IS014001、OHSAS18001认证，是一家集工程施工、投资开发、技术研究为一体的综合型企业，具有防水防腐保温工程施工专业承包一级、建筑机电安装工程专业承包叁级、冶金工程施工总承包叁级、模板脚手架专业承包不分等级、施工劳务不分等级。
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+              <div class="bg-blue-50 p-4 rounded-lg text-center">
+                <div class="text-primary text-2xl font-bold">50年</div>
+                <div class="text-gray-600 text-sm">专业经验</div>
+              </div>
+              <div class="bg-blue-50 p-4 rounded-lg text-center">
+                <div class="text-primary text-2xl font-bold">5000万</div>
+                <div class="text-gray-600 text-sm">注册资金</div>
+              </div>
+              <div class="bg-blue-50 p-4 rounded-lg text-center">
+                <div class="text-primary text-2xl font-bold">800+</div>
+                <div class="text-gray-600 text-sm">员工规模</div>
+              </div>
+              <div class="bg-blue-50 p-4 rounded-lg text-center">
+                <div class="text-primary text-2xl font-bold">20亿+</div>
+                <div class="text-gray-600 text-sm">年产能力</div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              src="https://readdy.ai/api/search-image?query=Professional%20industrial%20anti-corrosion%20and%20insulation%20company%20headquarters%20building%2C%20modern%20office%20architecture%20with%20blue%20glass%20facade%2C%20company%20logo%20prominently%20displayed%2C%20professional%20business%20environment%20with%20landscaped%20entrance%2C%20bright%20sunny%20day%20with%20clear%20blue%20sky&width=600&height=400&seq=1&orientation=landscape"
+              alt="公司总部"
+              class="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 企业实力 -->
+    <section class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            企业实力
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            公司注册资金5000万元，现有员工800余人，技术人员84人，其中高级职称8人，中级职称36人，初级职称40人。
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+              <div
+                class="w-10 h-10 flex items-center justify-center bg-primary rounded-full text-white mr-3"
+              >
+                <i class="ri-medal-line ri-lg"></i>
+              </div>
+              专业资质
+            </h3>
+            <ul class="space-y-3 pl-14">
+              <li class="flex items-center text-gray-600">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                防水防腐保温工程施工专业承包一级
+              </li>
+              <li class="flex items-center text-gray-600">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                建筑机电安装工程专业承包叁级
+              </li>
+              <li class="flex items-center text-gray-600">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                冶金工程施工总承包叁级
+              </li>
+              <li class="flex items-center text-gray-600">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                模板脚手架专业承包不分等级
+              </li>
+              <li class="flex items-center text-gray-600">
+                <div
+                  class="w-5 h-5 flex items-center justify-center text-primary mr-2"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                施工劳务不分等级
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+              <div
+                class="w-10 h-10 flex items-center justify-center bg-primary rounded-full text-white mr-3"
+              >
+                <i class="ri-team-line ri-lg"></i>
+              </div>
+              技术团队
+            </h3>
+            <div class="pl-14">
+              <div id="teamChart" class="w-full h-64"></div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+              <div
+                class="w-10 h-10 flex items-center justify-center bg-primary rounded-full text-white mr-3"
+              >
+                <i class="ri-tools-line ri-lg"></i>
+              </div>
+              设备规模
+            </h3>
+            <div class="pl-14">
+              <p class="text-gray-600 mb-4">
+                公司拥有各种施工机械设备560多台套，总功率7000千瓦。能承担单项在2.5亿元以内各项防腐保温、各类机电设备安装、工业窑炉的砌筑，年生产能力可达20亿元以上。
+              </p>
+              <div class="grid grid-cols-2 gap-4 mt-4">
+                <div
+                  class="bg-blue-50 p-3 rounded-lg text-center transform hover:scale-105 transition duration-300"
+                >
+                  <div class="text-primary text-xl font-bold">560+</div>
+                  <div class="text-gray-600 text-sm">专业设备</div>
+                </div>
+                <div
+                  class="bg-blue-50 p-3 rounded-lg text-center transform hover:scale-105 transition duration-300"
+                >
+                  <div class="text-primary text-xl font-bold">7000kW</div>
+                  <div class="text-gray-600 text-sm">总功率</div>
+                </div>
+                <div
+                  class="bg-blue-50 p-3 rounded-lg text-center transform hover:scale-105 transition duration-300"
+                >
+                  <div class="text-primary text-xl font-bold">2.5亿</div>
+                  <div class="text-gray-600 text-sm">单项承接能力</div>
+                </div>
+                <div
+                  class="bg-blue-50 p-3 rounded-lg text-center transform hover:scale-105 transition duration-300"
+                >
+                  <div class="text-primary text-xl font-bold">20亿+</div>
+                  <div class="text-gray-600 text-sm">年产能力</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+              <div
+                class="w-10 h-10 flex items-center justify-center bg-primary rounded-full text-white mr-3"
+              >
+                <i class="ri-global-line ri-lg"></i>
+              </div>
+              业务覆盖
+            </h3>
+            <div class="pl-14">
+              <div id="coverageChart" class="w-full h-64"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 发展历程 -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            发展历程
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            近50年来，我们不断创新、发展，成为行业的领军企业
+          </p>
+        </div>
+        <div class="relative pl-10 md:pl-0 md:flex md:justify-center">
+          <div
+            class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-400 via-primary to-purple-500"
+          ></div>
+          <div class="space-y-12 md:w-5/6">
+            <div class="flex flex-col md:flex-row group">
+              <div
+                class="md:w-1/2 md:pr-16 md:text-right relative timeline-item md:before:left-auto md:before:right-[-36px] md:after:left-auto md:after:right-[-29px]"
+              >
+                <div
+                  class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-lg shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:-translate-y-2"
+                >
+                  <div
+                    class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-primary rounded-full border-4 border-white shadow-lg group-hover:scale-125 transition-transform duration-300"
+                  ></div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">1975年</h3>
+                  <p class="text-gray-600">
+                    公司在白石故居创建，成为当地最早的防腐保温专业企业
+                  </p>
+                </div>
+              </div>
+              <div class="md:w-1/2"></div>
+            </div>
+            <div class="flex flex-col md:flex-row group">
+              <div class="md:w-1/2"></div>
+              <div class="md:w-1/2 md:pl-16 relative timeline-item">
+                <div
+                  class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-lg shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:-translate-y-2"
+                >
+                  <div
+                    class="absolute left-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-primary rounded-full border-4 border-white shadow-lg group-hover:scale-125 transition-transform duration-300"
+                  ></div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">2008年</h3>
+                  <p class="text-gray-600">
+                    通过ISO9001:2008、IS014001、OHSAS18001认证，质量管理体系日趋完善
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row group">
+              <div
+                class="md:w-1/2 md:pr-16 md:text-right relative timeline-item md:before:left-auto md:before:right-[-36px] md:after:left-auto md:after:right-[-29px]"
+              >
+                <div
+                  class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-lg shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:-translate-y-2"
+                >
+                  <div
+                    class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-primary rounded-full border-4 border-white shadow-lg group-hover:scale-125 transition-transform duration-300"
+                  ></div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">2009年</h3>
+                  <p class="text-gray-600">
+                    完成企业改制，正式更名为湘潭市防腐保温安装有限公司
+                  </p>
+                </div>
+              </div>
+              <div class="md:w-1/2"></div>
+            </div>
+            <div class="flex flex-col md:flex-row group">
+              <div class="md:w-1/2"></div>
+              <div class="md:w-1/2 md:pl-16 relative timeline-item">
+                <div
+                  class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-lg shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:-translate-y-2"
+                >
+                  <div
+                    class="absolute left-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-primary rounded-full border-4 border-white shadow-lg group-hover:scale-125 transition-transform duration-300"
+                  ></div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">2015年</h3>
+                  <p class="text-gray-600">
+                    获得多项专业承包资质，成为行业内资质最全、等级最高的企业之一
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row group">
+              <div
+                class="md:w-1/2 md:pr-16 md:text-right relative timeline-item md:before:left-auto md:before:right-[-36px] md:after:left-auto md:after:right-[-29px]"
+              >
+                <div
+                  class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-lg shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:-translate-y-2"
+                >
+                  <div
+                    class="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-primary rounded-full border-4 border-white shadow-lg group-hover:scale-125 transition-transform duration-300"
+                  ></div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">2018年</h3>
+                  <p class="text-gray-600">
+                    年产能突破20亿元，成为湖南省防腐保温行业龙头企业
+                  </p>
+                </div>
+              </div>
+              <div class="md:w-1/2"></div>
+            </div>
+            <div class="flex flex-col md:flex-row group">
+              <div class="md:w-1/2"></div>
+              <div class="md:w-1/2 md:pl-16 relative timeline-item">
+                <div
+                  class="bg-gradient-to-br from-white to-blue-50 p-6 rounded-lg shadow-lg transform transition-all duration-300 group-hover:scale-105 group-hover:-translate-y-2"
+                >
+                  <div
+                    class="absolute left-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-primary rounded-full border-4 border-white shadow-lg group-hover:scale-125 transition-transform duration-300"
+                  ></div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">2023年</h3>
+                  <p class="text-gray-600">
+                    员工规模达800余人，技术团队不断壮大，为企业发展提供强大人才支持
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 企业文化 -->
+    <section
+      class="py-16 bg-gradient-to-br from-blue-800 to-indigo-900 text-white"
+    >
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">企业文化</h2>
+          <p class="text-blue-100 max-w-3xl mx-auto">
+            我们的企业文化是我们成功的基石，指引着公司的每一步发展
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-white/20 rounded-full text-white mb-4"
+            >
+              <i class="ri-compass-3-line ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">企业理念</h3>
+            <p class="text-blue-100">
+              "行远必自迩、追求无止境"。我们始终坚信，伟大的成就源于一步一个脚印的踏实前行。
+            </p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-white/20 rounded-full text-white mb-4"
+            >
+              <i class="ri-service-line ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">服务宗旨</h3>
+            <p class="text-blue-100">
+              一切为用户服务，我们始终将客户需求放在首位，提供专业、高效、可靠的防腐保温解决方案。
+            </p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-white/20 rounded-full text-white mb-4"
+            >
+              <i class="ri-hand-heart-line ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">经营理念</h3>
+            <p class="text-blue-100">
+              重合同，守信用，注重企业效益和社会效益相结合，以诚信赢得市场，以质量赢得口碑。
+            </p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-white/20 rounded-full text-white mb-4"
+            >
+              <i class="ri-eye-line ri-2x"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">发展愿景</h3>
+            <p class="text-blue-100">
+              打造保温防腐第一品牌，以激情奔放、彰显非凡、锐意革新、进取不息的精神，引领行业发展。
+            </p>
+          </div>
+        </div>
+        <div class="mt-16 bg-white/10 backdrop-blur-sm p-8 rounded-lg">
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/3">
+              <img
+                src="https://readdy.ai/api/search-image?query=Professional%20team%20of%20engineers%20and%20workers%20in%20safety%20gear%20and%20hard%20hats%20discussing%20blueprints%20at%20an%20industrial%20site%2C%20diverse%20group%20of%20professionals%20collaborating%20on%20anti-corrosion%20project%2C%20industrial%20facility%20in%20background&width=400&height=300&seq=2&orientation=landscape"
+                alt="企业团队"
+                class="w-full h-auto rounded-lg"
+              />
+            </div>
+            <div class="md:w-2/3">
+              <h3 class="text-2xl font-bold mb-4">我们的承诺</h3>
+              <p class="text-blue-100 mb-4">
+                我公司本着一切为用户服务的宗旨，自觉做到重合同，守信用，注重企业效益和社会效益相结合起来，制定和完善了一系列规章制度，有力地保证了工程建设的顺利进行。
+              </p>
+              <p class="text-blue-100">
+                经过多年潜心经营，被誉为中国"保温之乡"的白石"保温"人，以世界文化名人齐白石老人为楷模，充分发挥名人故里优势，积极争取各级相关部门和广大业主的高度重视，拓宽市场，精诚合作，敢于攻克工程技术难关，使公司各项业务插上了腾飞的双翅，迈入中国同行的前列。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 资质荣誉 -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            资质荣誉
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            多年来，我们凭借卓越的技术和服务，获得了众多荣誉和认可
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-sm honor-card overflow-hidden"
+          >
+            <div class="relative mb-6">
+              <img
+                src="https://readdy.ai/api/search-image?query=Professional%20business%20award%20certificate%20with%20gold%20seal%20and%20blue%20ribbon%2C%20elegant%20design%20with%20official%20stamps%20and%20signatures%2C%20corporate%20achievement%20recognition&width=400&height=300&seq=3&orientation=landscape"
+                alt="重合同守信誉单位"
+                class="w-full h-48 object-cover rounded-lg shadow-md"
+              />
+              <div
+                class="absolute top-4 right-4 w-16 h-16 flex items-center justify-center bg-white/90 backdrop-blur-sm rounded-full text-primary shadow-lg"
+              >
+                <i class="ri-award-line ri-2x"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">
+              重合同守信誉单位
+            </h3>
+            <p class="text-gray-600 mb-4">
+              连续5年被评为湘潭市工商局"重合同、守信誉"单位，彰显了我们对商业诚信的坚守。
+            </p>
+            <div class="flex items-center text-primary">
+              <i class="ri-medal-line ri-lg mr-2"></i>
+              <span>湘潭市工商局颁发</span>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-sm honor-card overflow-hidden"
+          >
+            <div class="relative mb-6">
+              <img
+                src="https://readdy.ai/api/search-image?query=Modern%20construction%20management%20excellence%20award%20plaque%20mounted%20on%20marble%2C%20with%20engraved%20text%20and%20company%20logo%2C%20professional%20corporate%20achievement&width=400&height=300&seq=4&orientation=landscape"
+                alt="施工企业管理先进单位"
+                class="w-full h-48 object-cover rounded-lg shadow-md"
+              />
+              <div
+                class="absolute top-4 right-4 w-16 h-16 flex items-center justify-center bg-white/90 backdrop-blur-sm rounded-full text-primary shadow-lg"
+              >
+                <i class="ri-building-line ri-2x"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">
+              施工企业管理先进单位
+            </h3>
+            <p class="text-gray-600 mb-4">
+              多次被行业管理部门授予"湘潭市施工企业管理先进单位"，展现了我们卓越的管理水平。
+            </p>
+            <div class="flex items-center text-primary">
+              <i class="ri-medal-line ri-lg mr-2"></i>
+              <span>湘潭市建设局颁发</span>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-sm honor-card overflow-hidden"
+          >
+            <div class="relative mb-6">
+              <img
+                src="https://readdy.ai/api/search-image?query=AAA%20credit%20rating%20certificate%20with%20golden%20triple%20A%20emblem%2C%20professional%20financial%20document%20with%20official%20stamps%20and%20watermarks%2C%20high-quality%20paper%20texture&width=400&height=300&seq=5&orientation=landscape"
+                alt="AAA信用单位"
+                class="w-full h-48 object-cover rounded-lg shadow-md"
+              />
+              <div
+                class="absolute top-4 right-4 w-16 h-16 flex items-center justify-center bg-white/90 backdrop-blur-sm rounded-full text-primary shadow-lg"
+              >
+                <i class="ri-bank-line ri-2x"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">AAA信用单位</h3>
+            <p class="text-gray-600 mb-4">
+              湘潭市建安行业"AAA"信用单位，是对我们企业信用最高级别的认可。
+            </p>
+            <div class="flex items-center text-primary">
+              <i class="ri-medal-line ri-lg mr-2"></i>
+              <span>湘潭市信用评价委员会颁发</span>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-sm honor-card overflow-hidden"
+          >
+            <div class="relative mb-6">
+              <img
+                src="https://readdy.ai/api/search-image?query=Industry%20leading%20enterprise%20award%20with%20elegant%20design%2C%20professional%20certificate%20with%20gold%20emblem%20and%20official%20stamps%2C%20corporate%20achievement%20recognition%20in%20construction%20industry&width=400&height=300&seq=6&orientation=landscape"
+                alt="行业骨干单位"
+                class="w-full h-48 object-cover rounded-lg shadow-md"
+              />
+              <div
+                class="absolute top-4 right-4 w-16 h-16 flex items-center justify-center bg-white/90 backdrop-blur-sm rounded-full text-primary shadow-lg"
+              >
+                <i class="ri-government-line ri-2x"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">行业骨干单位</h3>
+            <p class="text-gray-600 mb-4">
+              湖南省防腐保温施工行业骨干单位，是对我们行业地位的重要认可。
+            </p>
+            <div class="flex items-center text-primary">
+              <i class="ri-medal-line ri-lg mr-2"></i>
+              <span>湖南省建筑业协会颁发</span>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-sm honor-card overflow-hidden"
+          >
+            <div class="relative mb-6">
+              <img
+                src="https://readdy.ai/api/search-image?query=ISO%20certification%20document%20with%20professional%20layout%2C%20international%20standard%20certification%20with%20official%20stamps%20and%20holographic%20security%20features%2C%20quality%20management%20system%20certificate&width=400&height=300&seq=7&orientation=landscape"
+                alt="ISO体系认证"
+                class="w-full h-48 object-cover rounded-lg shadow-md"
+              />
+              <div
+                class="absolute top-4 right-4 w-16 h-16 flex items-center justify-center bg-white/90 backdrop-blur-sm rounded-full text-primary shadow-lg"
+              >
+                <i class="ri-file-list-3-line ri-2x"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">ISO体系认证</h3>
+            <p class="text-gray-600 mb-4">
+              通过了GB/T/ISO9001:2008、IS014001、OHSAS18001认证，标志着我们的管理体系达到国际标准。
+            </p>
+            <div class="flex items-center text-primary">
+              <i class="ri-medal-line ri-lg mr-2"></i>
+              <span>国际标准化组织认证</span>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg shadow-sm honor-card overflow-hidden"
+          >
+            <div class="relative mb-6">
+              <img
+                src="https://readdy.ai/api/search-image?query=Construction%20excellence%20award%20with%20modern%20design%2C%20professional%20achievement%20certificate%20with%20gold%20seal%20and%20ribbon%2C%20outstanding%20construction%20company%20recognition&width=400&height=300&seq=8&orientation=landscape"
+                alt="施工优秀单位"
+                class="w-full h-48 object-cover rounded-lg shadow-md"
+              />
+              <div
+                class="absolute top-4 right-4 w-16 h-16 flex items-center justify-center bg-white/90 backdrop-blur-sm rounded-full text-primary shadow-lg"
+              >
+                <i class="ri-user-star-line ri-2x"></i>
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">施工优秀单位</h3>
+            <p class="text-gray-600 mb-4">
+              多次被省内外业主授予施工优秀单位光荣称号，体现了客户对我们工程质量的高度认可。
+            </p>
+            <div class="flex items-center text-primary">
+              <i class="ri-medal-line ri-lg mr-2"></i>
+              <span>各大业主单位颁发</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 合作伙伴 -->
+    <section class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            合作伙伴
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            我们与众多知名企业建立了长期稳定的合作关系，为各行业提供专业的防腐保温解决方案
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center client-logo"
+          >
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-oil-fill ri-2x text-gray-700"></i>
+              </div>
+              <span class="mt-2 text-gray-800 font-medium">中国石化</span>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center client-logo"
+          >
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-gas-station-fill ri-2x text-gray-700"></i>
+              </div>
+              <span class="mt-2 text-gray-800 font-medium">中国石油</span>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center client-logo"
+          >
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-building-4-fill ri-2x text-gray-700"></i>
+              </div>
+              <span class="mt-2 text-gray-800 font-medium">中国建筑</span>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center client-logo"
+          >
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-flashlight-fill ri-2x text-gray-700"></i>
+              </div>
+              <span class="mt-2 text-gray-800 font-medium">中国电力</span>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center client-logo"
+          >
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-hammer-fill ri-2x text-gray-700"></i>
+              </div>
+              <span class="mt-2 text-gray-800 font-medium">湖南华菱</span>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center client-logo"
+          >
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-truck-fill ri-2x text-gray-700"></i>
+              </div>
+              <span class="mt-2 text-gray-800 font-medium">中联重科</span>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center client-logo"
+          >
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-robot-fill ri-2x text-gray-700"></i>
+              </div>
+              <span class="mt-2 text-gray-800 font-medium">三一重工</span>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center client-logo"
+          >
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-train-fill ri-2x text-gray-700"></i>
+              </div>
+              <span class="mt-2 text-gray-800 font-medium">中国中车</span>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center client-logo"
+          >
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-plane-fill ri-2x text-gray-700"></i>
+              </div>
+              <span class="mt-2 text-gray-800 font-medium">中国航空</span>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center client-logo"
+          >
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-flask-fill ri-2x text-gray-700"></i>
+              </div>
+              <span class="mt-2 text-gray-800 font-medium">中国化工</span>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center client-logo"
+          >
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-fire-fill ri-2x text-gray-700"></i>
+              </div>
+              <span class="mt-2 text-gray-800 font-medium">中国冶金</span>
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center client-logo"
+          >
+            <div class="flex flex-col items-center">
+              <div class="w-12 h-12 flex items-center justify-center">
+                <i class="ri-battery-2-charge-fill ri-2x text-gray-700"></i>
+              </div>
+              <span class="mt-2 text-gray-800 font-medium">中国能源</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 联系我们 -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            联系我们
+          </h2>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            如果您有任何问题或需求，欢迎随时与我们联系
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10">
+          <div
+            class="md:w-1/2 bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-lg shadow-sm"
+          >
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">联系方式</h3>
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary rounded-full text-white mr-4 flex-shrink-0"
+                >
+                  <i class="ri-map-pin-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">公司地址</h4>
+                  <p class="text-gray-600">
+                    湘潭县易俗河镇荷花南路西（天易示范区）
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary rounded-full text-white mr-4 flex-shrink-0"
+                >
+                  <i class="ri-phone-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">联系电话</h4>
+                  <p class="text-gray-600">18207483310</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary rounded-full text-white mr-4 flex-shrink-0"
+                >
+                  <i class="ri-wechat-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">微信</h4>
+                  <p class="text-gray-600">mayexin1991</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-primary rounded-full text-white mr-4 flex-shrink-0"
+                >
+                  <i class="ri-mail-line ri-lg"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-1">电子邮箱</h4>
+                  <p class="text-gray-600">mahiudong1024@163.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8">
+              <h4 class="font-bold text-gray-800 mb-3">关注我们</h4>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center bg-white rounded-full text-primary hover:bg-primary hover:text-white transition"
+                >
+                  <i class="ri-weibo-fill ri-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center bg-white rounded-full text-primary hover:bg-primary hover:text-white transition"
+                >
+                  <i class="ri-wechat-fill ri-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center bg-white rounded-full text-primary hover:bg-primary hover:text-white transition"
+                >
+                  <i class="ri-linkedin-fill ri-lg"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 flex items-center justify-center bg-white rounded-full text-primary hover:bg-primary hover:text-white transition"
+                >
+                  <i class="ri-youtube-fill ri-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <div
+              class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-lg shadow-sm h-full"
+            >
+              <div
+                class="w-full h-full rounded-lg overflow-hidden"
+                style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png'); background-position: center; background-size: cover;"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 返回顶部按钮 -->
+    <div class="fixed right-6 bottom-6 z-40 hidden" id="backToTop">
+      <button
+        class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-lg flex items-center justify-center hover:from-blue-600 hover:to-purple-600 transition !rounded-button whitespace-nowrap"
+      >
+        <i class="ri-arrow-up-line ri-lg"></i>
+      </button>
+    </div>
+    <!-- 页脚 -->
+    <footer
+      class="bg-gradient-to-br from-gray-800 via-gray-900 to-blue-900 text-white pt-12 pb-6"
+    >
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">关于我们</h3>
+            <p class="text-gray-300 mb-4">
+              湘潭市防腐保温安装有限公司创建于1975年，是一家集工程施工、投资开发、技术研究为一体的综合型企业，为各行业提供高品质的防腐保温解决方案。
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-300 hover:text-white">
+                <div class="w-8 h-8 flex items-center justify-center">
+                  <i class="ri-weibo-fill ri-lg"></i>
+                </div>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white">
+                <div class="w-8 h-8 flex items-center justify-center">
+                  <i class="ri-wechat-fill ri-lg"></i>
+                </div>
+              </a>
+              <a href="#" class="text-gray-300 hover:text-white">
+                <div class="w-8 h-8 flex items-center justify-center">
+                  <i class="ri-linkedin-fill ri-lg"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">服务项目</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="./index.html"
+                  data-readdy="true"
+                  class="text-gray-300 hover:text-white"
+                  >防腐工程</a
+                >
+              </li>
+              <li>
+                <a href="./index.html" class="text-gray-300 hover:text-white">保温工程</a>
+              </li>
+              <li>
+                <a href="./index.html" class="text-gray-300 hover:text-white"
+                  >防火防爆工程</a
+                >
+              </li>
+              <li>
+                <a href="./index.html" class="text-gray-300 hover:text-white"
+                  >地坪防腐工程</a
+                >
+              </li>
+              <li>
+                <a href="./index.html" class="text-gray-300 hover:text-white"
+                  >阴极保护工程</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">快速链接</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="./index.html"
+                  data-readdy="true"
+                  class="text-gray-300 hover:text-white"
+                  >首页</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./服务详情页.html"
+                  data-readdy="true"
+                  class="text-gray-300 hover:text-white"
+                  >服务项目</a
+                >
+              </li>
+              <li>
+                <a href="./工程案例.html" class="text-gray-300 hover:text-white">工程案例</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-300 hover:text-white">关于我们</a>
+              </li>
+              <li>
+                <a
+                  href="./新闻资讯.html"
+                  data-readdy="true"
+                  class="text-gray-300 hover:text-white"
+                  >新闻资讯</a
+                >
+              </li>
+              <li>
+                <a href="./联系我们.html" class="text-gray-300 hover:text-white">联系我们</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">联系我们</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-3"
+                >
+                  <i class="ri-map-pin-line text-gray-300"></i>
+                </div>
+                <span class="text-gray-300"
+                  >湘潭县易俗河镇荷花南路西（天易示范区）</span
+                >
+              </li>
+              <li class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-phone-line text-gray-300"></i>
+                </div>
+                <span class="text-gray-300">18207483310</span>
+              </li>
+              <li class="flex items-center">
+                <div class="w-5 h-5 flex items-center justify-center mr-3">
+                  <i class="ri-mail-line text-gray-300"></i>
+                </div>
+                <span class="text-gray-300">mahiudong1024@163.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 pt-6 text-center text-gray-400 text-sm"
+        >
+          <p>© 2025 湘潭市防腐保温安装有限公司. 保留所有权利.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 技术团队图表
+        const teamChart = echarts.init(document.getElementById("teamChart"));
+        const teamOption = {
+          animation: false,
+          tooltip: {
+            trigger: "item",
+            backgroundColor: "rgba(255, 255, 255, 0.8)",
+            textStyle: {
+              color: "#1f2937",
+            },
+          },
+          color: [
+            "rgba(87, 181, 231, 1)",
+            "rgba(141, 211, 199, 1)",
+            "rgba(251, 191, 114, 1)",
+          ],
+          legend: {
+            orient: "vertical",
+            right: 10,
+            top: "center",
+            textStyle: {
+              color: "#1f2937",
+            },
+          },
+          series: [
+            {
+              name: "技术团队",
+              type: "pie",
+              radius: ["40%", "70%"],
+              avoidLabelOverlap: false,
+              itemStyle: {
+                borderRadius: 8,
+                borderColor: "#fff",
+                borderWidth: 2,
+              },
+              label: {
+                show: false,
+                position: "center",
+              },
+              emphasis: {
+                label: {
+                  show: true,
+                  fontSize: "14",
+                  fontWeight: "bold",
+                  color: "#1f2937",
+                },
+              },
+              labelLine: {
+                show: false,
+              },
+              data: [
+                { value: 8, name: "高级职称 (8人)" },
+                { value: 36, name: "中级职称 (36人)" },
+                { value: 40, name: "初级职称 (40人)" },
+              ],
+            },
+          ],
+        };
+        teamChart.setOption(teamOption);
+        // 业务覆盖图表
+        const coverageChart = echarts.init(document.getElementById("coverageChart"));
+        const coverageOption = {
+          animation: false,
+          tooltip: {
+            trigger: "axis",
+            backgroundColor: "rgba(255, 255, 255, 0.8)",
+            textStyle: {
+              color: "#1f2937",
+            },
+          },
+          grid: {
+            left: "0",
+            right: "0",
+            bottom: "0",
+            top: "10",
+            containLabel: true,
+          },
+          xAxis: {
+            type: "category",
+            data: [
+              "化工",
+              "冶炼",
+              "电力",
+              "石化",
+              "制药",
+              "造纸",
+              "酿酒",
+              "纺织",
+              "航空",
+            ],
+            axisLabel: {
+              interval: 0,
+              rotate: 45,
+              color: "#1f2937",
+            },
+          },
+          yAxis: {
+            type: "value",
+            axisLabel: {
+              color: "#1f2937",
+            },
+          },
+          series: [
+            {
+              name: "项目数量",
+              type: "bar",
+              barWidth: "60%",
+              data: [120, 98, 85, 70, 60, 55, 40, 35, 30],
+              itemStyle: {
+                color: "rgba(87, 181, 231, 1)",
+                borderRadius: 4,
+              },
+            },
+          ],
+        };
+        coverageChart.setOption(coverageOption);
+        // 窗口大小变化时重绘图表
+        window.addEventListener("resize", function () {
+          teamChart.resize();
+          coverageChart.resize();
+        });
+        // 返回顶部按钮
+        const backToTopButton = document.getElementById("backToTop");
+        window.addEventListener("scroll", function () {
+          if (window.pageYOffset > 300) {
+            backToTopButton.classList.remove("hidden");
+          } else {
+            backToTopButton.classList.add("hidden");
+          }
+        });
+        backToTopButton.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
